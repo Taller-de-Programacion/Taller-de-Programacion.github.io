@@ -7,9 +7,6 @@ permalink: ':title/'
 markdown: kramdown
 baseurl: "/karna"
 
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
 
 sass:
     style: compressed
@@ -27,7 +24,7 @@ compress_html:
   profile: false
   startings: []
 
-highlighter: rouge
+highlight: rouge
 
 
 # Tracker

@@ -1,0 +1,5 @@
+Run the server locally:
+    bundle exec jekyll serve
+
+Update your github-pages gems
+    bundle update github-pages
