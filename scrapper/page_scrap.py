@@ -12,6 +12,7 @@ from tqdm import tqdm
 import unidecode
 
 class DummyTqdmFile(object):
+    ''' Helper class to log in the current 'progress bar' or in a global 'progress bar'.'''
     def __init__(self, pbar=None):
         self.pbar = pbar if pbar else tqdm
 
@@ -21,6 +22,12 @@ class DummyTqdmFile(object):
 
 @contextlib.contextmanager
 def stdout_redirect_to_tqdm(pbar=None):
+    ''' Helper function to redirect all the prints to tqdm. In this way, when tqdm is 
+        showing in the console its progress bar, the prints to the raw stdout will not
+        collide each other.
+        When the prints are handled by tqdm itself, he will know how to print all the stuffs
+        along with the progress bar.
+        '''
     save_stdout = sys.stdout
     try:
         sys.stdout = DummyTqdmFile(pbar)
@@ -82,6 +89,11 @@ class Session(object):
         self.driver.close()
 
     def open_first_post(self):
+        ''' Go to the 'first_post_url' url using the browser. Then, skip up to 'skip_post_count' posts.
+            From there you should be ready to scrap the site.
+            The skip_post_count parameter will enable you to control from where to start without to rewrite
+            the 'first_post_url' url.
+            '''
         driver = self.driver
         driver.get(self.first_post_url)
 
@@ -97,6 +109,7 @@ class Session(object):
 
 
     def go_to_next_post(self, pbar=None):
+        ''' Given a browser with a post page opened in it, go to the next post page. Simple.'''
         driver = self.driver
         next_post_url = driver.find_element(By.CLASS_NAME, "nav-next").find_element(By.TAG_NAME, "a").get_attribute('href')
         driver.get(next_post_url)
@@ -104,12 +117,25 @@ class Session(object):
 
 
     def go_to_previous_post(self, pbar=None):
+        ''' The inverse of go_to_next_post.'''
         driver = self.driver
         previous_post_url = driver.find_element(By.CLASS_NAME, "nav-previous").find_element(By.TAG_NAME, "a").get_attribute('href')
         driver.get(previous_post_url)
         print "You are at: %s" % previous_post_url
 
     def get_post_data(self):
+        ''' Read from the current web page loaded in the browser all the relevant data of the post.
+            Here is where you do the "real scrap":
+                - get the title of the post
+                - the author of the post
+                - the date of the post
+                - its content of course!
+
+            But it is likely that this implementation is incomplete, so:
+                
+                IMPROVE ME!!
+
+            '''
         driver = self.driver
         title = driver.find_element(By.CLASS_NAME, "entry-title").text
         author = driver.find_element(By.CLASS_NAME, "author").text
@@ -128,6 +154,20 @@ class Session(object):
 
 
     def remap_urls(self, container, download=True):
+        ''' Remap the urls that are in the page in the Browser taking urls relative to the
+            Wordpress site and transforming them into urls relative to the new githubpage site.
+
+            This is done **in** the browser, modifing the webpage in real time. This is done in
+            this way so we can request to the browser the html of the page later and that html
+            will contain the remapped urls.
+            Otherwise we would have to parse and modify the html by ourselves: no way!
+
+            This implementation if far from perfect or complete. It handles relative urls and
+            download links but it is likely that this will need more love, so
+                
+                IMPROVE ME!!
+
+            '''
         driver = self.driver
         js_set_attr = '''arguments[0].%s = %s; return true;'''
 
@@ -176,6 +216,7 @@ class Session(object):
                 pbar.update(1)
 
     def download_asset(self, download_url, dst_path):
+        ''' Helper method to download an asset from the scrapped site. '''
         file_dir = os.path.join(self.repository_home, os.path.dirname(dst_path)[1:])
         dst_file = os.path.join(file_dir, os.path.basename(dst_path))
 
@@ -186,6 +227,13 @@ class Session(object):
         os.system('wget -c "%s" -O "%s"' % (download_url, dst_file))
 
     def port_post(self):
+        ''' Scrap the current web page (post) using get_post_data and create a new post
+            with the syntaxis required by githubpages.
+
+            If the template used in githubpages is changed it is possible that this method
+            will require a few improvements.
+
+            '''
         driver = self.driver
         date, title, author, post_content_html = self.get_post_data()
 
