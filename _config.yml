@@ -1,11 +1,23 @@
 
-title: Karna
-desctiption: Karna is a responsive jekyll theme which includes pinterest like pins.
-url: http://webjeda.com/
-permalink: ':title/'
+title: 75.42 - Taller de programación I
+email: tallerdeprogramacion@googlegroups.com
+description: > # this means to ignore newlines until "baseurl:"
+  Sitio en construcción de la materia 75.42 - Taller de programación, de la facultad
+  de ingeniería de la Universidad de Buenos Aires
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
+github_username:  Taller-de-programacion
+
+# Build settings
 markdown: kramdown
-baseurl: ""
+theme: minima
+gems:
+  - jekyll-feed
+  - jekyll-paginate
+exclude:
+  - Gemfile
+  - Gemfile.lock
 
 kramdown:
   input: GFM
@@ -43,4 +55,3 @@ api-token:
 include: [_pages]
 version: 0.8
 
-gems: [jekyll-paginate]
