@@ -123,7 +123,6 @@ class Session(object):
                     self.go_to_next_post(pbar)
                     pbar.update(1)
 
-
     def go_to_next_post(self, pbar=None):
         ''' Given a browser with a post page opened in it, go to the next post page. Simple.'''
         driver = self.driver
@@ -131,6 +130,12 @@ class Session(object):
         driver.get(next_post_url)
         print "You are at: %s" % next_post_url
 
+    def try_go_to_next_post(self, pbar=None):
+        try:
+            self.go_to_next_post(pbar)
+            return True
+        except:
+            return False
 
     def go_to_previous_post(self, pbar=None):
         ''' The inverse of go_to_next_post.'''
@@ -286,7 +291,7 @@ class Session(object):
         file_dir = os.path.join(self.repository_home, self.destination_post_path_prefix[1:], year)
         os.system('mkdir -p "%s"' % file_dir)
 
-        normalized_title = (' '.join(unidecode.unidecode_expect_ascii(title).replace("-", " ").split())).replace(" ", "-")
+        normalized_title = (' '.join(unidecode.unidecode_expect_ascii(title).replace("-", " ").split())).replace(" ", "-").replace("/", "-")
         file_name = "%s-%s-%s-%s.mk" % (year, month, day, normalized_title)
 
         post = Post_Template % dict(title=title,
@@ -296,6 +301,15 @@ class Session(object):
 
         with open(os.path.join(file_dir, file_name), 'wt') as post_file:
             post_file.write(post.encode('utf8'))
+
+    def port_all_posts(self):
+        self.port_post()
+
+        has_next = self.try_go_to_next_post()
+        while has_next:
+            self.port_post()
+            has_next = self.try_go_to_next_post()
+
 
 
 Post_Template = '''---
