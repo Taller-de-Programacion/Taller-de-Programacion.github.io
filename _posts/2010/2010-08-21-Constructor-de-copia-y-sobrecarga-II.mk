@@ -322,7 +322,7 @@ snippets:
 <div class="entry-content">
 						<p>Constructor de copia, sobrecarga de operadores.</p>
 <p>cadena.h</p>
-<div><div id="highlighter_652418" class="">{{page.snippets[0] | markdownify }}</div></div>
+<div><div id="highlighter_765182" class="">{{page.snippets[0] | markdownify }}</div></div>
 <p>cadena.cpp</p>
-<div><div id="highlighter_325099" class="">{{page.snippets[1] | markdownify }}</div></div>
+<div><div id="highlighter_521650" class="">{{page.snippets[1] | markdownify }}</div></div>
 											</div>

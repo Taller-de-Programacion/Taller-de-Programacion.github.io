@@ -225,7 +225,7 @@ snippets:
 <div class="entry-content">
 						<p>Constructor de copia, sobrecarga de operadores.</p>
 <p>complejo.h</p>
-<div><div id="highlighter_665173" class="">{{page.snippets[0] | markdownify }}</div></div>
+<div><div id="highlighter_742999" class="">{{page.snippets[0] | markdownify }}</div></div>
 <p>complejo.cpp</p>
-<div><div id="highlighter_495885" class="">{{page.snippets[1] | markdownify }}</div></div>
+<div><div id="highlighter_962718" class="">{{page.snippets[1] | markdownify }}</div></div>
 											</div>

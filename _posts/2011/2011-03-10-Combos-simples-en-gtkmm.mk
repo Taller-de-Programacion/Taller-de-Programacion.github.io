@@ -35,5 +35,5 @@ snippets:
 <div class="entry-content">
 						<p>Agregamos un <a href="http://library.gnome.org/devel/gtkmm-tutorial/stable/sec-combobox.html">combo</a> simple que admite sólo los textos que mostrará (string). Este caso se simplifica en gran medida si utilizamos un <a href="http://library.gnome.org/devel/gtkmm-tutorial/stable/sec-comboboxtext.html">combo de texto</a> que hereda del combo original, ocultando la complejidad del esquema model-view y agregando funcionalidad sólo para textos.</p>
 <p>Utilizamos la señal <em>changed</em> para mostrar el elemento elegido por el usuario a través de la salida estándar.</p>
-<div><div id="highlighter_608019" class="">{{page.snippets[0] | markdownify }}</div></div>
+<div><div id="highlighter_807802" class="">{{page.snippets[0] | markdownify }}</div></div>
 											</div>

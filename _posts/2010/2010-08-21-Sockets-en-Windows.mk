@@ -130,5 +130,5 @@ snippets:
 <p>Para cerrar un socket se llama a la función <strong>closesocket</strong> que recibe un único parámetro que es el numero de socket.</p>
 <h2>6) Ejemplo</h2>
 <p>Este ejemplo se conecta a el servidor de http de yahoo y baja el contenido del index a la pantalla:</p>
-<div><div id="highlighter_925630" class="">{{page.snippets[0] | markdownify }}</div></div>
+<div><div id="highlighter_258055" class="">{{page.snippets[0] | markdownify }}</div></div>
 											</div>

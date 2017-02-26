@@ -75,5 +75,5 @@ snippets:
 <p>Cada vez que se produzca un evento WINDOWS notificará a la ventana especificada enviándole el mensaje especificado. El campo wParam contendrá el Identificador del ícono que generó el mensaje (sólo sirve para el caso de ventanas que insertan más de un ícono en la barra) .El parámetro lParam tendrá el evento generado por el mouse. Por ejemplo, si el mouse se posicionó sobre el ícono, lParam tendrá el valor WM_MOUSEMOVE.</p>
 <h2>4) Ejemplo:</h2>
 <p>La siguiente es una porción de código típica para agregar un ícono en la barra del Explorador.</p>
-<div><div id="highlighter_149219" class="">{{page.snippets[0] | markdownify }}</div></div>
+<div><div id="highlighter_500821" class="">{{page.snippets[0] | markdownify }}</div></div>
 											</div>

@@ -98,5 +98,5 @@ snippets:
 ---
 <div class="entry-content">
 						<p>Agregamos una caja de 		<a href="http://library.gnome.org/devel/gtk/stable/GtkEntry.html">entrada de texto</a> y hacemos que al presionar el botón, se imprima 	       	el texto ingresado por el usuario por la salida estándar.</p>
-<div><div id="highlighter_337368" class="">{{page.snippets[0] | markdownify }}</div></div>
+<div><div id="highlighter_807739" class="">{{page.snippets[0] | markdownify }}</div></div>
 											</div>

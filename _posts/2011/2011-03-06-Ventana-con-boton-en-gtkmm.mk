@@ -34,5 +34,5 @@ snippets:
 ---
 <div class="entry-content">
 						<p>Agregamos un <a href="http://library.gnome.org/devel/gtkmm-tutorial/stable/chapter-button-widget.html">botón</a> que cierra la ventana introduciendo el uso de <a href="http://library.gnome.org/devel/gtkmm-tutorial/stable/chapter-signals.html">señales</a> y da un mensaje por la salida estándar con el método recomendado en <em>gtkmm</em>.</p>
-<div><div id="highlighter_187629" class="">{{page.snippets[0] | markdownify }}</div></div>
+<div><div id="highlighter_78527" class="">{{page.snippets[0] | markdownify }}</div></div>
 											</div>

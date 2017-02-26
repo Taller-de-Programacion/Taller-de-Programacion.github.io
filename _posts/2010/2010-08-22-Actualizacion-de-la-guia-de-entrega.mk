@@ -7,5 +7,5 @@ snippets: none
 
 ---
 <div class="entry-content">
-						<p>Se actualizó la guía de entrega de trabajos prácticos y también de creó una <a href="https://taller-de-programacion.github.io/files/caratula.pdf" target="_blank">nueva carátula</a> para la entrega de los ejercicios individuales.</p>
+						<p>Se actualizó la guía de entrega de trabajos prácticos y también de creó una <a href="https://taller-de-programacion.github.io/No-encontrado" target="_blank">nueva carátula</a> para la entrega de los ejercicios individuales.</p>
 											</div>

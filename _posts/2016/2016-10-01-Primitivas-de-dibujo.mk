@@ -81,6 +81,6 @@ snippets:
 
 ---
 <div class="entry-content">
-						<p>Tomando el ejemplo de <a title="Ventana dummy" href="https://taller-de-programacion.github.io/ejemplo/gtk/ventana-dummy/">Ventana Dummy</a>, agregamos un <a href="https://developer.gnome.org/gtk3/stable/GtkDrawingArea.html">área de dibujo</a> que <em>pinta</em> figuras simples utilizando <a href="https://www.cairographics.org/">Cairo</a> cada vez que recibe el evento <tt>draw</tt>. La ventana se cierra con un botón que dispara el evento de destruir con un <strong>g_signal_connect_swapped.</strong></p>
-<div><div id="highlighter_17123" class="">{{page.snippets[0] | markdownify }}</div></div>
+						<p>Tomando el ejemplo de <a title="Ventana dummy" href="https://taller-de-programacion.github.io/Ventana-dummy">Ventana Dummy</a>, agregamos un <a href="https://developer.gnome.org/gtk3/stable/GtkDrawingArea.html">área de dibujo</a> que <em>pinta</em> figuras simples utilizando <a href="https://www.cairographics.org/">Cairo</a> cada vez que recibe el evento <tt>draw</tt>. La ventana se cierra con un botón que dispara el evento de destruir con un <strong>g_signal_connect_swapped.</strong></p>
+<div><div id="highlighter_454027" class="">{{page.snippets[0] | markdownify }}</div></div>
 											</div>

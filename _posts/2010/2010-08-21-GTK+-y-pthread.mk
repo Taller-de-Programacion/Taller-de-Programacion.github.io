@@ -252,7 +252,7 @@ snippets:
 <div class="entry-content">
 						<p>Programa en GTK+ con una barra de progreso que cambia según 		el progreso de un thread. Este ejemplo es una versión 		modificada del ejemplo de <em lang="en">progress 		bar</em> del tutorial de GTK+ al que se le agregó un 		thread POSIX (pthread).</p>
 <p>progressbar.c</p>
-<div><div id="highlighter_840178" class="">{{page.snippets[0] | markdownify }}</div></div>
+<div><div id="highlighter_940331" class="">{{page.snippets[0] | markdownify }}</div></div>
 <p>Makefile</p>
 <pre>CC = gcc
 

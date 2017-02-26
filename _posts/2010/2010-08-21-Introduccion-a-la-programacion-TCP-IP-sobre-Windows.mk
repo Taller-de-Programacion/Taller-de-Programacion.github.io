@@ -254,10 +254,10 @@ WSACleanup();</span></pre>
 </blockquote>
 <p>A continaución se presenta el código completo del cliente y del servidor.</p>
 <h3>Servidor.cpp</h3>
-<pre><span style="color: #ff0000;"><div><div id="highlighter_850479" class="">{{page.snippets[0] | markdownify }}</div></div>
+<pre><span style="color: #ff0000;"><div><div id="highlighter_253223" class="">{{page.snippets[0] | markdownify }}</div></div>
 <p></p>
 <h3>Cliente.cpp</h3>
-<pre><span style="color: #0000ff;"><div><div id="highlighter_870043" class="">{{page.snippets[1] | markdownify }}</div></div>
+<pre><span style="color: #0000ff;"><div><div id="highlighter_426441" class="">{{page.snippets[1] | markdownify }}</div></div>
 <p><br>
 Como sería de esperar, un programa tan simple como este, el mismo presenta algunos puntos cuestionables. En primer lugar, generalmente no se especifica la dirección IP de un host, sino el nombre del mismo. La librería de sockets dispone de la función <strong><em>gethostbyname()</em></strong> que, dado el nombre de un equipo retorna su dirección IP. Esta función recae en el sistema de conversión de nombres del sistema operativo, basado generalmente en servidores DNS o tablas de configuración locales, que si no operan correctamente, no podrá obtenerse la dirección IP. De todas formas, el uso de una dirección IP en lugar del nombre no es incorrecto.</p>
 <p>Pero la forma en que se recive el dato, utilizando la función recv sí es incorrecta. El tercer parámetro de <strong><em>recv </em></strong>especifica la longitud del buffer donde recibir la información, no la cantidad de bytes a recibir. Esta función retornará inmediatamente, al recibir un dato, aunque el buffer no se haya completado. Si por alguna razon el protocolo de red debe fragmentar la información, es posible que se reciba una cantidad menor a la solicitada. En este caso, es impensable que el protocolo TCP vaya a fragmentar un paquete con sólo 4 bytes de información, por lo que el programa funcionará correctamente, pero no puede suponerse que esto no vaya a ocurrir.</p>

@@ -68,8 +68,8 @@ snippets:
 
 ---
 <div class="entry-content">
-						<p>Tomando el ejemplo de <a title="Ventana dummy" href="https://taller-de-programacion.github.io/ejemplo/gtk/ventana-dummy/">Ventana Dummy</a>, agregamos un botón que utiliza <a href="https://developer.gnome.org/gtk-tutorial/stable/x159.html">señales</a> para imprimir <a href="https://developer.gnome.org/glib/stable/glib-Warnings-and-Assertions.html"> un mensaje por salida estándar</a>:</p>
-<div><div id="highlighter_340129" class="">{{page.snippets[0] | markdownify }}</div></div>
+						<p>Tomando el ejemplo de <a title="Ventana dummy" href="https://taller-de-programacion.github.io/Ventana-dummy">Ventana Dummy</a>, agregamos un botón que utiliza <a href="https://developer.gnome.org/gtk-tutorial/stable/x159.html">señales</a> para imprimir <a href="https://developer.gnome.org/glib/stable/glib-Warnings-and-Assertions.html"> un mensaje por salida estándar</a>:</p>
+<div><div id="highlighter_207047" class="">{{page.snippets[0] | markdownify }}</div></div>
 <p>Integrando el bloque anterior con la estructura simple de aplicación en GTK+ obtenemos:</p>
-<div><div id="highlighter_199529" class="">{{page.snippets[1] | markdownify }}</div></div>
+<div><div id="highlighter_728035" class="">{{page.snippets[1] | markdownify }}</div></div>
 											</div>
