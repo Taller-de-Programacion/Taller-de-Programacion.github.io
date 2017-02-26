@@ -1,0 +1,79 @@
+---
+layout: post
+title: TrayIcon
+author: admin
+date: 21/08/2010
+snippets: 
+    - |
+        ```cpp
+        BOOL MyTaskBarAddIcon (HWND hwnd, UINT uID, HICON hicon, LPSTR lpszTip)
+        {
+         BOOL res;
+         NOTIFYICONDATA tnid;
+          /* Cargo la estructura con los datos */
+         tnid.cbSize = sizeof (NOTIFYICONDATA);
+         tnid.hWnd = hwnd;
+         tnid.uID = uID;
+         tnid.uFlags = NIF_MESSAGE | NIF_ICON | NIF_TIP;
+         tnid.uCallbackMessage = MYWM_NOTIFYICON;
+         tnid.hIcon = hicon;
+         if (lpszTip)
+           lstrcpyn (tnid.szTip, lpszTip, sizeof(tnid.szTip));
+         else
+           tnid.szTip[0] = '\0';
+          /* Le pido al EXPLORER que agregue el ícono */
+         res = Shell_NotifyIcon (NIM_ADD, &tnid);
+          return res;
+        }
+        ```
+
+---
+<div class="entry-content">
+						<table border="1">
+<tbody>
+<tr>
+<td width="15%" bgcolor="#c0c0c0"><strong>Tema</strong></td>
+<td>TrayIcon</td>
+<td width="10%" bgcolor="#c0c0c0"><strong>Versión</strong></td>
+<td width="10%">1.00</td>
+</tr>
+<tr>
+<td width="15%" bgcolor="#c0c0c0"><strong>Resumen</strong></td>
+<td colspan="3">El siguiente documento explica la forma de insertar un       ícono en la barra del Explorador (TrayIcon). Asimismo indica la forma de       recibir los que éste produce.</td>
+</tr>
+<tr>
+<td width="15%" bgcolor="#c0c0c0"><strong>Sistema Operativo</strong></td>
+<td colspan="3">WINDOWS 9x, Me, NT, 2000, XP</td>
+</tr>
+<tr>
+<td width="15%" bgcolor="#c0c0c0"><strong>Autor</strong></td>
+<td>Andrés A. Veiga</td>
+<td width="10%" bgcolor="#c0c0c0"><strong>Fecha</strong></td>
+<td width="10%">18/8/2001</td>
+</tr>
+<tr>
+<td width="15%" bgcolor="#c0c0c0"><strong>Búsqueda</strong></td>
+<td colspan="3">Icono – TrayIcon – IconTray – Tray – Icono –       Ícono – Explorer – Explorador</td>
+</tr>
+</tbody>
+</table>
+<h2>1) Estructura de datos:</h2>
+<p>La estructura <strong>NOTIFYICONDATA</strong> permite especificar toda la información asociada a este tipo de íconos. Esta estructura posee los siguientes campos:</p>
+<p><strong>CbSize</strong>: Debe contener el tamaño de la estructura. Debe ser sizeof (<strong>NOTIFYICONDATA</strong>).</p>
+<p><strong>hWnd</strong>: Handle de la ventana a la que se le deben pasar los mensajes de notificación. Sólo se le pasan los mensajes en el caso en que se especifique el flag <strong>NIF_MESSAGE</strong> en el campo <strong>UFlags</strong>.</p>
+<p><strong>uID</strong>: Identificador del ícono. Debe ser un número único.</p>
+<p><strong>uFlags</strong>: Indica las características del ícono a insertar. Se debe utilizar alguna combinación de las siguientes constantes:</p>
+<blockquote><p><strong>NIF_MESSAGE</strong>: Indica que, cuando se produzca algún evento, se debe   enviar el mensaje indicado en UcallBackMessage a la ventana especificada en   hWnd.</p>
+<p><strong>NIF_ICON</strong>: Idica que el campo hIcon tiene el handle del ícono a   mostrar.</p>
+<p><strong>NIF_TIP</strong>: Indica que cuando el usuario señale el ícono, se deberá   deplegar un tooltip con el texto indicado en szTip`.</p></blockquote>
+<p><strong>uCallbackMessage</strong>: Mensaje que se desea recibir. Sólo es válido si se especificó el flag NIF_MESSAGE en uflags.</p>
+<p><strong>hIcon</strong>: hICON del ícono a mostrar. Sólo es válido si se especificó el flag NIF_ICON en Uflags.</p>
+<p><strong>szTip</strong>: Buffer de 64 caracteres que contiene el ‘tootip’. Sólo es válido si se especificó el flag NIF_TIP en uflags.</p>
+<h2>2) Creación, Modificación, Borrado:</h2>
+<p>Toda operación relacionada con los íconos de la barra del Explorador se hace mediante la función: <strong>Shell_NotifyIcon </strong>(DWORD dwMessage, PNOTIFYICONDATA pnid). Esta función toma como primer parámetro el tipo de operación que se desea realizar. Este parámetro puede tomar alguno de los siguientes valores: <strong>NIM_ADD</strong> (agregar), <strong>NIM_MODIFY</strong> (modificar) o <strong>NIM_DELETE</strong> (borrar). El segundo parámetro es la dirección de memoria de la estructura <strong>NOTIFYICONDATA</strong> que contiene los datos necesarios para la operación.</p>
+<h2>3) Recepción de notificaciones:</h2>
+<p>Cada vez que se produzca un evento WINDOWS notificará a la ventana especificada enviándole el mensaje especificado. El campo wParam contendrá el Identificador del ícono que generó el mensaje (sólo sirve para el caso de ventanas que insertan más de un ícono en la barra) .El parámetro lParam tendrá el evento generado por el mouse. Por ejemplo, si el mouse se posicionó sobre el ícono, lParam tendrá el valor WM_MOUSEMOVE.</p>
+<h2>4) Ejemplo:</h2>
+<p>La siguiente es una porción de código típica para agregar un ícono en la barra del Explorador.</p>
+<div><div id="highlighter_149219" class="">{{page.snippets[0] | markdownify }}</div></div>
+											</div>

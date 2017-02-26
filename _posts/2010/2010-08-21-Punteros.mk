@@ -1,0 +1,189 @@
+---
+layout: post
+title: Punteros
+author: admin
+date: 21/08/2010
+snippets: none
+
+---
+<div class="entry-content">
+						<table width="100%" border="1">
+<tbody>
+<tr>
+<td width="15%" bgcolor="#c0c0c0"><strong>Tema</strong></td>
+<td><strong>Punteros</strong></td>
+<td width="10%" bgcolor="#c0c0c0"><strong>Versión</strong></td>
+<td width="10%">1.00</td>
+</tr>
+<tr>
+<td width="15%" bgcolor="#c0c0c0"><strong>Resumen</strong></td>
+<td colspan="3">El presente documento busca profundizar el tema de punteros       en lenguaje C.</td>
+</tr>
+<tr>
+<td width="15%" bgcolor="#c0c0c0"><strong>Sistema Operativo</strong></td>
+<td colspan="3">Cualquiera</td>
+</tr>
+<tr>
+<td width="15%" bgcolor="#c0c0c0"><strong>Autor</strong></td>
+<td>Gabriel Agustín Praino</td>
+<td width="10%" bgcolor="#c0c0c0"><strong>Fecha</strong></td>
+<td width="10%">30/11/2001</td>
+</tr>
+<tr>
+<td width="15%" bgcolor="#c0c0c0"><strong>Búsqueda</strong></td>
+<td colspan="3">punteros, C</td>
+</tr>
+</tbody>
+</table>
+<p><strong><em></em></strong></p><strong><em>
+</em></strong><p><strong><em></em></strong></p>
+<table border="1" bgcolor="#ffff00">
+<tbody>
+<tr>
+<td><span style="color: #000000;">El presente material se encuentra inscripto en el       Registro Nacional de Propiedad Intelectual. Todos los derechos reservados.       La reproducción de la presente publicación se encuentra sujeta a los       términos establecidos en la página principal de la presente obra.       Prohibida la reproducción total o parcial de esta publicación en forma       independiente.</span></td>
+</tr>
+</tbody>
+</table>
+<h1><strong>Punteros</strong></h1>
+<p>El tema de la utilización correcta de punteros suele traer no pocos inconvenientes a quienes recién comienzan a programar. Más aún, la relación existente entre arrays y punteros suele parecer bastante confusa y llevar a errores de programación difíciles de encontrar. Por ello dedicaremos unas líneas a analizar la relación existente entre los punteros y los arrays, la forma de utilizarlos y las situaciones y problemas más frecuentes que suelen presentarse. Comencemos con un ejemplo sencillo:</p>
+<pre>void Funcion(void)
+{
+	unsigned Tam1, Tam2;
+	char szString1[100];
+	char *szString2;
+	Tam1 = sizeof (szString1);
+	Tam2 = sizeof (szString2);
+	...</pre>
+<p>En este caso, szString1 será un string de 100 caracteres, en tanto que szString2 será un puntero a caracter (una variable que almacena una dirección de memoria donde se encuentra almacenado un caracter). Si esto está claro, ¿podría decir qué valores tomarán las variables Tam1 y Tam2?</p>
+<p>Pués bien, Tam1 tomará el valor correspondiente al tamaño del array szString1, es decir, 100, en tanto que Tam2 tomará el valor correspondiente al tamaño de una dirección de memoria, 2 ó 4 en la mayoría de los casos. Surge entonces una paradoja. Cómo es posible realizar una operación del tipo:</p>
+<pre>szString2 = szString1; /* Esto es correcto */</pre>
+<p><span style="font-family: CG Omega; font-size: x-small;">Notar que estas dos variables tienen diferente tamaño, ¿cómo es posible entonces copiar su contenido? La respuesta debe buscarse en la forma en que se implementan los arrays. En C, todo array consiste en un puntero a la posición donde se encuentran los datos, es decir que szString1 es la dirección de memoria de la primer elemento del array.</span></p>
+<p>El lector atento notará que en el párrafo anterior se dice que szString2 es una variable que almacena una dirección de memoria (puntero), en tanto que szString1 es directamente una dirección de memoria, que por ser un valor no podrá ser modificada. Es decir que la operación inversa no es válida:</p>
+<p></p>
+<pre>	szString1 = szString2; /* Esto es incorrecto */</pre>
+<p>Veamos otro ejemplo. Si suponemos que existe una función:</p>
+<blockquote>
+<pre>void PrintString(char *s);</pre>
+</blockquote>
+<p>y ambas variables tienen significados diferentes, ¿cuál de las siguientes llamadas es la correcta?</p>
+<blockquote>
+<pre>PrintString(szString1);</pre>
+<pre>PrintString(szString2);</pre>
+</blockquote>
+<p>La respuesta es que ambas son correctas, ya que el pasaje de parámetros a funciones se realiza por valor, y por ende ambas funciones pasarán una dirección de memoria, que será cargada en la variable s de la función PrintString(char *s);</p>
+<p>¿Y qué hubiese pasado si hubiese definido la función PrintString() como sigue?</p>
+<blockquote>
+<pre>void PrintString(char s[100]);</pre>
+</blockquote>
+<p>La respuesta es que no hubiese pasado nada diferente. Recordemos que un array es la dirección de memoria del primer elemento. Cuando se define un array en una llamada a una función, esta dirección de memoria será recibida como parámetro, y por ende no se reserva memoria. Es decir que los elementos del array no serán copiados, sino que s contendrá la dirección de memoria especificada al llamar a la función, y cualquier modificación que se haga sobre el array se mantendrá al salir de la función. La única diferencia que existe entre el caso anterior y este es que en el anterior la variable s (por ser un puntero) puede ser modificada, en tanto que en el segundo caso, la dirección de memoria s no.</p>
+<p>Y bien, ya que al llamar a la función no se reservar memoria, ¿para qué sirve especificar el valor 100 dentro de la función? La respuesta es que no tiene ninguna utilidad. Daría lo mismo especificar 10, 100 o cualquier otro valor, o incluso nada, tal como se muestra a continuación:</p>
+<pre>	void PrintString(char s[]);</pre>
+<p>¿Es decir que siempre puede omitirse el tamaño del array?</p>
+<p>La respuesta es que siempre se lo puede hacer en el último tamaño del array. Por ejemplo, si estuviese pasando una matriz, debería pasar la cantidad de columnas, tal como se muestra a continuación:</p>
+<pre>	void Print (char s[][5]);</pre>
+<p>En este caso el 5 no es opcional. La función recibirá efectivamente una dirección de memoria, y no le interesa cuanta memoria haya alocada (por eso el primer parámetro no se pone), pero sí necesita saber cuántos elementos existen en cada fila para poder saber, por ejemplo, que s[1][1] se refiere al séptimo elemento, desde el comienzo del área de memoria.</p>
+<p>Continuando con las diferencias, szString1 ya reserva un área de memoria donde almacenar los datos en el momento de su creación (concretamente en el stack o pila del sistema (al igual que todas las variables), salvo que formen parte de una estructura), en tanto que szString2 no lo hace y deberá hacerlo el programador. Si se utiliza la función malloc() para reservar memoria, esta será tomada del área de datos del sistema.</p>
+<p>Veamos otro ejemplo con punteros:</p>
+<blockquote>
+<pre>char szString1[10] = "Hola";</pre>
+<pre>char *szString2 = "Hola";</pre>
+<pre>char *szString3 = (char *)malloc(10);</pre>
+<pre>strcpy (szString3, "Hola");</pre>
+</blockquote>
+<p>¿Qué diferencias tienen estos 3 strings? Algunas de ellas ya las mencionamos. Las direcciones de memoria almacenadas en szString2 y szString3 pueden ser modificadas, en tanto que la dirección de memoria szString1 no. La variable szString1 será creada en la pila del sistema, en la cual se cargará inicialmente los caracteres ‘H’, ‘o’, ‘l’, ‘a’, ‘\0′, en tanto que szString3 ocupará un área en la memoria de datos del sistema. Pero, ¿dónde estará szString2? La respuesta es que esta variable tendrá la dirección de memoria del código ejecutable donde estén almacenados los 5 caracteres “Hola\0″. ¿Qué pasará si tratamos de modificar estas variables tal como se muestra a continuación?</p>
+<blockquote>
+<pre>strcpy (szString1, "Chau");</pre>
+<pre>strcpy (szString2, "Chau");</pre>
+<pre>strcpy (szString3, "Chau");</pre>
+</blockquote>
+<p>En el primer y tercer caso se modificarán áreas de memoria válidas, ya sea pila o área de datos, pero en el segundo se estará modificando el programa, es decir el código ejecutable. Esto puede tener diferentes consecuencias. En D.O.S. nada impide modificar cualquier área de la memoria, con lo cual el programa será efectivamente modificado y las consecuencias son imprevisibles. En un sistema con memoria protegida (Windows/UNIX) se producirá una excepción que interrumpirá la ejecución normal del software, y si la misma no es controlada (un tema que se verá más adelante) el programa se interrupirá.</p>
+<p>Volviendo al ejemplo anterior, se definió:</p>
+<blockquote>
+<pre>char szString1[10] = "Hola";</pre>
+</blockquote>
+<p>lo cual significa que este array tomará como valor inicial estos carateres. El C permite especificar valores iniciales para un array en el momento de su creación, los cuales son cargados en el array, lo cual no puede hacerse después. Es decir, que luego de la creación del array, el siguiente código es incorrecto.</p>
+<blockquote>
+<pre>szString1 = "Hola"; /* Este código es incorrecto */</pre>
+</blockquote>
+<p>Pero sí puede efectuarse las operaciones:</p>
+<blockquote>
+<pre>szString2 = "Hola";</pre>
+<pre>szString3 = "Hola";</pre>
+</blockquote>
+<p>Ya que las mismas no cargan los datos, sino que modifican el puntero cargando la dirección de memoria donde estén definidos estos strings en el código ejecutable.</p>
+<p>Se dijo anteriormente que los arrays se crean en la pila del sistema, siempre y cuando no formen parte de una estructura. Por ejemplo:</p>
+<pre>struct str{
+	char Nombre[100];
+};</pre>
+<p><em> Nombre</em> ocupará un lugar de memoria donde sea creada la estructura.</p>
+<p>Como una tabla de ayuda se resumen estos puntos en la siguiente tabla:</p>
+<table cellspacing="1" cellpadding="4" width="598" border="1">
+<tbody>
+<tr>
+<td width="25%"></td>
+<td width="25%"><strong> </strong><strong>Array</strong></td>
+<td width="25%"><strong> </strong><strong>Puntero a área de datos</strong></td>
+<td width="25%"><strong> </strong><strong>Puntero a área de ejecutable</strong></td>
+</tr>
+<tr>
+<td width="25%"><strong>Ejemplo</strong></td>
+<td width="25%">char s[100];</td>
+<td width="25%">char *s;<br>
+s = (char*)malloc (100)</td>
+<td width="25%">char *s = “Texto”;</td>
+</tr>
+<tr>
+<td width="25%"><strong>Tipo</strong></td>
+<td width="25%">dirección (valor)</td>
+<td colspan="2" width="50%">puntero (variable que almacena un valor)</td>
+</tr>
+<tr>
+<td width="25%"><strong>sizeof()</strong></td>
+<td width="25%">100</td>
+<td colspan="2" width="50%">2 ó 4 generalmente</td>
+</tr>
+<tr>
+<td width="25%"><strong>Espacio de memoria utilizado por la variable ‘<em>s’</em></strong></td>
+<td width="25%">ninguno</td>
+<td width="25%">pila del sistema</td>
+<td width="25%">pila del sistema</td>
+</tr>
+<tr>
+<td width="25%"><strong>Espacio de memoria utilizado por los datos apuntados por ‘<em>s’</em></strong></td>
+<td width="25%">pila del sistema</td>
+<td width="25%">área de datos</td>
+<td width="25%">código ejecutable</td>
+</tr>
+<tr>
+<td width="25%"><strong>La dirección puede ser modificada</strong></td>
+<td width="25%">no</td>
+<td width="25%">sí</td>
+<td width="25%">sí</td>
+</tr>
+<tr>
+<td width="25%"><strong>Los datos pueden ser leídos</strong></td>
+<td width="25%">sí</td>
+<td width="25%">sí</td>
+<td width="25%">sí</td>
+</tr>
+<tr>
+<td width="25%"><strong>Los datos pueden ser modificados</strong></td>
+<td width="25%">sí</td>
+<td width="25%">sí</td>
+<td width="25%">no</td>
+</tr>
+<tr>
+<td width="25%"><strong>Ventajas</strong></td>
+<td width="25%">No requiere alocar/dealocar memoria en el área de datos (sino en la       pila, lo cual es inmediato).</td>
+<td width="25%">Tamaño de string variable.</td>
+<td width="25%">Los datos ya están cargados y no debe alocarse ni liberarse memoria.</td>
+</tr>
+<tr>
+<td width="25%"><strong>Desventajas</strong></td>
+<td width="25%">La pila del sistema puede llenarse. El tamaño del string debe ser       especificado durante la compilación.</td>
+<td width="25%">El proceso de alocar/dealocar memoria es costoso y contribuje a       fragmentar la memoria del sistema.</td>
+<td width="25%">Los datos no pueden ser modificados.</td>
+</tr>
+</tbody>
+</table>
+											</div>
