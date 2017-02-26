@@ -56,6 +56,22 @@ class Session(object):
         
                        repository_home = os.path.join(os.path.dirname(os.path.abspath(__file__)), "../")
                     ):
+        '''
+            s = Session()
+            s.open_firefox()  # this will use the selenium_driver_executable_path and open the source_site page.
+
+            s.open_first_post() # open the first_post_url page and then move to the next post skip_post_count times (0 by default).
+
+            s.go_to_next_post()       # open the next post page or the 
+            s.go_to_previous_post()   # previous post page as you wish
+
+            s.port_post()  # port the current web page to the destination_site:
+                           #  - remap the links to source_site to destination_site
+                           #  - download and remap the assets from source_asset_path_prefix to destination_asset_path_prefix
+                           #  - rewrite the code snippets
+                           #
+                           # save the ported post into destination_post_path_prefix
+            '''
 
         self.first_post_url = first_post_url
         self.skip_post_count = skip_post_count
@@ -143,13 +159,14 @@ class Session(object):
 
         post_content = driver.find_element(By.CLASS_NAME, "entry-content")
         self.remap_urls(post_content)
+        snippets = self.rewrite_code_snippets(post_content)
 
         del post_content # just to make this explicit, we need a fresh reference after the remap urls
         post_content = driver.find_element(By.CLASS_NAME, "entry-content")
 
         post_content_html = post_content.get_attribute('outerHTML')
 
-        return date, title, author, post_content_html
+        return date, title, author, snippets, post_content_html
 
 
 
@@ -226,6 +243,32 @@ class Session(object):
         os.system('mkdir -p "%s"' % file_dir)
         os.system('wget -c "%s" -O "%s"' % (download_url, dst_file))
 
+    def rewrite_code_snippets(self, post_content):
+        js_set_attr = '''arguments[0].%s = %s; return true;'''
+        snippet_containers = post_content.find_elements_by_css_selector(".syntaxhighlighter")
+
+        rewritten_snippets = []
+        for idx, container in enumerate(snippet_containers):
+            snippet = container.find_element_by_css_selector(".code").text
+
+            highlighted_syntax_block = '```cpp\n%s\n```' % snippet
+            idented_block = '\n'.join((' ' * 8) + line  for line in highlighted_syntax_block.split('\n'))
+
+            highlighted_syntax_snippet = '\n' + (' ' * 4) + '- |\n%s\n' % idented_block
+
+            include_snippet_tag = "'{{page.snippets[%i] | markdownify }}'" % idx
+            self.driver.execute_script(js_set_attr % ('innerHTML', include_snippet_tag), container)
+            self.driver.execute_script(js_set_attr % ('className', "''"), container)
+
+
+            rewritten_snippets.append(highlighted_syntax_snippet)
+
+        if rewritten_snippets:
+            return "".join(rewritten_snippets)
+        else:
+            return 'none\n'
+
+
     def port_post(self):
         ''' Scrap the current web page (post) using get_post_data and create a new post
             with the syntaxis required by githubpages.
@@ -235,7 +278,7 @@ class Session(object):
 
             '''
         driver = self.driver
-        date, title, author, post_content_html = self.get_post_data()
+        date, title, author, snippets, post_content_html = self.get_post_data()
 
         day, month, year = date.split("/")
         assert len(year) == 4
@@ -248,6 +291,7 @@ class Session(object):
 
         post = Post_Template % dict(title=title,
                                     author=author, date=date,
+                                    snippets=snippets,
                                     content = post_content_html)
 
         with open(os.path.join(file_dir, file_name), 'wt') as post_file:
@@ -259,6 +303,7 @@ layout: post
 title: %(title)s
 author: %(author)s
 date: %(date)s
+snippets: %(snippets)s
 ---
 %(content)s
 '''
