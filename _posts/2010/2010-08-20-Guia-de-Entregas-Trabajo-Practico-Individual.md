@@ -8,15 +8,15 @@ snippets: none
 ---
 <div class="entry-content">
 						<h2>Consideraciones acerca de los ejercicios semanales.</h2>
-<p style="padding-left: 30px;">La entrega de los trabajos prácticos consta de dos partes: la <a href="https://taller-de-programacion.github.io/Guia-de-Entregas-Trabajo-Practico-Individual#EE">entrega electrónica</a> y la <a href="https://taller-de-programacion.github.io/Guia-de-Entregas-Trabajo-Practico-Individual#EP">entrega en papel</a>. Ambas son necesarias para la corrección del trabajo y no puede realizarse la entrega en papel si no se entregó correctamente en forma electrónica. Es muy importante leer la guía de entrega completa para evitar inconvenientes.</p>
-<p style="padding-left: 30px;">Para el caso del trabajo práctico grupal existe <a href="https://taller-de-programacion.github.io/Guia-de-Entregas-Trabajo-Practico-Final" target="_self">una guía particular</a>.</p>
+<p style="padding-left: 30px;">La entrega de los trabajos prácticos consta de dos partes: la <a href="/2010/08/20/Guia-de-Entregas-Trabajo-Practico-Individual.html#EE">entrega electrónica</a> y la <a href="/2010/08/20/Guia-de-Entregas-Trabajo-Practico-Individual.html#EP">entrega en papel</a>. Ambas son necesarias para la corrección del trabajo y no puede realizarse la entrega en papel si no se entregó correctamente en forma electrónica. Es muy importante leer la guía de entrega completa para evitar inconvenientes.</p>
+<p style="padding-left: 30px;">Para el caso del trabajo práctico grupal existe <a href="/2010/08/21/Guia-de-Entregas-Trabajo-Practico-Final.html" target="_self">una guía particular</a>.</p>
 <h2><a name="EP"></a>Entrega en papel</h2>
 <p style="padding-left: 30px;">El informe del ejercicio semanal debe ser entregado impreso en <strong>hoja A4</strong> abrochado o, dentro de un folio (también <strong>A4</strong>). Por favor <strong>NO</strong> entreguen los informes en carpeta ni en tamaños de hoja diferentes.</p>
 <p style="padding-left: 30px;">El informe <span style="text-decoration: underline;">debe</span> contener carátula oficial, informe, diagrama y el código fuente devuelto por el sistema de entregas. Opcionalmente podrá contener aclaraciones del alumno.</p>
 <p style="padding-left: 30px;">A continuación se detallan cada uno de los puntos mencionados anteriormente.</p>
 <h3>Carátula</h3>
 <p style="padding-left: 30px;">Debe ser la oficial de la materia. Y no debe cambiarse cuando un trabajo es entregado en segunda oportunidad. Es decir que debe mantenerse en la caratula la primera nota y la lista de correcciones original del trabajo.</p>
-<p style="padding-left: 30px;"><img class="alignnone size-full wp-image-71" title="Archivo PDF" src="/wp-content/uploads/2010/08/file-pdf.gif" alt="Archivo PDF" width="39" height="38"><a href="https://taller-de-programacion.github.io/assets/2010/08/caratula.pdf">Carátula</a></p>
+<p style="padding-left: 30px;"><img class="alignnone size-full wp-image-71" title="Archivo PDF" src="/wp-content/uploads/2010/08/file-pdf.gif" alt="Archivo PDF" width="39" height="38"><a href="/assets/2010/08/caratula.pdf">Carátula</a></p>
 <h3>Informe</h3>
 <p style="padding-left: 30px;">Una descripción textual de al menos una carilla donde se describa un tema relevante relacionado con la solución del trabajo. Puede tratarse de la forma en la que se solucionó el problema más complejo que presentaba el ejercicio o una lista descriptiva de las funciones o clases más importantes.</p>
 <h3>Esquema del diseño</h3>
@@ -58,9 +58,9 @@ snippets: none
 <address>* Salvo indicación explícita del enunciado o del profesor</address>
 <h2><a name="compilar"></a>¿Cómo compilar en Linux?</h2>
 <p>Para compilar en Linux (o cualquier otro <em>sabor</em> de Unix) se utiliza el comando <strong>make</strong> en conjunto con uno de los siguientes archivos de <em>scripts</em>:</p>
-<blockquote><p><em><em><a href="https://taller-de-programacion.github.io/assets/2010/08/file-zip.gif"><img title="Archivo ZIP" src="/wp-content/uploads/2010/08/file-zip.gif" alt="Archivo ZIP" width="37" height="37"></a></em> <a href="https://taller-de-programacion.github.io/assets/2016/09/Makefile.zip">Makefile</a><br>
+<blockquote><p><em><em><a href="/assets/2010/08/file-zip.gif"><img title="Archivo ZIP" src="/wp-content/uploads/2010/08/file-zip.gif" alt="Archivo ZIP" width="37" height="37"></a></em> <a href="/assets/2016/09/Makefile.zip">Makefile</a><br>
 </em></p>
-<p><em><a href="https://taller-de-programacion.github.io/assets/2010/08/file-zip.gif"><img title="Archivo ZIP" src="/wp-content/uploads/2010/08/file-zip.gif" alt="Archivo ZIP" width="37" height="37"></a> <a href="https://taller-de-programacion.github.io/assets/2016/09/Makefile_client_server.zip">Makefile Cliente/Servidor</a><br>
+<p><em><a href="/assets/2010/08/file-zip.gif"><img title="Archivo ZIP" src="/wp-content/uploads/2010/08/file-zip.gif" alt="Archivo ZIP" width="37" height="37"></a> <a href="/assets/2016/09/Makefile_client_server.zip">Makefile Cliente/Servidor</a><br>
 </em></p></blockquote>
 <p>Ambos Makefiles deben descomprimirse en el directorio donde se encuentran todos los fuentes del ejercicio. Luego se edita el <tt>Makefile</tt> con tu editor de texto para configurar la sección llamada&nbsp; <strong><tt>#CONFIGURACION</tt></strong> para indicar el nombre del ejecutable, si se trata de un ejercicio en C o C++, si usa GTK+, gtkmm o la biblioteca matemática (math.h).</p>
 <p>En la sección de <strong><tt>#CONFIGURACION "AVANZADA"</tt></strong> se encuentra el detalle de los valores de configuración que puede ser modificado si la configuración simple no es suficiente.</p>
@@ -82,5 +82,5 @@ snippets: none
 </ul>
 <h2>Estándares de Codificación</h2>
 <p>La cátedra adopta las guías de codificación propuestas por Google para sus herramientas y proyectos públicos. A fin de controlar el cumplimiento de estas normas, los alumnos deben ejecutar el <em>script</em> de verificación <strong>Cpplint</strong> provisto por la cátedra.</p>
-<p>Para más información, consultar el instructivo sobre <strong><a title="Normas de Codificación – CPPLint" href="https://taller-de-programacion.github.io/Normas-de-Codificacion-CPPLint">Normas de Codificación y Cpplint</a></strong>.</p>
+<p>Para más información, consultar el instructivo sobre <strong><a title="Normas de Codificación – CPPLint" href="/2013/08/21/Normas-de-Codificacion-CPPLint.html">Normas de Codificación y Cpplint</a></strong>.</p>
 											</div>

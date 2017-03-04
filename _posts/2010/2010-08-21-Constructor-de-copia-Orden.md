@@ -147,7 +147,7 @@ snippets:
 <div class="entry-content">
 						<p>Constructor de copia – Orden</p>
 <p>orden.cpp</p>
-<div><div id="highlighter_579380" class="">{{page.snippets[0] | markdownify }}</div></div>
+<div><div>{{page.snippets[0] | markdownify }}</div></div>
 <p>ccopia.cpp</p>
-<div><div id="highlighter_482014" class="">{{page.snippets[1] | markdownify }}</div></div>
+<div><div>{{page.snippets[1] | markdownify }}</div></div>
 											</div>

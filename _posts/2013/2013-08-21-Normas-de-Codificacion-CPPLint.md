@@ -18,7 +18,7 @@ snippets: none
 <p>A fin de verificar el cumplimiento de los estándares de codificación, se utiliza el sistema de ‘lint’ propuesto por Google, llamado <strong>Cpplint</strong>. Ciertas normas fueron relajadas según el criterio de la cátedra para permitir cierta flexibilidad al programador.</p>
 <p>Antes de realizar una entrega, es necesario comprobar el cumplimiento de los estándares de la misma forma en que lo verifica el servidor. Por este motivo, se proveen los scripts utilizados por la cátedra:</p>
 <ul>
-<li><a href="https://taller-de-programacion.github.io/assets/2013/08/cpplint.zip">Cpplint y Reglas de Codificación utilizadas por SERCOM</a></li>
+<li><a href="/assets/2013/08/cpplint.zip">Cpplint y Reglas de Codificación utilizadas por SERCOM</a></li>
 </ul>
 <p>Una vez descargado el archivo Cpplint, se puede utilizar el script <strong>execute.sh</strong> para verificar las normas de todos los archivos de extensión .c,.cpp,.h,.hpp bajo la carpeta actual. Para ejecutar el script, es necesario asegurarse que se cuenta con un interprete bash apropiado. Existen dos formas de hacer esto:</p>
 <div>

@@ -26,7 +26,7 @@ snippets:
 <div class="entry-content">
 						<p>Valgrind, entre otros, reporta errores por la utilización de valores no inicializados.</p>
 <p>valgrind_init.c</p>
-<div><div id="highlighter_461902" class="">{{page.snippets[0] | markdownify }}</div></div>
+<div><div>{{page.snippets[0] | markdownify }}</div></div>
 <p>Si compilamos y ejecutamos este código tendremos un comportamiento indeterminado porque dentro de la función <strong>foo()</strong> se condiciona la ejecución del <strong>printf()</strong> según el valor del argumento. Que es una copia del valor de la variable <strong>y</strong> de la función <strong>main()</strong> y que nunca se inicializó.</p>
 <p>Al ejecutar con valgrind este programa recibimos un reporte de error del estilo:</p>
 <pre>==14252== Memcheck, a memory error detector

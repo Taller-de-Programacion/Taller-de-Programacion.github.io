@@ -68,5 +68,5 @@ snippets:
 <div class="entry-content">
 						<p>Agregamos un <a href="http://library.gnome.org/devel/gtkmm-tutorial/stable/sec-combobox.html">combo</a> complejo que admite elementos con valor (entero) y texto (string). Para aceptar esta estructura se la debe definir en un modelo e indicarle al combo que auspicie de vista para el mismo. Ver el <a href="http://library.gnome.org/devel/gtkmm-tutorial/2.91/chapter-combobox.html">tutorial de <em>gtkmm</em></a> para entender el concepto de <em>view-model</em> utilizado en este tipo de controles.</p>
 <p>Utilizamos la señal <em>changed</em> para mostrar el elemento elegido por el usuario a través de la salida estándar.</p>
-<div><div id="highlighter_817646" class="">{{page.snippets[0] | markdownify }}</div></div>
+<div><div>{{page.snippets[0] | markdownify }}</div></div>
 											</div>

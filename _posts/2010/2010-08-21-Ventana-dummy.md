@@ -46,5 +46,5 @@ snippets:
 <div class="entry-content">
 						<p>Una <a href="http://library.gnome.org/devel/gtk/stable/GtkWindow.html">ventana</a> que no hace nada, lo más simple que se puede hacer en GTK+.</p>
 <p>ventana.c</p>
-<div><div id="highlighter_609358" class="">{{page.snippets[0] | markdownify }}</div></div>
+<div><div>{{page.snippets[0] | markdownify }}</div></div>
 											</div>

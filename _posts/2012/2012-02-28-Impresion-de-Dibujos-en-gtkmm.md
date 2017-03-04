@@ -82,7 +82,7 @@ std::cerr &lt;&lt; "An error occurred while trying to run a print operation:"
 <p>Como resultado se obtendrá un cuadro de diálogo de impresión que permitirá elegir entre una exportación a PDF o una impresión en papel del dibujo resultante del código cairomm antes visto.</p>
 <p>Para más información sobre esta funcionalidad de gtkmm, referirse al capítulo de impresión del tutorial de gtkmm [3].</p>
 <p>Se adjunta un ejemplo de código completo basado en mencionado tutorial:</p>
-<blockquote><p><a href="https://taller-de-programacion.github.io/assets/2012/02/CustomPrintOperation.zip">Descargar ejemplo CustomPrintOperation</a></p></blockquote>
+<blockquote><p><a href="/assets/2012/02/CustomPrintOperation.zip">Descargar ejemplo CustomPrintOperation</a></p></blockquote>
 <p>[1] http://cairographics.org/tutorial/<br>
 [2]&nbsp;http://developer.gnome.org/gtkmm-tutorial/3.2/sec-cairo-drawing-model.html<br>
 [3] http://developer.gnome.org/gtkmm-tutorial/3.2/chapter-printing.html</p>

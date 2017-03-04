@@ -84,5 +84,5 @@ snippets:
 ---
 <div class="entry-content">
 						<p>Una ventana que muestra una 		<a href="http://library.gnome.org/devel/gtk/stable/GtkImage.html">imagen</a> cargada a través de un 		<a href="http://library.gnome.org/devel/gdk-pixbuf/stable/">PixBuf</a> y reporta errores al cargar la imagen a través de una 		<a href="http://library.gnome.org/devel/gtk/stable/GtkMessageDialog.html">ventana 		de diálogo de mensajes</a>.</p>
-<div><div id="highlighter_311188" class="">{{page.snippets[0] | markdownify }}</div></div>
+<div><div>{{page.snippets[0] | markdownify }}</div></div>
 											</div>
