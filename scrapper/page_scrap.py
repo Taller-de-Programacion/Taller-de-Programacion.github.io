@@ -10,6 +10,9 @@ import traceback
 import os
 from tqdm import tqdm
 import unidecode
+import time
+
+from contextlib import contextmanager
 
 class DummyTqdmFile(object):
     ''' Helper class to log in the current 'progress bar' or in a global 'progress bar'.'''
@@ -19,6 +22,20 @@ class DummyTqdmFile(object):
     def write(self, x):
         if len(x.rstrip()) > 0:
             self.pbar.write(x)
+
+@contextmanager
+def open_temporally(session, url):
+    primary_driver = session.driver
+    session._secondary_driver.get(url)
+    try:
+        # swap drivers
+        session.driver = session._secondary_driver
+
+        # do whatever you have to do on this page
+        yield
+
+    finally:
+        session.driver = primary_driver
 
 @contextlib.contextmanager
 def stdout_redirect_to_tqdm(pbar=None):
@@ -54,7 +71,9 @@ class Session(object):
 
                        destination_post_path_prefix = '/_posts/',
         
-                       repository_home = os.path.join(os.path.dirname(os.path.abspath(__file__)), "../")
+                       repository_home = os.path.join(os.path.dirname(os.path.abspath(__file__)), "../"),
+                       
+                       estimate_of_total_count_of_post_to_port=34
                     ):
         '''
             s = Session()
@@ -65,12 +84,16 @@ class Session(object):
             s.go_to_next_post()       # open the next post page or the 
             s.go_to_previous_post()   # previous post page as you wish
 
+            # then you can port the current web page ....
             s.port_post()  # port the current web page to the destination_site:
                            #  - remap the links to source_site to destination_site
                            #  - download and remap the assets from source_asset_path_prefix to destination_asset_path_prefix
                            #  - rewrite the code snippets
                            #
                            # save the ported post into destination_post_path_prefix
+
+            # or port all the web pages in one shot!
+            s.port_all_posts()
             '''
 
         self.first_post_url = first_post_url
@@ -89,6 +112,8 @@ class Session(object):
 
         self.repository_home = repository_home
 
+        self.estimate_of_total_count_of_post_to_port = estimate_of_total_count_of_post_to_port
+
 
     def open_firefox(self):
         ''' Open a browser under the control of Selenium.
@@ -99,10 +124,15 @@ class Session(object):
         driver.get(self.source_site) # just to check if everything works
 
         self.driver = driver
+
+        self._secondary_driver =  webdriver.Firefox(executable_path=self.selenium_driver_executable_path)
+        self._secondary_driver.get(self.source_site) 
+
         return driver
 
     def close_browser(self):
         self.driver.close()
+        self._secondary_driver.close()
 
     def open_first_post(self):
         ''' Go to the 'first_post_url' url using the browser. Then, skip up to 'skip_post_count' posts.
@@ -144,12 +174,21 @@ class Session(object):
         driver.get(previous_post_url)
         print "You are at: %s" % previous_post_url
 
+    def get_post_title_and_date(self):
+        driver = self.driver
+        title = driver.find_element(By.CLASS_NAME, "entry-title").text
+
+        try:
+            date = driver.find_element(By.CLASS_NAME, "entry-date").text
+        except:
+            date = "25/10/1985"
+
+        return title, date
+
     def get_post_data(self):
         ''' Read from the current web page loaded in the browser all the relevant data of the post.
             Here is where you do the "real scrap":
-                - get the title of the post
                 - the author of the post
-                - the date of the post
                 - its content of course!
 
             But it is likely that this implementation is incomplete, so:
@@ -158,9 +197,10 @@ class Session(object):
 
             '''
         driver = self.driver
-        title = driver.find_element(By.CLASS_NAME, "entry-title").text
-        author = driver.find_element(By.CLASS_NAME, "author").text
-        date = driver.find_element(By.CLASS_NAME, "entry-date").text
+        try:
+            author = driver.find_element(By.CLASS_NAME, "author").text
+        except:
+            author = 'admin'
 
         post_content = driver.find_element(By.CLASS_NAME, "entry-content")
         self.remap_urls(post_content)
@@ -171,7 +211,7 @@ class Session(object):
 
         post_content_html = post_content.get_attribute('outerHTML')
 
-        return date, title, author, snippets, post_content_html
+        return author, snippets, post_content_html
 
 
 
@@ -194,48 +234,43 @@ class Session(object):
         js_set_attr = '''arguments[0].%s = %s; return true;'''
 
         links = container.find_elements(By.TAG_NAME, 'a')
-        dst_url_parsed_template = urllib2.urlparse.urlparse(self.destination_site)
         
-        with tqdm(total=len(links), unit='Link', unit_scale=True) as pbar, \
-                stdout_redirect_to_tqdm(pbar):
+        print "Remapping %i links/urls" % len(links)
+        for link in links:
+            original_url = link.get_attribute('href')
+            if original_url is None:
+                continue
 
-            for link in links:
-                original_url = link.get_attribute('href')
-                if original_url is None:
-                    pbar.update(1)
-                    continue
+            src_url_parsed = urllib2.urlparse.urlparse(original_url)
 
-                src_url_parsed = urllib2.urlparse.urlparse(original_url)
+            if src_url_parsed.netloc != self.source_netloc or src_url_parsed.scheme == "https": # https is for sercom
+                continue # skip it, we map only our internal 'self.source_netloc' urls, not the other ones.
 
-                if src_url_parsed.netloc != self.source_netloc:
-                    pbar.update(1) # skip it, we map only our internal 'self.source_netloc' urls, not the other ones.
-                    continue
+            if src_url_parsed.path.startswith(self.source_asset_path_prefix):
+                download_url = original_url
+                dst_path = src_url_parsed.path.replace(self.source_asset_path_prefix, self.destination_asset_path_prefix, 1)
+                
+                if download:
+                    self.download_asset(download_url, dst_path)
 
-                if src_url_parsed.path.startswith(self.source_asset_path_prefix):
-                    download_url = original_url
-                    dst_path = src_url_parsed.path.replace(self.source_asset_path_prefix, self.destination_asset_path_prefix, 1)
-                    
-                    if download:
-                        self.download_asset(download_url, dst_path)
+            else:
+                with open_temporally(self, original_url):
+                    refered_title, refered_date = self.get_post_title_and_date()
+                    _, _, dst_path = self.get_year_filename_and_urlpath(refered_title, refered_date)
 
-                else:
-                    dst_path = src_url_parsed.path
+            dst_url_parsed = urllib2.urlparse.ParseResult(
+                                        scheme='',
+                                        netloc='',
 
+                                        path=dst_path,
 
-                dst_url_parsed = urllib2.urlparse.ParseResult(
-                                            scheme=dst_url_parsed_template.scheme, 
-                                            netloc=dst_url_parsed_template.netloc, 
+                                        params=src_url_parsed.params, 
+                                        query=src_url_parsed.query, 
+                                        fragment=src_url_parsed.fragment)
 
-                                            path=dst_path,
+            new_url = dst_url_parsed.geturl()
 
-                                            params=src_url_parsed.params, 
-                                            query=src_url_parsed.query, 
-                                            fragment=src_url_parsed.fragment)
-
-                new_url = dst_url_parsed.geturl()
-
-                driver.execute_script(js_set_attr % ('href', '"%s"' % new_url), link)
-                pbar.update(1)
+            driver.execute_script(js_set_attr % ('href', '"%s"' % new_url), link)
 
     def download_asset(self, download_url, dst_path):
         ''' Helper method to download an asset from the scrapped site. '''
@@ -250,8 +285,10 @@ class Session(object):
 
     def rewrite_code_snippets(self, post_content):
         js_set_attr = '''arguments[0].%s = %s; return true;'''
+        js_remove_attr = '''arguments[0].removeAttribute("%s"); return true;'''
         snippet_containers = post_content.find_elements_by_css_selector(".syntaxhighlighter")
 
+        print "Rewritting %i code snippets" % len(snippet_containers)
         rewritten_snippets = []
         for idx, container in enumerate(snippet_containers):
             snippet = container.find_element_by_css_selector(".code").text
@@ -263,8 +300,9 @@ class Session(object):
 
             include_snippet_tag = "'{{page.snippets[%i] | markdownify }}'" % idx
             self.driver.execute_script(js_set_attr % ('innerHTML', include_snippet_tag), container)
-            self.driver.execute_script(js_set_attr % ('className', "''"), container)
 
+            self.driver.execute_script(js_remove_attr % ('class'), container)
+            self.driver.execute_script(js_remove_attr % ('id'), container)
 
             rewritten_snippets.append(highlighted_syntax_snippet)
 
@@ -273,6 +311,9 @@ class Session(object):
         else:
             return 'none\n'
 
+
+    def get_normalize_title(self, title):
+        return (' '.join(unidecode.unidecode_expect_ascii(title).replace("-", " ").split())).replace(" ", "-").replace("/", "-")
 
     def port_post(self):
         ''' Scrap the current web page (post) using get_post_data and create a new post
@@ -283,16 +324,14 @@ class Session(object):
 
             '''
         driver = self.driver
-        date, title, author, snippets, post_content_html = self.get_post_data()
 
-        day, month, year = date.split("/")
-        assert len(year) == 4
+        title, date = self.get_post_title_and_date()
+
+        author, snippets, post_content_html = self.get_post_data()
+        year, file_name, _ = self.get_year_filename_and_urlpath(title, date)
 
         file_dir = os.path.join(self.repository_home, self.destination_post_path_prefix[1:], year)
         os.system('mkdir -p "%s"' % file_dir)
-
-        normalized_title = (' '.join(unidecode.unidecode_expect_ascii(title).replace("-", " ").split())).replace(" ", "-").replace("/", "-")
-        file_name = "%s-%s-%s-%s.mk" % (year, month, day, normalized_title)
 
         post = Post_Template % dict(title=title,
                                     author=author, date=date,
@@ -302,13 +341,32 @@ class Session(object):
         with open(os.path.join(file_dir, file_name), 'wt') as post_file:
             post_file.write(post.encode('utf8'))
 
-    def port_all_posts(self):
-        self.port_post()
+    def get_year_filename_and_urlpath(self, title, date):
+        normalized_title = self.get_normalize_title(title)
 
-        has_next = self.try_go_to_next_post()
-        while has_next:
+        day, month, year = date.split("/")
+        assert len(year) == 4
+        
+        file_name = "%s-%s-%s-%s.md" % (year, month, day, normalized_title)
+        webpage_url_path = "/%s/%s/%s/%s.html" % (year, month, day, normalized_title)
+
+        return year, file_name, webpage_url_path
+
+    def port_all_posts(self):
+        with tqdm(total=self.estimate_of_total_count_of_post_to_port, unit='Post', unit_scale=True) as pbar, \
+                stdout_redirect_to_tqdm(pbar):
+            
             self.port_post()
+            pbar.update(1)
+
             has_next = self.try_go_to_next_post()
+            while has_next:
+                self.port_post()
+                pbar.update(1)
+
+                has_next = self.try_go_to_next_post()
+
+            print("[DONE]")
 
 
 
