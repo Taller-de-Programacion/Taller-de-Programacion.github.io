@@ -2,7 +2,7 @@
 
 Sitio no oficial de la materia 7542 - Taller de programación I
 
-# Como levantar localmente el sitio con docker
+## Como levantar localmente el sitio con docker
 
 Primero clonamos el sitio
 
@@ -75,7 +75,7 @@ Este último comando:
 > Nota: A veces los permisos se alteran y pueden terminar mapeandose a un grupo inválido con GID 65533, asegurarse de corregirlo
 ```chown``` para evitar errores al levantar el servidor.
 
-# Como detener el servicio del sitio
+## Como detener el servicio del sitio
 
 Uno puede detener al ejecución de jekyll sabiendo el id del container:
 
@@ -92,17 +92,20 @@ $ sudo docker stop 47647a3c6c6c
 47647a3c6c6c
 ```
 
-# Como levantar localmente el sitio con docker (versión offline)
+## Como levantar localmente el sitio con docker (versión offline)
 
 En muchas ocaciones no queremos estar descargandonos la última versión de jekyll para tan solo escribir un post.
 Para levantar el sitio sin necesitar estar online hay que hacer algunos pasos extra.
 
-## Setup (se necesita estar online)
+### Setup (se necesita estar online)
 
 En vez de correr un comando en un container temporal, podemos (y debemos!) hacer un container persistente.
 
 ```shell
-$ sudo docker run --name TallerPages --entrypoint /usr/local/bin/jekyll -v $(pwd):/srv/jekyll -p 127.0.0.1:4000:4000 jekyll/jekyll:pages serve --watch --incremental
+$ sudo docker run --name TallerPages --entrypoint /usr/local/bin/jekyll \
+                  -v $(pwd):/srv/jekyll -p 127.0.0.1:4000:4000 \
+                  jekyll/jekyll:pages \
+                  serve --watch --incremental
 Unable to find image 'jekyll/jekyll:pages' locally
 pages: Pulling from jekyll/jekyll
 6023f1cb0d92: Pull complete 
@@ -171,7 +174,7 @@ bash-4.3# exit
 ```
 
 
-## Start / Stop (offline)
+### Start / Stop (offline)
 
 Habiendo hecho esto, podemos frenar e iniciar el sitio sin necesidad de conectarnos a la internet simplemente con un stop y un start.
 
