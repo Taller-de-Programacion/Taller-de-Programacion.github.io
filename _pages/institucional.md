@@ -5,7 +5,7 @@ permalink: /institucional
 ---
 # Institucional
 
-Como requisito para cursar la materia Taller de Programación I (75.42) usted debe cargar sus datos en el [sitio de seguimiento de cursada](https://7542.fi.uba.ar/dashboard"). Los mismos serán utilizados para confeccionar las planillas de la materia.
+Como requisito para cursar la materia Taller de Programación I (75.42) usted debe cargar sus datos en el [sitio de seguimiento de cursada](https://7542.fi.uba.ar/dashboard). Los mismos serán utilizados para confeccionar las planillas de la materia.
 
 
 ## Política de confidencialidad
@@ -20,7 +20,7 @@ Dada la confidencialidad de la información ingresada, estos datos no serán mos
 
 # Sitio de entregas/inscripción a la materia
 
-Para hacer efectiva la cursada, el alumno debe registrarse en el [sitio de entregas de la materia](https://7542.fi.uba.ar/register). En el mismo se podrán entregar los trabajos prácticos semanales y final para la corrección docente. Es indispensable leer atentamente la [guía de entrega de trabajos individuales](http://7542.fi.uba.ar/administracion/entrega/) y la del [trabajo grupal](http://7542.fi.uba.ar/administracion/guia-tp-final/).
+Para hacer efectiva la cursada, el alumno debe registrarse en el [sitio de entregas de la materia](https://7542.fi.uba.ar/register). En el mismo se podrán entregar los trabajos prácticos semanales y final para la corrección docente. Es indispensable leer atentamente la <a href="/guia-entregas-tp-individual" target="_self">guía de entrega de trabajos individuales</a> y la del <a href="/guia-entregas-tp-final" target="_self">trabajo grupal</a>. 
 
 Si el alumno es **recursante** de la materia, debe inscribirse en el curso actual desde la [sección correspondiente](https://7542.fi.uba.ar/upgrade_registration).
 Asientos de la materia en la Libreta
@@ -69,12 +69,12 @@ El Jefe de Trabajos prácticos completará la nota y rubricará la libreta queda
 
 ### Exámen final
 
-Cada vez que se concurra a rendir final, se debe presentar la libreta de forma que el Profesor pueda asentar la fecha de Final. El alumno no debe completar ningún dato en esta ocasión.
+Cada vez que se concurra a rendir final, se debe presentar la libreta de forma que el Profesor pueda asentar la fecha de Final. El alumno **no debe completar ningún dato** en esta ocasión.
 
 
 ### Firma de la Materia
 
-Una vez aprobado el Exámen Final el alumno podrá concurrir para que se le asiente la aprobación de la Materia. En esta oportunidad el alumno no deberá completar nada. Será el Profesor a Cargo de la Materia quien complete Fecha, Libro, Folio y Calificación y rubrique la aprobación.
+Una vez aprobado el Exámen Final el alumno podrá concurrir para que se le asiente la aprobación de la Materia. En esta oportunidad el alumno **no deberá completar nada**. Será el Profesor a Cargo de la Materia quien complete Fecha, Libro, Folio y Calificación y rubrique la aprobación.
 
 
 ### Cursos y docentes

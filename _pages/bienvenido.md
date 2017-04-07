@@ -12,4 +12,4 @@ Aquí encontrará las últimas [novedades](/noticias) sobre la cátedra y los ev
 
 ## A los alumnos:
 
-Es muy importante leer detenidamente la guía de entrega de trabajos individuales para evitar inconvenientes. 
+Es muy importante leer detenidamente la [guía de entrega de trabajos individuales](/guia-entregas-tp-individual) para evitar inconvenientes. 

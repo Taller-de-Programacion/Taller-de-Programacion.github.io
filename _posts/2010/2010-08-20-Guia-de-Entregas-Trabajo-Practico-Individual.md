@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Guía de Entregas – Trabajo Práctico Individual
+permalink: /guia-entregas-tp-individual
 author: admin
 date: 20/08/2010
 snippets: none

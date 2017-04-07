@@ -9,36 +9,6 @@ A continuación se muestra un programa **orientativo** de la materia.
 
 Se suponen conocidos los conceptos básicos de C. Sólo se darán los conceptos más importantes y previamente se hará un repaso general.
 
-Asimismo se pueden descargar clases en fomato PDF pertenecientes a cuatrimestres anteriores como referencia. Es muy recomendable tener los textos en las clases para tomar nota sobre los mismos. Aunque no se garantiza que cada clase se dará según los apuntes aquí publicados, los contenidos principales no varían sustancialmente.
-
-## Apuntes por Tema (PDF)
-
-* [Introducción a la Materia](/wp-content/uploads/2010/08/clase_1_introduccion.pdf)
-
-* Lenguaje C
-    * [Parte 1 – Fundamentos](/wp-content/uploads/2010/08/clase_1.pdf)
-    * [Parte 2 – Memória dinámica](/wp-content/uploads/2010/08/clase_21.pdf)
-
-* Threads
-    * [Parte 1](/wp-content/uploads/2010/08/clase_4_threads_1.pdf)
-    * [Ejemplo Encapsulación en C](/wp-content/uploads/2010/08/threads_ejemplo_encapsulacion.zip)
-
-* Sockets
-    * [Parte 1](/wp-content/uploads/2010/08/clase_sockets_1.pdf)
-    * [Parte 2](/wp-content/uploads/2010/08/clase_sockets_2.pdf)
-
-* Lenguaje C++
-    * [Parte 1](/wp-content/uploads/2010/08/clase_3_cpp.pdf)
-    * [Repaso – Verdadero o falso](/wp-content/uploads/2010/08/clase3.intro_.a.cpp_.repaso.verdadero.o.falso_.pdf)
-
-* Templates
-    * [Templates y STL](/wp-content/uploads/2010/08/clase_templates_y_stl.pdf)
-    * [Templates en Detalle](/wp-content/uploads/2010/08/clase_5_templates.pdf)
-
-* [Excepciones y manejo de recursos](/wp-content/uploads/2010/08/clase_6_excepciones.pdf)
-
-* [GTK+ y programación orientada a eventos](/wp-content/uploads/2010/08/clase_7_gtk.pdf)
-
 ## Clases
 
 <table id="lectures-table">
