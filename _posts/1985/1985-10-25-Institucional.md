@@ -9,14 +9,14 @@ snippets: none
 <div class="entry-content">
 						<div id="contenedor">
 <div id="contenido">
-<p>Como requisito para cursar la materia Taller de Programación I  (75.42)  usted debe cargar sus datos en el <a href="https://7542.fi.uba.ar" target="_blank">sitio de seguimiento de cursada</a>. Los mismos serán utilizados para  confeccionar las  planillas de la materia.</p>
+<p>Como requisito para cursar la materia Taller de Programación I  (75.42)  usted debe cargar sus datos en el <a href="{{ site.sercom_url }}" target="_blank">sitio de seguimiento de cursada</a>. Los mismos serán utilizados para  confeccionar las  planillas de la materia.</p>
 <h3>Política de confidencialidad</h3>
 <p>La información ingresada será destinada a confeccionar las plantillas  de la materia. Los campos opcionales  son considerados de caracter  confidencial y sólo se utilizarán para fines estadísticos. Sin embargo,  dado que Taller de Programación utiliza un hosting público y los datos  se transmiten en claro, los docentes a cargo de la materia no pueden ni  se hacen responsables de garantizar la absoluta confidencialidad de esta  información.</p>
 <h3>Modificaciones</h3>
 <p>Dada la confidencialidad de la información ingresada, estos datos no  serán mostrados. En caso de cometer un error  en algún dato, o querer  realizar cambios, ingrese sus datos nuevamente.</p>
 <h2>Sitio de entregas/inscripción a la materia</h2>
-<p>Para hacer efectiva la cursada, el alumno debe registrarse en el <a href="https://7542.fi.uba.ar/register">sitio de entregas de la materia</a>. En el mismo se podrán entregar los trabajos prácticos semanales y final para la corrección docente. Es indispensable leer atentamente la <a href="https://taller-de-programacion.github.io/Guia-de-Entregas-Trabajo-Practico-Individual" target="_self">guía de entrega de trabajos individuales</a> y la del <a href="https://taller-de-programacion.github.io/Guia-de-Entregas-Trabajo-Practico-Final" target="_self">trabajo grupal</a>.</p>
-<p>Si el alumno es <strong>recursante</strong> de la materia, debe inscribirse en el curso actual desde <a href="https://7542.fi.uba.ar/upgrade_registration">la sección correspondiente</a>.</p>
+<p>Para hacer efectiva la cursada, el alumno debe registrarse en el <a href="{{ site.sercom_url }}register">sitio de entregas de la materia</a>. En el mismo se podrán entregar los trabajos prácticos semanales y final para la corrección docente. Es indispensable leer atentamente la <a href="https://taller-de-programacion.github.io/Guia-de-Entregas-Trabajo-Practico-Individual" target="_self">guía de entrega de trabajos individuales</a> y la del <a href="https://taller-de-programacion.github.io/Guia-de-Entregas-Trabajo-Practico-Final" target="_self">trabajo grupal</a>.</p>
+<p>Si el alumno es <strong>recursante</strong> de la materia, debe inscribirse en el curso actual desde <a href="{{ site.sercom_url }}upgrade_registration">la sección correspondiente</a>.</p>
 <h2>Asientos de la materia en la Libreta</h2>
 <h3>Generalidades:</h3>
 <p>La presente sección explica la forma en que debe completarse la  libreta para realizar los diversos asientos administrativos referidos a  la materia,  a saber:</p>

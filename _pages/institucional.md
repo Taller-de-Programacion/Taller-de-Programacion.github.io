@@ -5,7 +5,7 @@ permalink: /institucional
 ---
 # Institucional
 
-Como requisito para cursar la materia Taller de Programación I (75.42) usted debe cargar sus datos en el [sitio de seguimiento de cursada](https://7542.fi.uba.ar/dashboard). Los mismos serán utilizados para confeccionar las planillas de la materia.
+Como requisito para cursar la materia Taller de Programación I (75.42) usted debe cargar sus datos en el [sitio de seguimiento de cursada]({{ site.sercom_url }}dashboard). Los mismos serán utilizados para confeccionar las planillas de la materia.
 
 
 ## Política de confidencialidad
@@ -20,9 +20,9 @@ Dada la confidencialidad de la información ingresada, estos datos no serán mos
 
 # Sitio de entregas/inscripción a la materia
 
-Para hacer efectiva la cursada, el alumno debe registrarse en el [sitio de entregas de la materia](https://7542.fi.uba.ar/register). En el mismo se podrán entregar los trabajos prácticos semanales y final para la corrección docente. Es indispensable leer atentamente la <a href="/guia-entregas-tp-individual" target="_self">guía de entrega de trabajos individuales</a> y la del <a href="/guia-entregas-tp-final" target="_self">trabajo grupal</a>. 
+Para hacer efectiva la cursada, el alumno debe registrarse en el [sitio de entregas de la materia]({{ site.sercom_url }}register). En el mismo se podrán entregar los trabajos prácticos semanales y final para la corrección docente. Es indispensable leer atentamente la <a href="/guia-entregas-tp-individual" target="_self">guía de entrega de trabajos individuales</a> y la del <a href="/guia-entregas-tp-final" target="_self">trabajo grupal</a>. 
 
-Si el alumno es **recursante** de la materia, debe inscribirse en el curso actual desde la [sección correspondiente](https://7542.fi.uba.ar/upgrade_registration).
+Si el alumno es **recursante** de la materia, debe inscribirse en el curso actual desde la [sección correspondiente]({{ site.sercom_url }}upgrade_registration).
 Asientos de la materia en la Libreta
 
 

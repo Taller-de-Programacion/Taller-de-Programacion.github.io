@@ -7,7 +7,7 @@ permalink: /enlaces
 ## 7542
 
 
-[SERCOM](https://7542.fi.uba.ar/dashboard) Sitio de entregas y notas
+[SERCOM]({{ site.sercom_url }}dashboard) Sitio de entregas y notas
 
 
 ## Foros de discusión
