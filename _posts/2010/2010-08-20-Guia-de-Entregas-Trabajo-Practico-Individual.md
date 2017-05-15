@@ -9,8 +9,8 @@ snippets: none
 ---
 <div class="entry-content">
 						<h2>Consideraciones acerca de los ejercicios semanales.</h2>
-<p style="padding-left: 30px;">La entrega de los trabajos prácticos consta de dos partes: la <a href="/2010/08/20/Guia-de-Entregas-Trabajo-Practico-Individual.html#EE">entrega electrónica</a> y la <a href="/2010/08/20/Guia-de-Entregas-Trabajo-Practico-Individual.html#EP">entrega en papel</a>. Ambas son necesarias para la corrección del trabajo y no puede realizarse la entrega en papel si no se entregó correctamente en forma electrónica. Es muy importante leer la guía de entrega completa para evitar inconvenientes.</p>
-<p style="padding-left: 30px;">Para el caso del trabajo práctico grupal existe <a href="/2010/08/21/Guia-de-Entregas-Trabajo-Practico-Final.html" target="_self">una guía particular</a>.</p>
+<p style="padding-left: 30px;">La entrega de los trabajos prácticos consta de dos partes: la <a href="/guia-entregas-tp-individual#EE">entrega electrónica</a> y la <a href="/guia-entregas-tp-individual#EP">entrega en papel</a>. Ambas son necesarias para la corrección del trabajo y no puede realizarse la entrega en papel si no se entregó correctamente en forma electrónica. Es muy importante leer la guía de entrega completa para evitar inconvenientes.</p>
+<p style="padding-left: 30px;">Para el caso del trabajo práctico grupal existe <a href="/guia-entregas-tp-final" target="_self">una guía particular</a>.</p>
 <h2><a name="EP"></a>Entrega en papel</h2>
 <p style="padding-left: 30px;">El informe del ejercicio semanal debe ser entregado impreso en <strong>hoja A4</strong> abrochado o, dentro de un folio (también <strong>A4</strong>). Por favor <strong>NO</strong> entreguen los informes en carpeta ni en tamaños de hoja diferentes.</p>
 <p style="padding-left: 30px;">El informe <span style="text-decoration: underline;">debe</span> contener carátula oficial, informe, diagrama y el código fuente devuelto por el sistema de entregas. Opcionalmente podrá contener aclaraciones del alumno.</p>
