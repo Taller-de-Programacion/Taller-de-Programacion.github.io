@@ -1,10 +1,8 @@
 ---
-layout: page
+layout: post
 title: Programa
 permalink: /programa
 ---
-# Programa
-
 A continuación se muestra un programa **orientativo** de la materia.
 
 Se suponen conocidos los conceptos básicos de C. Sólo se darán los conceptos más importantes y previamente se hará un repaso general.

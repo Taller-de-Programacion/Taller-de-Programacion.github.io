@@ -1,6 +1,7 @@
 <html>
 {% include head.html %}
 <body>
+{% include header.html %}
   <div class="wrapper">
     <div class="content">
       <div class="container container-center">
@@ -8,7 +9,7 @@
           <div class="col-md-8">
             <div class="article">
               <div class="well">
-                <h1><a href="{{ site.url | append:site.baseurl | append:page.url }}">{{ page.title }}</a></h1>
+                <h1>{{ page.title }}</h1>
                 <div class="post-meta">
                   <div class="post-time">
                     <i class="fa fa-calendar"></i>

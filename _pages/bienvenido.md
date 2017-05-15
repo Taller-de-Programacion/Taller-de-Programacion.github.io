@@ -1,10 +1,8 @@
 ---
-layout: page
+layout: post
 title: Bienvenido
 permalink: /bienvenido
 ---
-
-# Bienvenido
 
 Este es el sitio oficial de la materia **Taller de programación I – 7542**
 

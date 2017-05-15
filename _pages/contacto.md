@@ -1,10 +1,8 @@
 ---
-layout: page
+layout: post
 title: Contacto
 permalink: /contacto
 ---
-
-# Contacto
 
 A continuación, se muestran varias direcciones de correo electrónico, para contactarse con la materia
 

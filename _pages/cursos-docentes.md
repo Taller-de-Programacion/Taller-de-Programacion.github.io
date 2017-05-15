@@ -1,10 +1,8 @@
 ---
-layout: page
+layout: post
 title: Docentes
 permalink: /cursos-docentes
 ---
-
-# Docentes
 
 ## Titular a cargo
  - Andrés Veiga
