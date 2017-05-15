@@ -16,7 +16,7 @@ snippets: none
 <h3>Modificaciones</h3>
 <p>Dada la confidencialidad de la información ingresada, estos datos no  serán mostrados. En caso de cometer un error  en algún dato, o querer  realizar cambios, ingrese sus datos nuevamente.</p>
 <h2>Sitio de entregas/inscripción a la materia</h2>
-<p>Para hacer efectiva la cursada, el alumno debe registrarse en el <a href="{{ site.sercom_url }}register">sitio de entregas de la materia</a>. En el mismo se podrán entregar los trabajos prácticos semanales y final para la corrección docente. Es indispensable leer atentamente la <a href="https://taller-de-programacion.github.io/Guia-de-Entregas-Trabajo-Practico-Individual" target="_self">guía de entrega de trabajos individuales</a> y la del <a href="https://taller-de-programacion.github.io/Guia-de-Entregas-Trabajo-Practico-Final" target="_self">trabajo grupal</a>.</p>
+<p>Para hacer efectiva la cursada, el alumno debe registrarse en el <a href="{{ site.sercom_url }}register">sitio de entregas de la materia</a>. En el mismo se podrán entregar los trabajos prácticos semanales y final para la corrección docente. Es indispensable leer atentamente la <a href="/guia-entregas-tp-individual" target="_self">guía de entrega de trabajos individuales</a> y la del <a href="/guia-entregas-tp-final" target="_self">trabajo grupal</a>.</p>
 <p>Si el alumno es <strong>recursante</strong> de la materia, debe inscribirse en el curso actual desde <a href="{{ site.sercom_url }}upgrade_registration">la sección correspondiente</a>.</p>
 <h2>Asientos de la materia en la Libreta</h2>
 <h3>Generalidades:</h3>
@@ -28,7 +28,7 @@ snippets: none
 <li>Firma de la Materia</li>
 </ol>
 <p>La siguiente imagen muestra un modelo de libreta correspondiente a un  alumno que, habiendo aprobado la práctica, se encuentra en condiciones  de rendir examen. La misma se provee a forma de ejemplo y como ayuda  para clarificar qué datos debe  completar el alumno (en azul) y cuales  serán completados por los docentes  (en rojo).</p>
-<p><a href="https://taller-de-programacion.github.io/assets/2010/08/libreta.jpg"><img title="Inicialización de libreta" src="https://taller-de-programacion.github.io/assets/2010/08/libreta.jpg" alt="" width="521" height="402"></a></p>
+<p><a href="/assets/2010/08/libreta.jpg"><img title="Inicialización de libreta" src="/assets/2010/08/libreta.jpg" alt="" width="521" height="402"></a></p>
 <p>Las siguientes secciones detallan la forma y el momento en que deben realizarse  cada uno de los asientos.</p>
 <h3>Inicio de Cursada:</h3>
 <p>Durante las <strong>primeras 4 clases</strong> de la materia el alumno debe  presentar su libreta de forma que el cuerpo docente pueda verificar las  correlatividades y asentar la materia. A estos efectos, el alumno debe  presentar su libreta con los siguientes  datos completos:</p>
@@ -49,7 +49,7 @@ snippets: none
 <h3>Firma de la Materia</h3>
 <p>Una vez aprobado el Exámen Final el alumno podrá concurrir para que  se le asiente la aprobación de la Materia. En esta oportunidad el alumno  <strong>no deberá completar nada</strong>. Será el Profesor a Cargo de la Materia quien complete Fecha, Libro, Folio y Calificación y rubrique  la aprobación.</p>
 <h3>Cursos y docentes</h3>
-<p><a href="https://taller-de-programacion.github.io/Cursos-y-docentes" target="_self">Ver los cursos y docentes</a></p>
+<p><a href="/cursos-docentes" target="_self">Ver los cursos y docentes</a></p>
 </div>
 </div>
 																	</div>

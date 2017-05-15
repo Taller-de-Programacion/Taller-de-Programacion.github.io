@@ -7,7 +7,9 @@ permalink: /enlaces
 ## 7542
 
 
-[SERCOM]({{ site.sercom_url }}dashboard) Sitio de entregas y notas
+* [SERCOM]({{ site.sercom_url }}dashboard) Sitio de entregas y notas.
+
+* [Grupo](tallerdeprogramacion@googlegroups.com) Grupo (no oficial) de alumnos. 
 
 
 ## Foros de discusión
