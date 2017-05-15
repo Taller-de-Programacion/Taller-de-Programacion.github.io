@@ -23,7 +23,13 @@ permalink: /enlaces
 
 ## Herramientas
 
+* [Ubuntu](https://www.ubuntu.com/) Distribución del sistema operativo Linux usada en la cátedra. Tiene soporte para LiveCD: se trata de un CD con el que se puede iniciar una PC sin necesidad de instalación lo que lo hace ideal para trabajar sobre máquinas con otros sistemas operativos. Ayuda para [Ubuntu LiveCD](https://help.ubuntu.com/community/LiveCD) en inglés.
+
+* [Virtualbox](https://www.virtualbox.org/) Virtualizador de máquinas. Permite instalar y ejecutar un sistema operativo sobre otro y es una buena alternativa al LiveCD.
+
 * [GCC](https://gcc.gnu.org/) GCC, the GNU Compiler Collection.
+
+* [Valgrind](http://valgrind.org/) Analizador de memoria y recursos en run-time (linux)
 
 * [Cygwin](http://www.cygwin.org/cygwin/) Instalación de herramientas GNU en Windows, incluye gcc
 
@@ -35,10 +41,8 @@ permalink: /enlaces
 
 * [OSSWin](https://bartvandewoestyne.github.io/osswin/) Software libre para Windows
 
-* [Valgrind](http://valgrind.org/) Analizador de memoria y recursos en run-time (linux)
 
-
-## Libros-y-tutoriales
+## Libros y tutoriales
 
 * [C++ Essentials](http://www.pragsoft.com/download.html#Books) Libro de C++ y otros. Con ejemplos. Un poco desactualizado con respecto al estandar.
 
