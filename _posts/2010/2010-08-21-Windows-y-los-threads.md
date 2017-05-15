@@ -164,7 +164,7 @@ DispatchMessage (&amp;Msg);<br>
 <p>El envío de mensajes (SendMessage ()) y el encolado de mensajes (PostMessage()) es procesado de forma diferente, razón por la cual veremos estos casos por separado.</p>
 <h2>Encolado de mensajes</h2>
 <p>El manejo de mensajes se muestra esquemáticamente a continuación:</p>
-<p><a href="/assets/2010/08/Threads01.gif"><img class="alignnone size-full wp-image-118" title="Threads01" src="http://7542.fi.uba.ar/wp-content/uploads/2010/08/Threads01.gif" alt="" width="453" height="353"></a></p>
+<p><a href="/assets/2010/08/Threads01.gif"><img class="alignnone size-full wp-image-118" title="Threads01" src="/assets/2010/08/Threads01.gif" alt="" width="453" height="353"></a></p>
 <p>1) Cuando un programa encola un mensaje para una ventana utilizando la función <em>PostMessage()</em>, el mismo es insertado dentro de la cola de mensajes de la <em>thread </em>de la ventana, y en el campo <em>hWnd </em>del mensaje indica la ventana destino. Función <em>PostMessage()</em> retorna inmediatamente y la <em>thread </em>que encoló el mensaje continúa su procesamiento normal.</p>
 <p>Existe también la función <em>PostThreadMessage()</em>, que trabaja en forma similar a <em>PostMessage()</em>, sólo que en lugar de indicarse un ventana como destino, se indica una <em>thread</em>. En este caso, el mensaje será encolado en forma idéntica, pero el campo <em>hWnd </em>tendrá un valor NULL.</p>
 <p>2) La función <em>GetMessage()</em> / <em>PeekMessage()</em> lee y/o retira un mensaje de la cola. Los mensajes encolados por la propia thread tienen prioridad por los encolados por cualquier otra <em>thread</em>.</p>

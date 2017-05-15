@@ -1,8 +1,9 @@
 ---
 layout: post
 title: Institucional
-author: admin
-date: 25/10/1985
+author: Andres Veiga
+date: 02/08/2010
+permalink: /institucional
 snippets: none
 
 ---
@@ -27,7 +28,7 @@ snippets: none
 <li>Firma de la Materia</li>
 </ol>
 <p>La siguiente imagen muestra un modelo de libreta correspondiente a un  alumno que, habiendo aprobado la práctica, se encuentra en condiciones  de rendir examen. La misma se provee a forma de ejemplo y como ayuda  para clarificar qué datos debe  completar el alumno (en azul) y cuales  serán completados por los docentes  (en rojo).</p>
-<p><a href="https://taller-de-programacion.github.io/assets/2010/08/libreta.jpg"><img title="Inicialización de libreta" src="/wp-content/uploads/2010/08/libreta.jpg" alt="" width="521" height="402"></a></p>
+<p><a href="https://taller-de-programacion.github.io/assets/2010/08/libreta.jpg"><img title="Inicialización de libreta" src="https://taller-de-programacion.github.io/assets/2010/08/libreta.jpg" alt="" width="521" height="402"></a></p>
 <p>Las siguientes secciones detallan la forma y el momento en que deben realizarse  cada uno de los asientos.</p>
 <h3>Inicio de Cursada:</h3>
 <p>Durante las <strong>primeras 4 clases</strong> de la materia el alumno debe  presentar su libreta de forma que el cuerpo docente pueda verificar las  correlatividades y asentar la materia. A estos efectos, el alumno debe  presentar su libreta con los siguientes  datos completos:</p>

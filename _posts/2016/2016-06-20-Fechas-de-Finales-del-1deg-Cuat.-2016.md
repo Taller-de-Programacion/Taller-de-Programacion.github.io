@@ -16,5 +16,5 @@ snippets: none
 <li>Jueves 28/08/2016</li>
 </ul>
 <p>En todos los casos el examen se realizará en un aula a confirmar&nbsp;comenzando a las 18:00 hs sin excepción. A fin de inscribirse en las mismas, dirigirse a&nbsp;<a href="http://finales.fi.uba.ar">http://finales.fi.uba.ar</a>.</p>
-<p>Recordar traer la libreta inicializada de acuerdo con el instructivo subido al sitio de la materia (ver <a title="Institucional" href="/1985/10/25/Institucional.html">página institucional</a>).</p>
+<p>Recordar traer la libreta inicializada de acuerdo con el instructivo subido al sitio de la materia (ver <a title="Institucional" href="/institucional">página institucional</a>).</p>
 											</div>

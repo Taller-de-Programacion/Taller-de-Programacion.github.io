@@ -119,7 +119,7 @@ gcc -o main main.o -pthread -I/usr/include/gtk-2.0 -I/usr/lib/x86_... -lcairo -l
 root@d621851baad4:/home/src# ./main
 Gtk-Message: Failed to load module "canberra-gtk-module"</pre>
 <p>El siguiente archivo posee los scripts y un directorio src con un Makefile y una simple ventana:</p>
-<p><img class="  wp-image-72 alignleft" src="http://7542.fi.uba.ar/wp-content/uploads/2010/08/file-zip.gif" alt="Archivo ZIP" width="61" height="61"></p>
+<p><img class="  wp-image-72 alignleft" src="/assets/2010/08/file-zip.gif" alt="Archivo ZIP" width="61" height="61"></p>
 <p><a href="/assets/2015/06/single_docker_with_gtk.zip">single_docker_with_gtk.zip</a></p>
 <p>&nbsp;</p>
 <p>&nbsp;</p>
@@ -174,7 +174,7 @@ else
  echo "USAGE: ./run.sh (client|server)"
 fi</pre>
 <p>El siguiente archivo posee los scripts y un directorio src con un Makefile y los códigos del cliente-servidor:</p>
-<p><a href="/assets/2010/08/file-zip.gif"><img class="  wp-image-72 alignleft" src="http://7542.fi.uba.ar/wp-content/uploads/2010/08/file-zip.gif" alt="Archivo ZIP" width="55" height="55"></a></p>
+<p><a href="/assets/2010/08/file-zip.gif"><img class="  wp-image-72 alignleft" src="/assets/2010/08/file-zip.gif" alt="Archivo ZIP" width="55" height="55"></a></p>
 <p><a href="/assets/2015/06/two_dockers_connected_by_ports.zip">two_dockers_connected_by_ports.zip</a></p>
 <p>&nbsp;</p>
 											</div>
