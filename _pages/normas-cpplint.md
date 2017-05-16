@@ -33,13 +33,13 @@ Una vez descargado el archivo Cpplint, se puede utilizar el script <strong>execu
 
 <div>
 <ol>
-<li><span style="font-size: 12px; line-height: 18px;">Utilizar el comando <strong>bash</strong> e indicarle el archivo de script:</span>
+<li>Utilizar el comando <strong>bash</strong> e indicarle el archivo de script:
 <ul>
 <li>&gt; <strong>bash execute.sh &nbsp;</strong>o bien:</li>
 <li><strong>&gt;</strong> <strong>sh execute.sh</strong></li>
 </ul>
 </li>
-<li><span style="font-size: 12px; line-height: 18px;">Entregar al archivo los permisos de ejecución necesarios y agregar la ruta al comando bash en la cabecera:</span>
+<li>Entregar al archivo los permisos de ejecución necesarios y agregar la ruta al comando bash en la cabecera:
 <ul>
 <li>Controlar que el comando <strong>bash</strong> se encuentre en <strong>/bin/bash</strong> y que esta ruta esté indicada en la cabecera de <strong>execute.sh</strong>:</li>
 <li><strong>&gt; chmod +x execute.sh</strong></li>
