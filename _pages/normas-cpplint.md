@@ -4,23 +4,33 @@ title: Normas de Codificación – CPPLint
 author: Pablo Roca
 date: 21/08/2013
 snippets: none
+permalink: /normas-cpplint
 
 ---
-<div class="entry-content">
-						<p>Una de las buenas prácticas de programación más aceptadas es la adopción de normas o estándares de codificación dentro de ciertos entornos de trabajo.</p>
-<p>La cátedra adopta para los trabajos prácticos individuales la guía de codificación propuesta por Google para sus herramientas y desarrollos públicos. Se entiende que dichas normas facilitan la lectura del código y generan buenas prácticas en los desarrolladores que las adoptan.</p>
-<h2>Documentación y Script de Verificación</h2>
-<p>El detalle de las normas se puede encontrar en la guía de estilos provista por Google:</p>
+
+Una de las buenas prácticas de programación más aceptadas es la adopción de normas o estándares de codificación dentro de ciertos entornos de trabajo.
+
+La cátedra adopta para los trabajos prácticos individuales la guía de codificación propuesta por Google para sus herramientas y desarrollos públicos. Se entiende que dichas normas facilitan la lectura del código y generan buenas prácticas en los desarrolladores que las adoptan.
+
+## Documentación y Script de Verificación
+
+El detalle de las normas se puede encontrar en la guía de estilos provista por Google:
+
 <ul>
 <li><a href="https://code.google.com/p/google-styleguide/">Guía de Estilos de Google – Página Principal</a></li>
 <li><a href="https://google.github.io/styleguide/cppguide.html">Guía de Estilos de Google – Normas para C++</a></li>
 </ul>
-<p>A fin de verificar el cumplimiento de los estándares de codificación, se utiliza el sistema de ‘lint’ propuesto por Google, llamado <strong>Cpplint</strong>. Ciertas normas fueron relajadas según el criterio de la cátedra para permitir cierta flexibilidad al programador.</p>
-<p>Antes de realizar una entrega, es necesario comprobar el cumplimiento de los estándares de la misma forma en que lo verifica el servidor. Por este motivo, se proveen los scripts utilizados por la cátedra:</p>
+
+A fin de verificar el cumplimiento de los estándares de codificación, se utiliza el sistema de ‘lint’ propuesto por Google, llamado <strong>Cpplint</strong>. Ciertas normas fueron relajadas según el criterio de la cátedra para permitir cierta flexibilidad al programador.
+
+Antes de realizar una entrega, es necesario comprobar el cumplimiento de los estándares de la misma forma en que lo verifica el servidor. Por este motivo, se proveen los scripts utilizados por la cátedra:
+
 <ul>
 <li><a href="/assets/2013/08/cpplint.zip">Cpplint y Reglas de Codificación utilizadas por SERCOM</a></li>
 </ul>
-<p>Una vez descargado el archivo Cpplint, se puede utilizar el script <strong>execute.sh</strong> para verificar las normas de todos los archivos de extensión .c,.cpp,.h,.hpp bajo la carpeta actual. Para ejecutar el script, es necesario asegurarse que se cuenta con un interprete bash apropiado. Existen dos formas de hacer esto:</p>
+
+Una vez descargado el archivo Cpplint, se puede utilizar el script <strong>execute.sh</strong> para verificar las normas de todos los archivos de extensión .c,.cpp,.h,.hpp bajo la carpeta actual. Para ejecutar el script, es necesario asegurarse que se cuenta con un interprete bash apropiado. Existen dos formas de hacer esto:
+
 <div>
 <ol>
 <li><span style="font-size: 12px; line-height: 18px;">Utilizar el comando <strong>bash</strong> e indicarle el archivo de script:</span>
@@ -38,10 +48,14 @@ snippets: none
 </li>
 </ol>
 </div>
+
 <div><span style="line-height: 24px;"><br>
 </span></div>
-<h2>Normas Básicas y Ejemplos</h2>
-<p>Las normas de codificación básicas son:</p>
+
+## Normas Básicas y Ejemplos
+
+Las normas de codificación básicas son:
+
 <ul>
 <li>Evitar líneas vacías a menos que se estén separando dos bloques de código con distinta funcionalidad.</li>
 <li>Indentar el código siempre. Utilizar espacios cuando sea posible.</li>
@@ -57,7 +71,9 @@ snippets: none
 <li>Las variables deben estar en minúscula y utilizar guión bajo ( _ ) como separador de palabras.</li>
 <li>Los bloques condicionales IF/ELSE pueden o no incluir llaves pero su empleo debe ser consistente dentro de un mismo bloque.</li>
 </ul>
-<p>Los siguientes extractos de código muestran un ejemplo de uso correcto e incorrecto de las normas:</p>
+
+Los siguientes extractos de código muestran un ejemplo de uso correcto e incorrecto de las normas:
+
 <table>
 <tbody>
 <tr>
@@ -92,6 +108,7 @@ int main(int argc, char* argv[]) {
 </tr>
 </tbody>
 </table>
+
 <table>
 <tbody>
 <tr>
@@ -145,7 +162,9 @@ int main(int argc,char* argv[])
 </tr>
 </tbody>
 </table>
-<p>A fines prácticos, se incluye el detalle de las normas utilizadas por el script. Cada regla es respaldada por la <a href="https://google.github.io/styleguide/cppguide.html">documentación provista en las guías de codificación</a>:</p>
+
+A fines prácticos, se incluye el detalle de las normas utilizadas por el script. Cada regla es respaldada por la <a href="https://google.github.io/styleguide/cppguide.html">documentación provista en las guías de codificación</a>:
+
 <ul>
 <li>build/class</li>
 <li>build/deprecated</li>
@@ -179,4 +198,3 @@ int main(int argc,char* argv[])
 <li>whitespace/parens</li>
 <li>whitespace/semicolon</li>
 </ul>
-											</div>
