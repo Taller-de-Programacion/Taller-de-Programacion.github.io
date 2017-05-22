@@ -46,14 +46,14 @@ snippets: none
 <h2>Introducción</h2>
 <h3>Representación digital de una señal de audio</h3>
 <p>Una señal de audio es captada por un micrófono como una señal eléctrica  analógica. Se dice que una señal es analógica, cuando la misma está formada por  valores continuos, tanto en el tiempo como en amplitud.</p>
-<p><a href="/assets/2010/08/Image01.gif"><img class="alignnone size-full wp-image-97" title="Image01" src="http://7542.fi.uba.ar/wp-content/uploads/2010/08/Image01.gif" alt="" width="336" height="75"></a></p>
+<p><a href="/assets/2010/08/Image01.gif"><img class="alignnone size-full wp-image-97" title="Image01" src="/assets/2010/08/Image01.gif" alt="" width="336" height="75"></a></p>
 <p>Si bien esta señal puede ser procesada en forma analógica por medios  electrónicos, para su procesamiento en una computadora es necesario  digitalizarla. Este proceso de digitalización se realiza con un dispositivo  conocido como <strong><em>conversor analógico digital </em></strong>o (<em><strong>ADC </strong></em>por  sus siglas en inglés), y se lleva a cabo en dos pasos: muestreo y  discretización.</p>
 <p>El primer paso se conoce con el nombre de muestreo, y consiste en tomar  muestras de la señal en forma periódica.</p>
-<p><a href="/assets/2010/08/Image02.gif"><img class="alignnone size-full wp-image-98" title="Image02" src="http://7542.fi.uba.ar/wp-content/uploads/2010/08/Image02.gif" alt="" width="324" height="84"></a></p>
+<p><a href="/assets/2010/08/Image02.gif"><img class="alignnone size-full wp-image-98" title="Image02" src="/assets/2010/08/Image02.gif" alt="" width="324" height="84"></a></p>
 <p>El segundo paso se conoce como discretización, y consiste en aproximar el  valor continuo a una escala discreta.</p>
-<p><a href="/assets/2010/08/Image03.gif"><img class="alignnone size-full wp-image-99" title="Image03" src="http://7542.fi.uba.ar/wp-content/uploads/2010/08/Image03.gif" alt="" width="324" height="90"></a>.</p>
+<p><a href="/assets/2010/08/Image03.gif"><img class="alignnone size-full wp-image-99" title="Image03" src="/assets/2010/08/Image03.gif" alt="" width="324" height="90"></a>.</p>
 <p>El resultado es una secuencia finita de valores enteros, que pueden ser  procesados digitalmente:</p>
-<p><a href="/assets/2010/08/Image04.gif"><img class="alignnone size-full wp-image-100" title="Image04" src="http://7542.fi.uba.ar/wp-content/uploads/2010/08/Image04.gif" alt="" width="355" height="116"></a></p>
+<p><a href="/assets/2010/08/Image04.gif"><img class="alignnone size-full wp-image-100" title="Image04" src="/assets/2010/08/Image04.gif" alt="" width="355" height="116"></a></p>
 <p>La precisión con la cual de lleve a cabo la digitalización determinará la  calidad de la onda, y está gobernada principalmente por dos parámetros:  <strong><em>frecuencia de muestreo</em></strong> y <strong><em>precisión de  discretización</em></strong>.</p>
 <p>La <strong>f<em>recuencia de muestreo</em> </strong>especifica la cantidad de muestras  que se toman de la señal por unidad de tiempo. Los valores típicos para audio  son:</p>
 <ul>
@@ -68,8 +68,8 @@ snippets: none
 <li>Existen algunos sistemas que trabajan incluso con 32 bits, pero esto es    muy poco frecuente.</li>
 </ul>
 <p>A continuación se muestran los resultados de duplicar cada uno de estos  parámetros en la figura de arriba:</p>
-<p><a href="/assets/2010/08/Image06.gif"><img class="alignnone size-full wp-image-102" title="Image06" src="http://7542.fi.uba.ar/wp-content/uploads/2010/08/Image06.gif" alt="" width="487" height="115"></a></p>
-<p><a href="/assets/2010/08/Image07.gif"><img class="alignnone size-full wp-image-103" title="Image07" src="http://7542.fi.uba.ar/wp-content/uploads/2010/08/Image07.gif" alt="" width="489" height="116"></a></p>
+<p><a href="/assets/2010/08/Image06.gif"><img class="alignnone size-full wp-image-102" title="Image06" src="/assets/2010/08/Image06.gif" alt="" width="487" height="115"></a></p>
+<p><a href="/assets/2010/08/Image07.gif"><img class="alignnone size-full wp-image-103" title="Image07" src="/assets/2010/08/Image07.gif" alt="" width="489" height="116"></a></p>
 <h4>Nota</h4>
 <p>Surge una incongruencia al referirnos a los dispositivos de audio de PC. Al  trabajar con 8 bits de precisión, se utilizan valores sin signo (0 – 255), con  lo cual el valor de sonido nulo será 128, en tanto que al trabajar con 16 bits  de precisión, se utilizan valores con signo (-32768 a 32767) y el valor de  sonido nulo será 0. Esta incongruencia en el standard obliga a realizar molestas  consideraciones al implementar software para ambos tipos de señales.</p>
 <h3>Reproducción</h3>
@@ -97,7 +97,7 @@ snippets: none
 <li><strong>r</strong> es un retardo (mayor a 0)</li>
 </ul>
 <p>El proceso completo se muestra en el siguiente diagrama:</p>
-<p><a href="/assets/2010/08/Image05.gif"><img class="alignnone size-full wp-image-101" title="Image05" src="http://7542.fi.uba.ar/wp-content/uploads/2010/08/Image05.gif" alt="" width="513" height="86"></a></p>
+<p><a href="/assets/2010/08/Image05.gif"><img class="alignnone size-full wp-image-101" title="Image05" src="/assets/2010/08/Image05.gif" alt="" width="513" height="86"></a></p>
 <h2>El dispositivo de audio en Windows</h2>
 <p>Hasta ahora hemos visto como es el proceso de grabación y reproducción de  audio. Ahora veamos cómo controlar el dispositivo de audio en Window, para poder  realizar esto.</p>
 <p>Windows cuenta con una librería especial <strong><em>mmsystem.h</em></strong>, con  funciones especiales para grabar y reproducir audio. Todas estas funciones  comienzan con los nombres <strong><em>waveIn…</em></strong> y <strong><em>waveOut…</em></strong></p>

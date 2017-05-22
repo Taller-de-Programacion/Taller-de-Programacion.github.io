@@ -1,16 +1,17 @@
 ---
 layout: post
 title: Guía de Entregas – Trabajo Práctico Final
+permalink: /guia-entregas-tp-final
 author: admin
 date: 21/08/2010
 snippets: none
 
 ---
-<div class="entry-content">
-						<div id="contenedor">
-<div id="contenido">
-<p>A continuación se detalla una guía del material que debe ser entregado junto al trabajo práctico final. Esta guía puede presentar pequeñas variaciones dependiendo del trabajo final en particular, y describe todo lo que tiene que tener la entrega para estar perfecta. Los ítems marcados con (*) son aquellos que cuyo peso es crítico a la hora de aprobar el TP (deberían estar completos para aprobar).</p>
-<h2>Manual de Proyecto</h2>
+
+A continuación se detalla una guía del material que debe ser entregado junto al trabajo práctico final. Esta guía puede presentar pequeñas variaciones dependiendo del trabajo final en particular, y describe todo lo que tiene que tener la entrega para estar perfecta. Los ítems marcados con (*) son aquellos que cuyo peso es crítico a la hora de aprobar el TP (deberían estar completos para aprobar).
+
+## Manual de Proyecto
+
 <ol>
 <li><strong>Integrantes (*)</strong></li>
 <li><strong>Enunciado</strong></li>
@@ -25,14 +26,16 @@ Cosas que faltan o deberían mejorar, cómo y por qué</li>
 Herramientas auxiliares que utilizaron para hacer el proyecto, como editor de interfaz gráfica, control de versiones, herramienta para generar documentación, herramientas para debug, etcétera.</li>
 <li><strong>Conclusiones</strong></li>
 </ol>
-<h2>Documentación Técnica</h2>
+
+## Documentación Técnica
+
 <ol>
 <li><strong>Requerimientos de software (*)</strong><br>
 OS, bibliotecas y herramientas necesarias para <strong>compilar</strong>, <strong>desarrollar</strong>, <strong>probar</strong> y <strong>depurar</strong> el programa</li>
 <li><strong>Descripción general (*)</strong><br>
 Arquitectura general del proyecto, qué módulos tiene, etcétera.</li>
 <li><strong>Módulo N (*)</strong><br>
-Una sección por módulo, que puede ser una aplicación, explicando más en detalle los ítems a continuación<p></p>
+Una sección por módulo, que puede ser una aplicación, explicando más en detalle los ítems a continuación
 <ol>
 <li><strong>Descripción general</strong></li>
 <li><strong>Clases</strong><br>
@@ -46,7 +49,7 @@ Formato de archivos y protocolos de red utilizados, si son compartidos por varia
 <li><strong>Programas intermedios y de prueba</strong><br>
 Programas ‘intermedios’ que hayan usado para probar porciones del tp</li>
 <li><strong>Código Fuente (*)</strong><br>
-Código fuente documentado e impreso con las siguientes características:<p></p>
+Código fuente documentado e impreso con las siguientes características:
 <ul>
 <li>Letra <strong><tt>monoespaciada</tt></strong> de tamaño más bien chico (10 pts aproximadamente)</li>
 <li>Organizado (por módulo, alfabéticamente u otra forma que crea conveniente)</li>
@@ -56,7 +59,9 @@ Código fuente documentado e impreso con las siguientes características:<p></p>
 </ul>
 </li>
 </ol>
-<h2>Manual de Usuario</h2>
+
+## Manual de Usuario
+
 <ol>
 <li><strong>Instalación</strong>
 <ol>
@@ -75,13 +80,14 @@ A criterio del alumno, debe explicar como usar la aplicación de forma completa 
 <li><strong>Apéndice de errores</strong><br>
 Si la aplicación tiene códigos de error, poner aquí su descripción, posible causa y posible solución</li>
 </ol>
-<h2>Medio Digital</h2>
-<p>Entregar en diskette(s) o (mini) CD (de ser posible en mini-CD) lo siguiente, organizado en directorios:</p>
+
+## Medio Digital
+
+Entregar en CD lo siguiente, organizado en directorios:
+
 <ul>
 <li>Binarios (*)</li>
 <li>Fuentes (*)</li>
 <li>Manuales en formato digital</li>
 </ul>
-</div>
-</div>
-											</div>
+

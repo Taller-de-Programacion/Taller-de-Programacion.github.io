@@ -64,7 +64,6 @@ class Session(object):
                        source_netloc = "7542.fi.uba.ar",
 
                        source_site ="http://7542.fi.uba.ar/",
-                       destination_site = 'https://taller-de-programacion.github.io',
 
                        source_asset_path_prefix = '/wp-content/uploads/',
                        destination_asset_path_prefix = '/assets/',
@@ -85,8 +84,8 @@ class Session(object):
             s.go_to_previous_post()   # previous post page as you wish
 
             # then you can port the current web page ....
-            s.port_post()  # port the current web page to the destination_site:
-                           #  - remap the links to source_site to destination_site
+            s.port_post()  # port the current web page:
+                           #  - remap the links to source_site to / (the current site)
                            #  - download and remap the assets from source_asset_path_prefix to destination_asset_path_prefix
                            #  - rewrite the code snippets
                            #
@@ -103,7 +102,6 @@ class Session(object):
         self.source_netloc = source_netloc
         
         self.source_site = source_site
-        self.destination_site = destination_site
 
         self.source_asset_path_prefix = source_asset_path_prefix
         self.destination_asset_path_prefix = destination_asset_path_prefix

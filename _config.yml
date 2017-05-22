@@ -10,6 +10,8 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  Taller-de-programacion
 repository: Taller-de-Programacion/Taller-de-Programacion.github.io
 
+sercom_url: https://7542.fi.uba.ar/
+
 # Build settings
 markdown: kramdown
 theme: minima
