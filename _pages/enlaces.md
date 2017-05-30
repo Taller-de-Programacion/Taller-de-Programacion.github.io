@@ -9,7 +9,7 @@ permalink: /enlaces
 
 * [SERCOM]({{ site.sercom_url }}dashboard) Sitio de entregas y notas.
 
-* [Grupo](tallerdeprogramacion@googlegroups.com) Grupo (no oficial) de alumnos. 
+* [Grupo](https://groups.google.com/forum/#!forum/tallerdeprogramacion) Grupo (no oficial) de alumnos: tallerdeprogramacion at googlegroups.com
 
 
 ## Foros de discusión
