@@ -29,59 +29,134 @@ wrapCell = function (child) {
     return wrapper;
 }
 
-fillLecturesTable = function(dates, contents, events) {
+
+
+nextweek = function (aDate){
+    return new Date(aDate.getTime() + 7 * 24 * 60 * 60 * 1000);
+}
+
+date_to_string = function (aDate) {
+    return aDate.getDate() + '/' + (aDate.getMonth() + 1) + '/' + aDate.getFullYear();
+}
+
+fillLecturesTable = function(initial_date, lectures) {
     var table = document.getElementById("lectures-table");
-    for (i = 0; i < 16; i++) {
+    var aDate = initial_date;
+    for (i = 0; i < lectures.length; i++) {
         var row = document.createElement("tr");
-        var dateNode = document.createTextNode(dates[i]);
-        var contentSublist = createList(contents[i]);
-        var eventSublist = createList(events[i]);
+        var dateNode = document.createTextNode(date_to_string(aDate));
+        var contentSublist = createList(lectures[i].contents);
+        var eventSublist = createList(lectures[i].events);
+
         row.appendChild(wrapCell(dateNode));
         row.appendChild(wrapCell(contentSublist));
         row.appendChild(wrapCell(eventSublist));
+
         table.appendChild(row);
+        aDate = nextweek(aDate);
     }
 }
 
-var dates = ["7/3/2017", "14/3/2017", "21/3/2017", "28/3/2017", "4/4/2017", "11/4/2017", "18/4/2017", "25/4/2017", "2/5/2017", "9/5/2017", "16/5/2017", "23/5/2017", "30/5/2017", "6/6/2017", "13/6/2017", "20/6/2017"];
-var contents = [
-    ["Introducción a la materia (1h)", "Conceptos de C avanzados (3hs)"],
-    ["Introducción a Threads (2hs)", "Introducción a Sockets (2hs)"],
-    ["C++ (4hs)"],
-    ["Buenas prácticas con Threads (2hs)", "Buenas prácticas con Sockets (2hs)"],
-    ["C++ (4hs)"],
-    ["C++ (4hs)"],
-    ["Templates/STL (3h)", "Excepciones (1hs)"],
-    ["GTK+ (1h)", "gtkmm (3hs)"],
-    ["Desarrollo de Trabajo Grupal"],
-    ["Desarrollo de Trabajo Grupal"],
-    ["Desarrollo de Trabajo Grupal"],
-    ["Desarrollo de Trabajo Grupal"],
-    ["Desarrollo de Trabajo Grupal"],
-    ["Desarrollo de Trabajo Grupal"],
-    ["Desarrollo de Trabajo Grupal"],
-    ["Desarrollo de Trabajo Grupal"]
-] 
-var events = [
-    ["Ejercicio 0 - Explicación (C)"],
-    ["Ejercicio 0 - Entrega", "Ejercicio 1 - Explicación (C)"],
-    ["Ejercicio 0 - Dev. Entrega"],
-    ["Ejercicio 1 - Entrega 1", "Ejercicio 2 - Explicación (C++)"],
-    ["Ejercicio 1 - Dev. Entrega 1"],
-    ["Ejercicio 1 - Entrega 2", "Ejercicio 2 - Entrega 1", "Ejercicio 3 - Explicación (C++)"],
-    ["Ejercicio 1 - Dev. Entrega 2", "Ejercicio 2 - Dev. Entrega 1"],
-    ["Ejercicio 2 - Entrega 2", "Ejercicio 3 - Entrega 1"],
-    ["Ejercicio 2 - Dev. Entrega 2", "Ejercicio 3 - Dev. Entrega 1", "Ejercicio final - Explicación (C++)"],
-    ["Ejercicio 3 - Entrega 2"],
-    ["Ejercicio 3 - Dev. Entrega 2"],
-    [],
-    [],
-    ["Ejercicio final - Pre-entrega"],
-    ["Ejercicio final - Dev. Pre-entrega"],
-    ["Ejercicio final - Entrega"]
-]
+var lectures = [
+    {
+        contents: 
+            ["Introducción a la materia (1h)", "Conceptos de C avanzados (3hs)"],
+        events:
+            ["Ejercicio 0 - Explicación (C)"],
+    },
+    {
+        contents: 
+            ["Introducción a Threads (2hs)", "Introducción a Sockets (2hs)"],
+        events:
+            ["Ejercicio 0 - Entrega", "Ejercicio 1 - Explicación (C)"],
+    },
+    {
+        contents: 
+            ["C++ (4hs)"],
+        events:
+            ["Ejercicio 0 - Dev. Entrega"],
+    },
+    {
+        contents: 
+            ["Buenas prácticas con Threads (2hs)", "Buenas prácticas con Sockets (2hs)"],
+        events:
+            ["Ejercicio 1 - Entrega 1", "Ejercicio 2 - Explicación (C++)"],
+    },
+    {
+        contents: 
+            ["C++ (4hs)"],
+        events:
+            ["Ejercicio 1 - Dev. Entrega 1"],
+    },
+    {
+        contents: 
+            ["C++ (4hs)"],
+        events:
+            ["Ejercicio 1 - Entrega 2", "Ejercicio 2 - Entrega 1", "Ejercicio 3 - Explicación (C++)"],
+    },
+    {
+        contents: 
+            ["Templates/STL (3h)", "Excepciones (1hs)"],
+        events:
+            ["Ejercicio 1 - Dev. Entrega 2", "Ejercicio 2 - Dev. Entrega 1"],
+    },
+    {
+        contents: 
+            ["GTK+ (1h)", "gtkmm (3hs)"],
+        events:
+            ["Ejercicio 2 - Entrega 2", "Ejercicio 3 - Entrega 1"],
+    },
+    {
+        contents: 
+            ["Desarrollo de Trabajo Grupal"],
+        events:
+            ["Ejercicio 2 - Dev. Entrega 2", "Ejercicio 3 - Dev. Entrega 1", "Ejercicio final - Explicación (C++)"],
+    },
+    {
+        contents: 
+            ["Desarrollo de Trabajo Grupal"],
+        events:
+            ["Ejercicio 3 - Entrega 2"],
+    },
+    {
+        contents: 
+            ["Desarrollo de Trabajo Grupal"],
+        events:
+            ["Ejercicio 3 - Dev. Entrega 2"],
+    },
+    {
+        contents: 
+            ["Desarrollo de Trabajo Grupal"],
+        events:
+            [],
+    },
+    {
+        contents: 
+            ["Desarrollo de Trabajo Grupal"],
+        events:
+            [],
+    },
+    {
+        contents: 
+            ["Desarrollo de Trabajo Grupal"],
+        events:
+            ["Ejercicio final - Pre-entrega"],
+    },
+    {
+        contents: 
+            ["Desarrollo de Trabajo Grupal"],
+        events:
+            ["Ejercicio final - Dev. Pre-entrega"],
+    },
+    {
+        contents: 
+            ["Desarrollo de Trabajo Grupal"],
+        events:
+            ["Ejercicio final - Entrega"]
+    },
+];
 
-fillLecturesTable(dates, contents, events);
+fillLecturesTable(new Date("2017/08/15"), lectures);
 </script>
 
 **NOTA**: Este cuadro contiene duraciones de cada clase a modo orientativo.
