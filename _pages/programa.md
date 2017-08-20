@@ -66,37 +66,37 @@ var lectures = [
     },
     {
         contents: 
-            ["Introducción a Threads (2hs)", "Introducción a Sockets (2hs)"],
+            ["Introducción a Sockets (3hs)", "Repaso de Archivos y TDAs (1h)"],
         events:
             ["Ejercicio 0 - Entrega", "Ejercicio 1 - Explicación (C)"],
     },
     {
         contents: 
-            ["C++ (4hs)"],
+            ["Clases, RAII, Move Semantics en C++ (2hs)", "Herencia y Polimorfismo en C++ (2hs)"],
         events:
             ["Ejercicio 0 - Dev. Entrega"],
     },
     {
         contents: 
-            ["Buenas prácticas con Threads (2hs)", "Buenas prácticas con Sockets (2hs)"],
+            ["Introducción a Threads (4hs)"],
         events:
             ["Ejercicio 1 - Entrega 1", "Ejercicio 2 - Explicación (C++)"],
     },
     {
         contents: 
-            ["C++ (4hs)"],
+            ["Templates/STL (3h)", "Operadores en C++ (1h)"],
         events:
             ["Ejercicio 1 - Dev. Entrega 1"],
     },
     {
         contents: 
-            ["C++ (4hs)"],
+            ["Excepciones (1hs)", "Introducción a la Arquitectura Cliente-Servidor (3hs)"],
         events:
             ["Ejercicio 1 - Entrega 2", "Ejercicio 2 - Entrega 1", "Ejercicio 3 - Explicación (C++)"],
     },
     {
         contents: 
-            ["Templates/STL (3h)", "Excepciones (1hs)"],
+            ["Sockets UDP (1hs)", "Programación Orientada a Eventos (3hs)"],
         events:
             ["Ejercicio 1 - Dev. Entrega 2", "Ejercicio 2 - Dev. Entrega 1"],
     },
