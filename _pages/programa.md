@@ -10,6 +10,13 @@ Se suponen conocidos los conceptos básicos de C. Sólo se darán los conceptos 
 ## Clases
 
 <table id="lectures-table">
+  <tr>
+    <th>Fecha</th>
+    <th>Temas</th>
+    <th>Recursos</th>
+    <th>Trabajos Prácticos</th>
+  </tr>
+
 </table>
 
 <script>
@@ -28,7 +35,7 @@ createListOfLinks = function(array) {
     array.forEach(function(el) {
         var item = document.createElement("li");
         var anchor = document.createElement("a");
-        anchor.src = el.link;
+        anchor.href = el.link;
         anchor.innerHTML = el.name;
         item.appendChild(anchor);
         node.appendChild(item);
@@ -55,7 +62,8 @@ date_to_string = function (aDate) {
 fillLecturesTable = function(initial_date, lectures) {
     var table = document.getElementById("lectures-table");
     var aDate = initial_date;
-    for (i = 0; i < lectures.length; i++) {
+
+    for (var i = 0; i < lectures.length; i++) {
         var row = document.createElement("tr");
         var dateNode = document.createTextNode(date_to_string(aDate));
         var contentSublist = createList(lectures[i].contents);
@@ -66,6 +74,12 @@ fillLecturesTable = function(initial_date, lectures) {
         row.appendChild(wrapCell(contentSublist));
         row.appendChild(wrapCell(linkSublist));
         row.appendChild(wrapCell(eventSublist));
+
+        if ((i % 2) === 0) {    // even rows
+            row.style.backgroundColor = "#eeeeee";
+        }
+        else {                  // odd rows
+        }
 
         table.appendChild(row);
         aDate = nextweek(aDate);
@@ -79,7 +93,7 @@ var lectures = [
         events:
             ["Ejercicio 0 - Explicación (C)"],
         links:
-            [{name: "Memoria en C/C++ (handout)", link: "https://github.com/Taller-de-Programacion/clases/blob/master/memoria/bin/memoria.7z"}],
+            [{name: "Memoria en C/C++ (handout)", link: "https://github.com/Taller-de-Programacion/clases/raw/master/memoria/bin/memoria.7z"}],
     },
     {
         contents: 
