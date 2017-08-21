@@ -26,7 +26,19 @@ class DummyTqdmFile(object):
 @contextmanager
 def open_temporally(session, url):
     primary_driver = session.driver
-    session._secondary_driver.get(url)
+    tries = 3
+    while tries > 0:
+        try:
+            session._secondary_driver.get(url)
+            break
+        except:
+            print "open failed... left %i tries" % tries
+            tries -= 1
+            session._secondary_driver.close()
+            time.sleep(5)
+            session._secondary_driver =  webdriver.Firefox(executable_path=session.selenium_driver_executable_path)
+            time.sleep(10)
+
     try:
         # swap drivers
         session.driver = session._secondary_driver
@@ -120,11 +132,13 @@ class Session(object):
             '''
         driver = webdriver.Firefox(executable_path=self.selenium_driver_executable_path)
         driver.get(self.source_site) # just to check if everything works
+        driver.set_page_load_timeout(120)
 
         self.driver = driver
 
         self._secondary_driver =  webdriver.Firefox(executable_path=self.selenium_driver_executable_path)
         self._secondary_driver.get(self.source_site) 
+        self._secondary_driver.set_page_load_timeout(120)
 
         return driver
 
@@ -162,7 +176,7 @@ class Session(object):
         try:
             self.go_to_next_post(pbar)
             return True
-        except:
+        except:             # TODO improve this: this is a too relaxed condition
             return False
 
     def go_to_previous_post(self, pbar=None):
@@ -188,6 +202,7 @@ class Session(object):
             Here is where you do the "real scrap":
                 - the author of the post
                 - its content of course!
+                - its tags
 
             But it is likely that this implementation is incomplete, so:
                 
@@ -209,7 +224,14 @@ class Session(object):
 
         post_content_html = post_content.get_attribute('outerHTML')
 
-        return author, snippets, post_content_html
+        tags = []
+        tag_links = driver.find_elements(By.CSS_SELECTOR, 'a[rel="category tag"]')
+        for l in tag_links:
+            tags.append(l.text)
+
+        tags = ', '.join(tags)
+
+        return author, snippets, post_content_html, tags
 
 
 
@@ -325,7 +347,7 @@ class Session(object):
 
         title, date = self.get_post_title_and_date()
 
-        author, snippets, post_content_html = self.get_post_data()
+        author, snippets, post_content_html, tags = self.get_post_data()
         year, file_name, _ = self.get_year_filename_and_urlpath(title, date)
 
         file_dir = os.path.join(self.repository_home, self.destination_post_path_prefix[1:], year)
@@ -334,7 +356,8 @@ class Session(object):
         post = Post_Template % dict(title=title,
                                     author=author, date=date,
                                     snippets=snippets,
-                                    content = post_content_html)
+                                    content = post_content_html, 
+                                    tags = tags)
 
         with open(os.path.join(file_dir, file_name), 'wt') as post_file:
             post_file.write(post.encode('utf8'))
@@ -373,6 +396,7 @@ layout: post
 title: %(title)s
 author: %(author)s
 date: %(date)s
+tags: [%(tags)s]
 snippets: %(snippets)s
 ---
 %(content)s
