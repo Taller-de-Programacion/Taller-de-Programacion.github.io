@@ -23,6 +23,19 @@ createList = function(array) {
     return node;
 }
 
+createListOfLinks = function(array) {
+    var node = document.createElement("ul");
+    array.forEach(function(el) {
+        var item = document.createElement("li");
+        var anchor = document.createElement("a");
+        anchor.src = el.link;
+        anchor.innerHTML = el.name;
+        item.appendChild(anchor);
+        node.appendChild(item);
+    });
+    return node;
+}
+
 wrapCell = function (child) {
     var wrapper = document.createElement("td");
     wrapper.appendChild(child);
@@ -46,10 +59,12 @@ fillLecturesTable = function(initial_date, lectures) {
         var row = document.createElement("tr");
         var dateNode = document.createTextNode(date_to_string(aDate));
         var contentSublist = createList(lectures[i].contents);
+        var linkSublist = createListOfLinks(lectures[i].links);
         var eventSublist = createList(lectures[i].events);
 
         row.appendChild(wrapCell(dateNode));
         row.appendChild(wrapCell(contentSublist));
+        row.appendChild(wrapCell(linkSublist));
         row.appendChild(wrapCell(eventSublist));
 
         table.appendChild(row);
@@ -63,77 +78,103 @@ var lectures = [
             ["Introducción a la materia (1h)", "Conceptos de C avanzados (3hs)"],
         events:
             ["Ejercicio 0 - Explicación (C)"],
+        links:
+            [{name: "Memoria en C/C++ (handout)", link: "https://github.com/Taller-de-Programacion/clases/blob/master/memoria/bin/memoria.7z"}],
     },
     {
         contents: 
             ["Introducción a Sockets (3hs)", "Repaso de Archivos y TDAs (1h)"],
         events:
             ["Ejercicio 0 - Entrega", "Ejercicio 1 - Explicación (C)"],
+        links:
+            [],
     },
     {
         contents: 
             ["Clases, RAII, Move Semantics en C++ (2hs)", "Herencia y Polimorfismo en C++ (2hs)"],
         events:
             ["Ejercicio 0 - Dev. Entrega"],
+        links:
+            [],
     },
     {
         contents: 
             ["Introducción a Threads (4hs)"],
         events:
             ["Ejercicio 1 - Entrega 1", "Ejercicio 2 - Explicación (C++)"],
+        links:
+            [],
     },
     {
         contents: 
             ["Templates/STL (3h)", "Operadores en C++ (1h)"],
         events:
             ["Ejercicio 1 - Dev. Entrega 1"],
+        links:
+            [],
     },
     {
         contents: 
             ["Excepciones (1hs)", "Introducción a la Arquitectura Cliente-Servidor (3hs)"],
         events:
             ["Ejercicio 1 - Entrega 2", "Ejercicio 2 - Entrega 1", "Ejercicio 3 - Explicación (C++)"],
+        links:
+            [],
     },
     {
         contents: 
             ["Sockets UDP (1hs)", "Programación Orientada a Eventos (3hs)"],
         events:
             ["Ejercicio 1 - Dev. Entrega 2", "Ejercicio 2 - Dev. Entrega 1"],
+        links:
+            [],
     },
     {
         contents: 
             ["GTK+ (1h)", "gtkmm (3hs)"],
         events:
             ["Ejercicio 2 - Entrega 2", "Ejercicio 3 - Entrega 1"],
-    },
-    {
-        contents: 
-            ["Desarrollo de Trabajo Grupal"],
-        events:
-            ["Ejercicio 2 - Dev. Entrega 2", "Ejercicio 3 - Dev. Entrega 1", "Ejercicio final - Explicación (C++)"],
-    },
-    {
-        contents: 
-            ["Desarrollo de Trabajo Grupal"],
-        events:
-            ["Ejercicio 3 - Entrega 2"],
-    },
-    {
-        contents: 
-            ["Desarrollo de Trabajo Grupal"],
-        events:
-            ["Ejercicio 3 - Dev. Entrega 2"],
-    },
-    {
-        contents: 
-            ["Desarrollo de Trabajo Grupal"],
-        events:
+        links:
             [],
     },
     {
         contents: 
             ["Desarrollo de Trabajo Grupal"],
         events:
+            ["Ejercicio 2 - Dev. Entrega 2", "Ejercicio 3 - Dev. Entrega 1", "Ejercicio final - Explicación (C++)"],
+        links:
+            [],
+    },
+    {
+        contents: 
+            ["Desarrollo de Trabajo Grupal"],
+        events:
+            ["Ejercicio 3 - Entrega 2"],
+        links:
+            [],
+    },
+    {
+        contents: 
+            ["Desarrollo de Trabajo Grupal"],
+        events:
+            ["Ejercicio 3 - Dev. Entrega 2"],
+        links:
+            [],
+    },
+    {
+        contents: 
+            ["Desarrollo de Trabajo Grupal"],
+        events:
+            [],
+        links:
+            [],
+    },
+    {
+        contents: 
+            ["Desarrollo de Trabajo Grupal"],
+        events:
+            [],
+        links:
             [],
     },
     {
@@ -141,18 +182,24 @@ var lectures = [
             ["Desarrollo de Trabajo Grupal"],
         events:
             ["Ejercicio final - Pre-entrega"],
+        links:
+            [],
     },
     {
         contents: 
             ["Desarrollo de Trabajo Grupal"],
         events:
             ["Ejercicio final - Dev. Pre-entrega"],
+        links:
+            [],
     },
     {
         contents: 
             ["Desarrollo de Trabajo Grupal"],
         events:
-            ["Ejercicio final - Entrega"]
+            ["Ejercicio final - Entrega"],
+        links:
+            [],
     },
 ];
 
