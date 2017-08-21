@@ -8,20 +8,13 @@ snippets: none
 
 ---
 
-Como requisito para cursar la materia Taller de Programación I  (75.42)  usted debe cargar sus datos en el <a href="{{ site.sercom_url }}" target="_blank">sitio de seguimiento de cursada</a>. Los mismos serán utilizados para  confeccionar las  planillas de la materia.
+Para hacer efectiva la cursada, el alumno debe registrarse en el <a href="{{ site.sercom_url }}" target="_blank">sitio de entregas de la materia</a>. En el mismo se podrán entregar los trabajos prácticos semanales y final para la corrección docente. Es indispensable leer atentamente la <a href="/guia-entregas-tp-individual" target="_self">guía de entrega de trabajos individuales</a> y la del <a href="/guia-entregas-tp-final" target="_self">trabajo grupal</a>.
 
-### Política de confidencialidad
 
-La información ingresada será destinada a confeccionar las plantillas  de la materia. Los campos opcionales  son considerados de caracter  confidencial y sólo se utilizarán para fines estadísticos. Sin embargo,  dado que Taller de Programación utiliza un hosting público y los datos  se transmiten en claro, los docentes a cargo de la materia no pueden ni  se hacen responsables de garantizar la absoluta confidencialidad de esta  información.
+### Recursantes
 
-### Modificaciones
+Si el alumno es **recursante** de la materia, debe inscribirse en el curso actual desde la <a href="{{ site.sercom_url }}/upgrade_registration" target="_blank">sección correspondiente</a>.
 
-Dada la confidencialidad de la información ingresada, estos datos no  serán mostrados. En caso de cometer un error  en algún dato, o querer  realizar cambios, ingrese sus datos nuevamente.
-
-## Sitio de entregas/inscripción a la materia
-
-Para hacer efectiva la cursada, el alumno debe registrarse en el <a href="{{ site.sercom_url }}register">sitio de entregas de la materia</a>. En el mismo se podrán entregar los trabajos prácticos semanales y final para la corrección docente. Es indispensable leer atentamente la <a href="/guia-entregas-tp-individual" target="_self">guía de entrega de trabajos individuales</a> y la del <a href="/guia-entregas-tp-final" target="_self">trabajo grupal</a>.
-Si el alumno es <strong>recursante</strong> de la materia, debe inscribirse en el curso actual desde <a href="{{ site.sercom_url }}upgrade_registration">la sección correspondiente</a>.
 
 ## Asientos de la materia en la Libreta
 
@@ -75,3 +68,4 @@ Una vez aprobado el Exámen Final el alumno podrá concurrir para que  se le asi
 ### Cursos y docentes
 
 <a href="/cursos-docentes" target="_self">Ver los cursos y docentes</a>
+
