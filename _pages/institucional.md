@@ -4,6 +4,7 @@ title: Institucional
 author: Andres Veiga
 date: 02/08/2010
 permalink: /institucional
+hide_post_meta: true
 snippets: none
 
 ---

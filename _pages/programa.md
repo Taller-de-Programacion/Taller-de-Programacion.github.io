@@ -2,6 +2,8 @@
 layout: post
 title: Programa
 permalink: /programa
+hide_post_meta: true
+
 ---
 A continuación se muestra un programa **orientativo** de la materia.
 

@@ -2,6 +2,8 @@
 layout: post
 title: Bienvenido
 permalink: /bienvenido
+hide_post_meta: true
+
 ---
 
 Este es el sitio oficial de la materia **Taller de programación I – 7542**

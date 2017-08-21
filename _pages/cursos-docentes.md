@@ -2,6 +2,8 @@
 layout: post
 title: Docentes
 permalink: /cursos-docentes
+hide_post_meta: true
+
 ---
 
 ## Titular a cargo

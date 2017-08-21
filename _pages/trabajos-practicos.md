@@ -4,6 +4,7 @@ title: Guías para los Trabajo Prácticos
 permalink: /trabajos-practicos
 author: admin
 date: 21/08/2010
+hide_post_meta: true
 snippets: none
 
 ---
