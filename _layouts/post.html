@@ -14,10 +14,12 @@
                   <div class="post-time">
                     <i class="fa fa-calendar"></i>
                   </div>
+                  {% if page.tags|length %}
                   <span>Tags: </span>
                     {% for tag in page.tags %}
                     <span>{{ tag }} </span> <!-- <li><a href="{{ site.url | append:site.baseurl }}/tag/{{ tag }}">{{ tag }}</a></li> -->
                     {% endfor %}
+                  {% endif %}
                 </div>
               </div>
               {{ content }}

@@ -3,6 +3,7 @@ layout: post
 title: Normas de Codificación – CPPLint
 author: Pablo Roca
 date: 21/08/2013
+tags: [Trabajos Prácticos] 
 snippets: none
 permalink: /normas-cpplint
 

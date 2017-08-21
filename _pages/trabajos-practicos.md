@@ -1,11 +1,16 @@
 ---
 layout: post
-title: Noticias
-permalink: /noticias
+title: Guías para los Trabajo Prácticos
+permalink: /trabajos-practicos
+author: admin
+date: 21/08/2010
+snippets: none
+
 ---
+
   <ul class="post-list">
-    {% for post in site.posts %}
-      {% if post.tags contains 'Noticias' %}
+    {% for post in site.pages %}
+      {% if post.tags contains 'Trabajos Prácticos' %}
       <li>
         <h2>
           <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
