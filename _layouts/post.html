@@ -2,35 +2,41 @@
 {% include head.html %}
 <body>
 {% include header.html %}
-  <div class="wrapper">
-    <div class="content">
       <div class="container container-center">
         <div class="row">
-          <div class="col-md-8">
-            <div class="article">
-              <div class="well">
+          <div class="col-sm-9">
+              <div>
                 <h1>{{ page.title }}</h1>
+                {% unless page.hide_post_meta %}
                 <div class="post-meta">
-                  <div class="post-time">
-                    <i class="fa fa-calendar"></i>
-                  </div>
-                  <ul>
-                    {% for tag in page.tags %}
-                      <li><a href="{{ site.url | append:site.baseurl }}/tag/{{ tag }}">{{ tag }}</a></li>
-                    {% endfor %}
-                  </ul>
+                    <div>
+                        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+                        <span class="post-meta">{{ page.date | date: date_format }} por {{ page.author | default: 'admin' }}</span>
+                    </div>
+                    {% if page.tags != empty and page.tags != black and page.tags != false %}
+                    <div>
+                        <span>Tags: </span>
+                        {% for tag in page.tags %}
+                        <span>{{ tag }} </span>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
                 </div>
+                {% endunless %}
               </div>
-              {{ content }}
-            </div>
           </div>
-          <div class="col-md-4 hidden-xs">
+          <div class="col-sm-3 hidden-xs">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-9">
+              {{ content }}
+          </div>
+          <div class="col-sm-3 hidden-xs">
             {% include sidebar.html %}
           </div>
         </div>
       </div>
-    </div>
-  </div>
 {% include footer.html %}
 </body>
 </html>

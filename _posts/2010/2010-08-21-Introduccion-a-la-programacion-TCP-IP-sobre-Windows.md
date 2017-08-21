@@ -3,6 +3,7 @@ layout: post
 title: Introducción a la programación TCP/IP sobre Windows
 author: admin
 date: 21/08/2010
+tags: [Notas técnicas]
 snippets: 
     - |
         ```cpp

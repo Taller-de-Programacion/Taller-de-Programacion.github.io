@@ -4,6 +4,8 @@ title: Guía de Entregas – Trabajo Práctico Final
 permalink: /guia-entregas-tp-final
 author: admin
 date: 21/08/2010
+tags: [Trabajos Prácticos] 
+hide_post_meta: true
 snippets: none
 
 ---

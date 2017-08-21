@@ -3,6 +3,7 @@ layout: post
 title: Fechas de Finales 1º Cuat. 2012
 author: Pablo Roca
 date: 28/06/2012
+tags: [Noticias]
 snippets: none
 
 ---

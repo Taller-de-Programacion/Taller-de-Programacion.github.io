@@ -2,6 +2,8 @@
 layout: post
 title: Programa
 permalink: /programa
+hide_post_meta: true
+
 ---
 A continuación se muestra un programa **orientativo** de la materia.
 
@@ -9,14 +11,17 @@ Se suponen conocidos los conceptos básicos de C. Sólo se darán los conceptos 
 
 ## Clases
 
-<table id="lectures-table">
+<table class="table table-striped">
+<thead>
   <tr>
     <th>Fecha</th>
     <th>Temas</th>
     <th>Recursos</th>
     <th>Trabajos Prácticos</th>
   </tr>
-
+</thead>
+<tbody id="lectures-table">
+</tbody>
 </table>
 
 <script>
@@ -60,12 +65,24 @@ date_to_string = function (aDate) {
 }
 
 fillLecturesTable = function(initial_date, lectures) {
+    var today = new Date();
+    var nextLectureFound = false;
     var table = document.getElementById("lectures-table");
     var aDate = initial_date;
 
     for (var i = 0; i < lectures.length; i++) {
         var row = document.createElement("tr");
-        var dateNode = document.createTextNode(date_to_string(aDate));
+
+        if ( today < aDate && nextLectureFound === false ) {
+            nextLectureFound = true;
+            row.className = "info";
+            
+            var dateNode = document.createTextNode(date_to_string(aDate) + "  \n(próxima clase)");
+        } 
+        else {
+            var dateNode = document.createTextNode(date_to_string(aDate));
+        }
+
         var contentSublist = createList(lectures[i].contents);
         var linkSublist = createListOfLinks(lectures[i].links);
         var eventSublist = createList(lectures[i].events);
@@ -74,12 +91,6 @@ fillLecturesTable = function(initial_date, lectures) {
         row.appendChild(wrapCell(contentSublist));
         row.appendChild(wrapCell(linkSublist));
         row.appendChild(wrapCell(eventSublist));
-
-        if ((i % 2) === 0) {    // even rows
-            row.style.backgroundColor = "#eeeeee";
-        }
-        else {                  // odd rows
-        }
 
         table.appendChild(row);
         aDate = nextweek(aDate);

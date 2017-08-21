@@ -3,6 +3,7 @@ layout: post
 title: Fechas de Finales 2º Cuat. 2010
 author: Pablo Roca
 date: 23/11/2010
+tags: [Noticias]
 snippets: none
 
 ---

@@ -3,6 +3,7 @@ layout: post
 title: Imágen y MessageDialog
 author: admin
 date: 21/08/2010
+tags: [GTK+]
 snippets: 
     - |
         ```cpp

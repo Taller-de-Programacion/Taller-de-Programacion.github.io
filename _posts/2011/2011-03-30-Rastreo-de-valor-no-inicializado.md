@@ -3,6 +3,7 @@ layout: post
 title: Rastreo de valor no inicializado
 author: admin
 date: 30/03/2011
+tags: [C, Valgrind]
 snippets: 
     - |
         ```cpp

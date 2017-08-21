@@ -1,13 +1,13 @@
 ---
 layout: post
-title: Noticias
-permalink: /noticias
+title: Notas Técnicas
+permalink: /notas-tecnicas
 hide_post_meta: true
 
 ---
   <ul class="post-list">
     {% for post in site.posts %}
-      {% if post.tags contains 'Noticias' %}
+      {% unless post.tags contains 'Noticias' %}
       <li>
         <h2>
           <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
@@ -26,7 +26,9 @@ hide_post_meta: true
             </div>
             {% endif %}
         </div>
+
       </li>
-      {% endif %}
+      {% endunless %}
     {% endfor %}
   </ul>
+

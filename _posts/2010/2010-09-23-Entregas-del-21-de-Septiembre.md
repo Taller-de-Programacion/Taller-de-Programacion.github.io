@@ -3,6 +3,7 @@ layout: post
 title: Entregas del 21 de Septiembre
 author: admin
 date: 23/09/2010
+tags: [Noticias]
 snippets: none
 
 ---

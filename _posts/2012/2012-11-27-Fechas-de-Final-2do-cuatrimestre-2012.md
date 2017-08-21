@@ -3,6 +3,7 @@ layout: post
 title: Fechas de Final 2do cuatrimestre 2012
 author: andres
 date: 27/11/2012
+tags: [Noticias]
 snippets: none
 
 ---

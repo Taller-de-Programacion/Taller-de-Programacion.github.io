@@ -3,6 +3,7 @@ layout: post
 title: Ventana con botón en GTK+
 author: admin
 date: 21/08/2010
+tags: [GTK+]
 snippets: 
     - |
         ```cpp

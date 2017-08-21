@@ -3,6 +3,7 @@ layout: post
 title: Ventana dummy
 author: admin
 date: 21/08/2010
+tags: [GTK+]
 snippets: 
     - |
         ```cpp

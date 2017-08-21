@@ -3,6 +3,7 @@ layout: post
 title: Fechas de Finales 2º Cuat. 2012 – Reprogramación por Feriados
 author: Pablo Roca
 date: 16/02/2012
+tags: [Noticias]
 snippets: none
 
 ---

@@ -3,6 +3,7 @@ layout: post
 title: Servidor de entregas.
 author: christian
 date: 07/04/2013
+tags: [Noticias]
 snippets: none
 
 ---

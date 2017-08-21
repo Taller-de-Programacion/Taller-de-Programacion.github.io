@@ -3,6 +3,7 @@ layout: post
 title: Botón de Salir
 author: Pablo Roca
 date: 02/05/2017
+tags: [C, GTK+]
 snippets: 
     - |
         ```cpp

@@ -2,6 +2,8 @@
 layout: post
 title: Enlaces
 permalink: /enlaces
+hide_post_meta: true
+
 ---
 
 ## 7542

@@ -3,6 +3,7 @@ layout: post
 title: Fechas de Finales 1º Cuat. 2011
 author: Pablo Roca
 date: 08/06/2011
+tags: [Noticias]
 snippets: none
 
 ---

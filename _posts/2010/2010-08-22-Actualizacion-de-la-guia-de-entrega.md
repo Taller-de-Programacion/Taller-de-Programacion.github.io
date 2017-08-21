@@ -3,6 +3,7 @@ layout: post
 title: Actualización de la guía de entrega
 author: admin
 date: 22/08/2010
+tags: [Noticias]
 snippets: none
 
 ---

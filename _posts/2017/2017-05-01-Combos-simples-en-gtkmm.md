@@ -3,6 +3,7 @@ layout: post
 title: Combos simples en gtkmm
 author: Pablo Roca
 date: 01/05/2017
+tags: [gtkmm]
 snippets: 
     - |
         ```cpp

@@ -3,6 +3,7 @@ layout: post
 title: Ventana gtkmm utilizando Application
 author: Pablo Roca
 date: 02/05/2017
+tags: [C++, gtkmm]
 snippets: 
     - |
         ```cpp
