@@ -1,5 +1,5 @@
 <div class="sidebar">
-  <h2>Contenidos nuevos</h2>
+  <h4>Últimas entradas</h4>
   <ul>
     {% for post in site.posts limit:5 %}
     <li><a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></li>

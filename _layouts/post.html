@@ -2,12 +2,9 @@
 {% include head.html %}
 <body>
 {% include header.html %}
-  <div class="wrapper">
-    <div class="content">
       <div class="container container-center">
         <div class="row">
-          <div class="col-md-8">
-            <div class="article">
+          <div class="col-sm-9">
               <div>
                 <h1>{{ page.title }}</h1>
                 <div class="post-meta">
@@ -22,16 +19,19 @@
                   {% endif %}
                 </div>
               </div>
-              {{ content }}
-            </div>
           </div>
-          <div class="col-md-4 hidden-xs">
+          <div class="col-sm-3 hidden-xs">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-9">
+              {{ content }}
+          </div>
+          <div class="col-sm-3 hidden-xs">
             {% include sidebar.html %}
           </div>
         </div>
       </div>
-    </div>
-  </div>
 {% include footer.html %}
 </body>
 </html>
