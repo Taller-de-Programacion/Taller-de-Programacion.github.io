@@ -3,6 +3,7 @@ layout: post
 title: Entrada de texto
 author: admin
 date: 02/05/2017
+tags: [GTK+]
 snippets: 
     - |
         ```cpp

@@ -3,6 +3,7 @@ layout: post
 title: Primitivas de dibujo
 author: admin
 date: 01/10/2016
+tags: [GTK+]
 snippets: 
     - |
         ```cpp

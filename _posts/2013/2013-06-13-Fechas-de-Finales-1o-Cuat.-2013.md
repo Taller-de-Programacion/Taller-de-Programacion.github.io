@@ -3,6 +3,7 @@ layout: post
 title: Fechas de Finales 1º Cuat. 2013
 author: Pablo Roca
 date: 13/06/2013
+tags: [Noticias]
 snippets: none
 
 ---

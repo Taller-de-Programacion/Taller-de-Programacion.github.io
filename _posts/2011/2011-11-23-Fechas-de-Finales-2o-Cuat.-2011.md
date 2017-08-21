@@ -3,6 +3,7 @@ layout: post
 title: Fechas de Finales 2º Cuat. 2011
 author: Pablo Roca
 date: 23/11/2011
+tags: [Noticias]
 snippets: none
 
 ---

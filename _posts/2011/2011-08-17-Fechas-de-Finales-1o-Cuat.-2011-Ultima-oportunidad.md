@@ -3,6 +3,7 @@ layout: post
 title: Fechas de Finales 1º Cuat. 2011 – Última oportunidad
 author: Pablo Roca
 date: 17/08/2011
+tags: [Noticias]
 snippets: none
 
 ---

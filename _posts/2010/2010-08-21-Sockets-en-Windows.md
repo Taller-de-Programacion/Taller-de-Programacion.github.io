@@ -3,6 +3,7 @@ layout: post
 title: Sockets en Windows
 author: admin
 date: 21/08/2010
+tags: [Notas técnicas]
 snippets: 
     - |
         ```cpp

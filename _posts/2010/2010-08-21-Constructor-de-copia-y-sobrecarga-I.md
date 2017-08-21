@@ -3,6 +3,7 @@ layout: post
 title: Constructor de copia y sobrecarga I
 author: admin
 date: 21/08/2010
+tags: [C]
 snippets: 
     - |
         ```cpp

@@ -3,6 +3,7 @@ layout: post
 title: Clase de hoy.
 author: christian
 date: 20/11/2012
+tags: [Noticias]
 snippets: none
 
 ---

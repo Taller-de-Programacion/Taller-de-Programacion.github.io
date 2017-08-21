@@ -3,6 +3,7 @@ layout: post
 title: Fechas de Finales 2º Cuat. 2013
 author: Pablo Roca
 date: 22/11/2013
+tags: [Noticias]
 snippets: none
 
 ---

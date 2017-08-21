@@ -3,6 +3,7 @@ layout: post
 title: Ventana con herencia y atributos
 author: Pablo Roca
 date: 02/05/2017
+tags: [C++, gtkmm]
 snippets: 
     - |
         ```cpp

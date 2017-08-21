@@ -3,6 +3,7 @@ layout: post
 title: Docker para Virtualización de Trabajos
 author: Pablo Roca
 date: 16/06/2015
+tags: [Notas técnicas]
 snippets: none
 
 ---

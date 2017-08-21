@@ -3,6 +3,7 @@ layout: post
 title: Fechas de Finales del 1° Cuat. 2017
 author: Pablo Roca
 date: 03/07/2017
+tags: [Noticias]
 snippets: none
 
 ---
