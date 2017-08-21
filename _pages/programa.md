@@ -92,8 +92,16 @@ var lectures = [
             ["Introducción a la materia (1h)", "Conceptos de C avanzados (3hs)"],
         events:
             ["Ejercicio 0 - Explicación (C)"],
-        links:
-            [{name: "Memoria en C/C++ (handout)", link: "https://github.com/Taller-de-Programacion/clases/raw/master/memoria/bin/memoria.7z"}],
+        links: [
+             {  
+                name: "Memoria en C/C++ (handout)", 
+                link: "https://github.com/Taller-de-Programacion/clases/raw/master/memoria/bin/memoria.7z",
+             },
+             {
+                name: "Compilación (tutorial)", 
+                link: "https://github.com/Taller-de-Programacion/compilacion",
+             }
+        ],
     },
     {
         contents: 
