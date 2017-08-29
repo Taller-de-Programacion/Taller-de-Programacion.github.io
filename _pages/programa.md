@@ -120,7 +120,16 @@ var lectures = [
         events:
             ["Ejercicio 0 - Entrega", "Ejercicio 1 - Explicación (C)"],
         links:
-            [],
+            [
+             {  
+                name: "Introducción a sockets TCP en C (handout)", 
+                link: "https://github.com/Taller-de-Programacion/clases/raw/master/sockets/bin/sockets.7z",
+             },
+             {  
+                name: "Sockets TCP en C (ejemplos)", 
+                link: "https://github.com/Taller-de-Programacion/clases/tree/master/sockets/src",
+             },
+        ],
     },
     {
         contents: 
@@ -128,7 +137,16 @@ var lectures = [
         events:
             ["Ejercicio 0 - Dev. Entrega"],
         links:
-            [],
+            [
+             {  
+                name: "struct y clases C++ (handout)", 
+                link: "https://github.com/Taller-de-Programacion/clases/raw/master/classes/bin/classes.7z",
+             },
+             {  
+                name: "Pasaje de objetos (handout)", 
+                link: "https://github.com/Taller-de-Programacion/clases/raw/master/moving/bin/moving.7z",
+             },
+        ],
     },
     {
         contents: 
