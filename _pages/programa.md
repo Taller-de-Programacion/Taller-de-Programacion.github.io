@@ -24,6 +24,32 @@ Se suponen conocidos los conceptos básicos de C. Sólo se darán los conceptos 
 </tbody>
 </table>
 
+**NOTA**: Este cuadro contiene duraciones de cada clase a modo orientativo.
+
+
+### Apuntes de otros cuatrimestres
+
+<ul>
+<li><a href="/assets/apuntes_legacy/C - Fundamentos.pdf.7z">C - Fundamentos</a></li>
+<li><a href="/assets/apuntes_legacy/C - Memoria.pdf.7z">C - Memoria</a></li>
+
+<li><a href="/assets/apuntes_legacy/C++.pdf.7z">C++</a></li>
+<li><a href="/assets/apuntes_legacy/C++ - Verdadero Falso.pdf.7z">C++ - Verdadero Falso</a></li>
+<li><a href="/assets/apuntes_legacy/Manejo de Errores.pdf.7z">Manejo de Errores</a></li>
+
+<li><a href="/assets/apuntes_legacy/TallerDeProgramacion_GabrielPraino.pdf.7z">Taller de Programacion (Gabriel Praino)</a></li>
+
+<li><a href="/assets/apuntes_legacy/Sockets.pdf.7z">Sockets</a></li>
+<li><a href="/assets/apuntes_legacy/Cliente-Servidor.pdf.7z">Cliente-Servidor</a></li>
+
+<li><a href="/assets/apuntes_legacy/Templates.pdf.7z">Templates</a></li>
+<li><a href="/assets/apuntes_legacy/Templates y STL.pdf.7z">Templates y STL</a></li>
+
+<li><a href="/assets/apuntes_legacy/POSIX Threads.pdf.7z">POSIX Threads</a></li>
+
+<li><a href="/assets/apuntes_legacy/GTK+ y Programacion Orientada a Eventos.pdf.7z">GTK+ y Programacion Orientada a Eventos</a></li>
+</ul>
+
 <script>
 createList = function(array) {
     var node = document.createElement("ul");
@@ -256,6 +282,4 @@ var lectures = [
 
 fillLecturesTable(new Date("2017/08/15"), lectures);
 </script>
-
-**NOTA**: Este cuadro contiene duraciones de cada clase a modo orientativo.
 
