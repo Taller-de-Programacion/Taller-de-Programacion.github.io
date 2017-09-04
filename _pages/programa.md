@@ -180,7 +180,12 @@ var lectures = [
         events:
             ["Ejercicio 1 - Entrega 1", "Ejercicio 2 - Explicación (C++)"],
         links:
-            [],
+            [
+             {  
+                name: "Threads en C++ (tutorial)", 
+                link: "https://github.com/Taller-de-Programacion/threads",
+             },
+        ]
     },
     {
         contents: 
