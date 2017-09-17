@@ -193,7 +193,12 @@ var lectures = [
         events:
             ["Ejercicio 1 - Dev. Entrega 1"],
         links:
-            [],
+            [
+             {  
+                name: "Templates (handout)", 
+                link: "https://github.com/Taller-de-Programacion/clases/raw/master/templates/bin/templates.7z",
+             },
+         ],
     },
     {
         contents: 
@@ -201,7 +206,12 @@ var lectures = [
         events:
             ["Ejercicio 1 - Entrega 2", "Ejercicio 2 - Entrega 1", "Ejercicio 3 - Explicación (C++)"],
         links:
-            [],
+            [
+             {  
+                name: "Manejo de Errores (handout)", 
+                link: "https://github.com/Taller-de-Programacion/clases/raw/master/manejodeerrores/bin/manejodeerrores.7z",
+             },
+            ],
     },
     {
         contents: 
