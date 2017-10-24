@@ -22,6 +22,8 @@ El informe del ejercicio semanal debe ser entregado impreso en <strong>hoja A4</
 
 El informe <strong>debe</strong> contener carátula oficial, informe, diagrama y el código fuente devuelto por el sistema de entregas. Opcionalmente podrá contener aclaraciones del alumno.
 
+En caso de tratarse de una reentrega, se <strong>debe</strong> incluir la entrega anterior con las correcciones del docente.
+
 A continuación se detallan cada uno de los puntos mencionados anteriormente.
 
 ### Carátula
@@ -51,7 +53,9 @@ En el caso excepcional en que no se haya cumplido con la totalidad de los requer
 
 Se requiere que el código fuente sea prolijo y contenga los comentarios pertinentes. Asimismo es obligatorio incluir sangría (<em>indent</em>) en el código fuente con longitud de entre dos y cuatro espacios. Esto puede hacerse utilizando utilizando espacios o el caracter TAB (tabulación). En el último caso el sistema de entregas ajustará el tamaño del TAB automáticamente.
 
-Se deberá utilizar el conjunto de caracteres <a href="http://es.wikipedia.org/wiki/UTF8" target="_blank">UTF-8</a> para la codificación de los archivos que conforman el código fuente. Si no dispone de un editor que permita seleccionar la codificación puede recurrir al utilitario <a href="http://en.wikipedia.org/wiki/Iconv" target="_blank">iconv</a> para procesar los archivos antes de crear el paquete ZIP y enviarlo.
+En caso de tratarse de una reentrega, se <strong>debe</strong> incluir el código fuente de la entrega anterior con las correcciones del docente.
+
+Se debe utilizar el conjunto de caracteres <a href="http://es.wikipedia.org/wiki/UTF8" target="_blank">UTF-8</a> para la codificación de los archivos que conforman el código fuente. Si no dispone de un editor que permita seleccionar la codificación puede recurrir al utilitario <a href="http://en.wikipedia.org/wiki/Iconv" target="_blank">iconv</a> para procesar los archivos antes de crear el paquete ZIP y enviarlo.
 
 El código fuente debe ser impreso en base al PDF que devuelve el sistema de entregas electrónicas de la cátedra. Deben imprimirse dos carillas de código por cada carilla de papel. Es decir que cada hoja contendrá cuatro carillas de código fuente; dos por cada faz. Esto se debe a la intención de reducir el uso de papel.
 
