@@ -16,5 +16,4 @@ hide_post_meta: true
  - Matías Lafroce
  - Ezequiel Werner
  - Martín Di Paola (martinp.dipaola at gmail.com)
- - Marcos Pernica
 

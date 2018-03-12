@@ -83,13 +83,13 @@ A criterio del alumno, debe explicar como usar la aplicación de forma completa 
 Si la aplicación tiene códigos de error, poner aquí su descripción, posible causa y posible solución</li>
 </ol>
 
-## Medio Digital
+## Entrega Electrónica
 
-Entregar en CD lo siguiente, organizado en directorios:
+Como frente a cualquier instancia de corrección resulta indispensable realizar una entrega electrónica a través del [SERCOM]({{ site.sercom_url }}dashboard). Dicha entrega deberá contemplar:
 
 <ul>
-<li>Binarios (*)</li>
-<li>Fuentes (*)</li>
+<li>Fuentes y recursos multimedia (*)</li>
 <li>Manuales en formato digital</li>
 </ul>
-
+<p>Es importante no realizar entrega de archivos binarios o librerías estándar que incrementen el peso de la entrega de forma innecesaria.<br />
+Se sugiere incluir los manuales en formato digital siempre que no posean un peso considerable. En caso de no poder garantizar esta condición se debe consultar al cuerpo docente sobre el procedimiento de entrega.</p>

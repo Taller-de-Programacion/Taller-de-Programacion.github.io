@@ -5,7 +5,87 @@ author: Pablo Roca
 date: 21/08/2013
 tags: [Trabajos Prácticos] 
 hide_post_meta: true
-snippets: none
+snippets: 
+    - |
+        ```cpp
+        #include <stdio.h>
+        int main(int argc, char* argv[]) {
+            if (argc > 1) {
+                printf("Hola %s\n", argv[1]);
+            } else {
+                printf("Hola Mundo\n");
+            }
+            return 0;
+        }
+
+
+        ```
+    - |
+        ```cpp
+        #include <stdio.h>
+        int main(int argc, char* argv[]) {
+            if (argc>1) {
+                printf("Hola %s\n", argv[1]);
+            }
+            else
+
+                printf("Hola Mundo\n");
+            return 0;
+
+        }
+        ```
+    - |
+        ```cpp
+        #include <stdio.h>
+
+        void imprimirSaludo(char* nombre_usuario) {
+            printf("Hola %s\n", nombre_usuario);
+        }
+
+        void imprimirSaludoGenerico() {
+            printf("Hola Mundo\n");
+        }
+
+        int main(int argc, char* argv[]) {
+            if (argc > 1)
+                imprimirSaludo(argv[1]);
+            else
+                imprimirSaludoGenerico();
+            return 0;
+        }
+
+
+
+
+
+        ```
+
+    - |
+        ```cpp
+        #include <stdio.h>
+
+        void imprimirSaludo(char* nombreUsuario)
+        {
+
+            printf("Hola %s\n",nombreUsuario);
+        }
+
+        void imprimir_saludo_generico()
+        {
+
+            printf("Hola Mundo\n");
+        }
+
+        int main(int argc,char* argv[])
+        {
+            if (argc > 1)
+                imprimirSaludo( argv[1] );
+            else
+                imprimir_saludo_generico ();
+            return 0 ;
+        }
+        ```
+
 permalink: /normas-cpplint
 
 ---
@@ -84,28 +164,10 @@ Los siguientes extractos de código muestran un ejemplo de uso correcto e incorr
 </tr>
 <tr>
 <td>
-<pre>#include &lt;stdio.h&gt;
-int main(int argc, char* argv[]) {
-    if (argc &gt; 1) {
-        printf("Hola %s\n", argv[1]);
-    } else {
-        printf("Hola Mundo\n");
-    }
-    return 0;
-}</pre>
+{{page.snippets[0] | markdownify }}
 </td>
 <td>
-<pre>#include &lt;stdio.h&gt;
-int main(int argc, char* argv[]) {
-    if (argc&gt;1) {
-        printf("Hola %s\n", argv[1]);
-    }
-    else
-
-        printf("Hola Mundo\n");
-    return 0;
-
-}</pre>
+{{page.snippets[1] | markdownify }}
 </td>
 </tr>
 </tbody>
@@ -119,47 +181,10 @@ int main(int argc, char* argv[]) {
 </tr>
 <tr>
 <td>
-<pre>#include &lt;stdio.h&gt;
-
-void imprimirSaludo(char* nombre_usuario) {
-    printf("Hola %s\n", nombre_usuario);
-}
-
-void imprimirSaludoGenerico() {
-    printf("Hola Mundo\n");
-}
-
-int main(int argc, char* argv[]) {
-    if (argc &gt; 1)
-        imprimirSaludo(argv[1]);
-    else
-        imprimirSaludoGenerico();
-    return 0;
-}</pre>
+{{page.snippets[2] | markdownify }}
 </td>
 <td>
-<pre>#include &lt;stdio.h&gt;
-
-void imprimirSaludo(char* nombreUsuario)
-{
-
-    printf("Hola %s\n",nombreUsuario);
-}
-
-void imprimir_saludo_generico()
-{
-
-    printf("Hola Mundo\n");
-}
-
-int main(int argc,char* argv[])
-{
-    if (argc &gt; 1)
-        imprimirSaludo( argv[1] );
-    else
-        imprimir_saludo_generico ();
-    return 0 ;
-}</pre>
+{{page.snippets[3] | markdownify }}
 </td>
 </tr>
 </tbody>

@@ -50,6 +50,9 @@ hide_post_meta: true
 
 * [C++ Essentials](http://www.pragsoft.com/download.html#Books) Libro de C++ y otros. Con ejemplos. Un poco desactualizado con respecto al estandar.
 
+* [Thinking in C++ 2nd Edition](http://www.mindview.net/Books/TICPP/ThinkingInCPP2e.html) de Bruce Eckel.
+
+* [Conociendo GDB](http://www.drk.com.ar/docs/development/conociendo_gdb.php) de Leandro Fernández. Una introducción al debugger mas usado en ambientes linux.
 
 ## Material de referencia
 
