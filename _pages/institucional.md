@@ -9,6 +9,8 @@ snippets: none
 
 ---
 
+## Sitio de entregas/inscripción a la materia
+
 Para hacer efectiva la cursada, el alumno debe registrarse en el <a href="{{ site.sercom_url }}" target="_blank">sitio de entregas de la materia</a>. En el mismo se podrán entregar los trabajos prácticos semanales y final para la corrección docente. Es indispensable leer atentamente la <a href="/guia-entregas-tp-individual" target="_self">guía de entrega de trabajos individuales</a> y la del <a href="/guia-entregas-tp-final" target="_self">trabajo grupal</a>.
 
 
@@ -25,7 +27,7 @@ La presente sección explica la forma en que debe completarse la  libreta para r
 
 <ol>
 <li>Inicio de Cursada</li>
-<li>Aprobación de Trabajos Prácticos</li>
+<li>Aprobación de Cursada y Trabajos Prácticos</li>
 <li>Examen Final</li>
 <li>Firma de la Materia</li>
 </ol>
@@ -38,22 +40,17 @@ Las siguientes secciones detallan la forma y el momento en que deben realizarse 
 
 ### Inicio de Cursada:
 
-Durante las <strong>primeras 4 clases</strong> de la materia el alumno debe  presentar su libreta de forma que el cuerpo docente pueda verificar las  correlatividades y asentar la materia. A estos efectos, el alumno debe  presentar su libreta con los siguientes  datos completos:
+Durante las <strong>primeras 4 clases</strong> de la materia el alumno debe verificar que su libreta posea las correlatividades necesarias para cursar la materia con fecha de firma previa al inicio de Taller de Programación I. A tal fin, se recuerda el listado de correlativas y se sugiere la consulta al cuerpo docente.
+
+### Aprobación de Cursada y Trabajos Prácticos
+
+Una vez aprobados los trabajos prácticos, el alumno debe presentar su libreta para que se asiente su nota. El Jefe de Trabajos Prácticos (JTP) verificará las correlatividades y rubricará la libreta quedando el alumno en condición regular para rendir el exámen final. Al hacer esto, la libreta debe contener los siguiente datos:
 
 <ul>
-<li><strong>Código y nombre de la Materia</strong> en la parte superior</li>
-<li><strong>Fecha de Inicio de Cursada</strong> <em>(esta aparecerá en la página de Web al  iniciarse cada cuatrimestre)</em></li>
-</ul>
-
-Una vez verificadas las correlatividades el Jefe de Trabajos  Prácticos rubricará la libreta quedando, el alumno, en condición regular  para iniciar la cursada.
-
-### Aprobación de Trabajos Prácticos
-
-Una vez aprobados los trabajos prácticos, el alumno debe presentar su  libreta para que se asiente su nota y se lo habilite para rendir Exámen  Final. Al hacer esto, la libreta debe contener los siguiente datos:
-
-<ul>
-<li><strong>Fecha de Firma de TP </strong><em>(esta aparecerá, oportunamente, en la página de Web)</em></li>
-<li><strong>Curso:</strong> Se trata de un código de la forma “T.C.AA” donde T es el <strong>Turno</strong> (ej: 1=Martes. 2=Jueves), C es el <strong>Cuatrimestre</strong> (1 o 2)  y AA el <strong>Año</strong>.</li>
+<li><strong>Código y nombre de la Materia (Alumno)</strong>: en la parte superior</li>
+<li><strong>Curso (Alumno)</strong>: Se trata de un código de la forma “T.C.AA” donde T es el <strong>Turno</strong> (corresponde ‘1’ para materias dictadas en un único turno), C es el <strong>Cuatrimestre</strong> (1 o 2) y AA el <strong>Año</strong>.</li>
+<li><strong>Fecha de Inicio de Cursada (JTP)</strong>: Primer día de clases según el calendario académico del cuatrimestre en cuestión.</li>
+<li><strong>Fecha de Firma de TP (JTP)</strong>: Último día de clases según el calendario académico del cuatrimestre en cuestión.</li>
 </ul>
 
 El Jefe de Trabajos prácticos completará la nota y rubricará la  libreta quedando, el alumno,  en condición de redir exámen final.
@@ -64,7 +61,7 @@ Cada vez que se concurra a rendir final, se debe presentar la libreta  de forma 
 
 ### Firma de la Materia
 
-Una vez aprobado el Exámen Final el alumno podrá concurrir para que  se le asiente la aprobación de la Materia. En esta oportunidad el alumno  <strong>no deberá completar nada</strong>. Será el Profesor a Cargo de la Materia quien complete Fecha, Libro, Folio y Calificación y rubrique  la aprobación.
+Una vez aprobado el Exámen Final el alumno podrá concurrir para que se le asiente la aprobación de la Materia. En esta oportunidad el alumno <strong>no deberá completar ningún dato.</strong> Será el Profesor a Cargo de la Materia quien complete Fecha, Libro, Folio y Calificación y rubrique la aprobación.
 
 ### Cursos y docentes
 
