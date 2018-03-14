@@ -102,9 +102,9 @@ fillLecturesTable = function(initial_date, lectures) {
         if ( today < aDate && nextLectureFound === false ) {
             nextLectureFound = true;
             row.className = "info";
-            
+
             var dateNode = document.createTextNode(date_to_string(aDate) + "  \n(próxima clase)");
-        } 
+        }
         else {
             var dateNode = document.createTextNode(date_to_string(aDate));
         }
@@ -125,96 +125,96 @@ fillLecturesTable = function(initial_date, lectures) {
 
 var lectures = [
     {
-        contents: 
+        contents:
             ["Introducción a la materia (1h)", "Conceptos de C avanzados (3hs)"],
         events:
             ["Ejercicio 0 - Explicación (C)"],
         links: [
-             {  
-                name: "Memoria en C/C++ (handout)", 
+             {
+                name: "Memoria en C/C++ (handout)",
                 link: "https://github.com/Taller-de-Programacion/clases/raw/master/memoria/bin/memoria.7z",
              },
              {
-                name: "Compilación (tutorial)", 
+                name: "Compilación (tutorial)",
                 link: "https://github.com/Taller-de-Programacion/compilacion",
              }
         ],
     },
     {
-        contents: 
+        contents:
             ["Introducción a Sockets (3hs)", "Repaso de Archivos y TDAs (1h)"],
         events:
             ["Ejercicio 0 - Entrega", "Ejercicio 1 - Explicación (C)"],
         links:
             [
-             {  
-                name: "Introducción a sockets TCP en C (handout)", 
+             {
+                name: "Introducción a sockets TCP en C (handout)",
                 link: "https://github.com/Taller-de-Programacion/clases/raw/master/sockets/bin/sockets.7z",
              },
-             {  
-                name: "Sockets TCP en C (ejemplos)", 
+             {
+                name: "Sockets TCP en C (ejemplos)",
                 link: "https://github.com/Taller-de-Programacion/clases/tree/master/sockets/src",
              },
         ],
     },
     {
-        contents: 
+        contents:
             ["Clases, RAII, Move Semantics en C++ (2hs)", "Herencia y Polimorfismo en C++ (2hs)"],
         events:
             ["Ejercicio 0 - Dev. Entrega"],
         links:
             [
-             {  
-                name: "struct y clases C++ (handout)", 
+             {
+                name: "struct y clases C++ (handout)",
                 link: "https://github.com/Taller-de-Programacion/clases/raw/master/classes/bin/classes.7z",
              },
-             {  
-                name: "Pasaje de objetos (handout)", 
+             {
+                name: "Pasaje de objetos (handout)",
                 link: "https://github.com/Taller-de-Programacion/clases/raw/master/moving/bin/moving.7z",
              },
         ],
     },
     {
-        contents: 
+        contents:
             ["Introducción a Threads (4hs)"],
         events:
             ["Ejercicio 1 - Entrega 1", "Ejercicio 2 - Explicación (C++)"],
         links:
             [
-             {  
-                name: "Threads en C++ (tutorial)", 
+             {
+                name: "Threads en C++ (tutorial)",
                 link: "https://github.com/Taller-de-Programacion/threads",
              },
         ]
     },
     {
-        contents: 
+        contents:
             ["Templates/STL (3h)", "Operadores en C++ (1h)"],
         events:
             ["Ejercicio 1 - Dev. Entrega 1"],
         links:
             [
-             {  
-                name: "Templates (handout)", 
+             {
+                name: "Templates (handout)",
                 link: "https://github.com/Taller-de-Programacion/clases/raw/master/templates/bin/templates.7z",
              },
          ],
     },
     {
-        contents: 
+        contents:
             ["Excepciones (1hs)", "Introducción a la Arquitectura Cliente-Servidor (3hs)"],
         events:
             ["Ejercicio 1 - Entrega 2", "Ejercicio 2 - Entrega 1", "Ejercicio 3 - Explicación (C++)"],
         links:
             [
-             {  
-                name: "Manejo de Errores (handout)", 
+             {
+                name: "Manejo de Errores (handout)",
                 link: "https://github.com/Taller-de-Programacion/clases/raw/master/manejodeerrores/bin/manejodeerrores.7z",
              },
             ],
     },
     {
-        contents: 
+        contents:
             ["Sockets UDP (1hs)", "Programación Orientada a Eventos (3hs)"],
         events:
             ["Ejercicio 1 - Dev. Entrega 2", "Ejercicio 2 - Dev. Entrega 1"],
@@ -222,7 +222,7 @@ var lectures = [
             [],
     },
     {
-        contents: 
+        contents:
             ["GTK+ (1h)", "gtkmm (3hs)"],
         events:
             ["Ejercicio 2 - Entrega 2", "Ejercicio 3 - Entrega 1"],
@@ -230,7 +230,7 @@ var lectures = [
             [],
     },
     {
-        contents: 
+        contents:
             ["Desarrollo de Trabajo Grupal"],
         events:
             ["Ejercicio 2 - Dev. Entrega 2", "Ejercicio 3 - Dev. Entrega 1", "Ejercicio final - Explicación (C++)"],
@@ -238,7 +238,7 @@ var lectures = [
             [],
     },
     {
-        contents: 
+        contents:
             ["Desarrollo de Trabajo Grupal"],
         events:
             ["Ejercicio 3 - Entrega 2"],
@@ -246,7 +246,7 @@ var lectures = [
             [],
     },
     {
-        contents: 
+        contents:
             ["Desarrollo de Trabajo Grupal"],
         events:
             ["Ejercicio 3 - Dev. Entrega 2"],
@@ -254,7 +254,7 @@ var lectures = [
             [],
     },
     {
-        contents: 
+        contents:
             ["Desarrollo de Trabajo Grupal"],
         events:
             [],
@@ -262,7 +262,7 @@ var lectures = [
             [],
     },
     {
-        contents: 
+        contents:
             ["Desarrollo de Trabajo Grupal"],
         events:
             [],
@@ -270,7 +270,7 @@ var lectures = [
             [],
     },
     {
-        contents: 
+        contents:
             ["Desarrollo de Trabajo Grupal"],
         events:
             ["Ejercicio final - Pre-entrega"],
@@ -278,7 +278,7 @@ var lectures = [
             [],
     },
     {
-        contents: 
+        contents:
             ["Desarrollo de Trabajo Grupal"],
         events:
             ["Ejercicio final - Dev. Pre-entrega"],
@@ -286,7 +286,7 @@ var lectures = [
             [],
     },
     {
-        contents: 
+        contents:
             ["Desarrollo de Trabajo Grupal"],
         events:
             ["Ejercicio final - Entrega"],
@@ -295,6 +295,6 @@ var lectures = [
     },
 ];
 
-fillLecturesTable(new Date("2017/08/15"), lectures);
+fillLecturesTable(new Date("2018/03/13"), lectures);
 </script>
 
