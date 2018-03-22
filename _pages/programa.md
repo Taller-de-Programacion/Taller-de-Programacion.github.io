@@ -131,11 +131,19 @@ var lectures = [
             ["Ejercicio 0 - Explicación (C)"],
         links: [
              {
+                name: "Introducción a la Materia (presentación)",
+                link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/2018/introduccion.pdf",
+             },
+             {
                 name: "Memoria en C/C++ (handout)",
                 link: "https://github.com/Taller-de-Programacion/clases/raw/master/memoria/bin/memoria.7z",
              },
              {
-                name: "Compilación (tutorial)",
+                name: "Proceso de Compilación (presentación)",
+                link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/2018/proceso_de_compilacion.pdf",
+             },
+             {
+                name: "Proceso de Compilación (tutorial)",
                 link: "https://github.com/Taller-de-Programacion/compilacion",
              }
         ],
@@ -154,6 +162,14 @@ var lectures = [
              {
                 name: "Sockets TCP en C (ejemplos)",
                 link: "https://github.com/Taller-de-Programacion/clases/tree/master/sockets/src",
+             },
+             {
+                name: "Archivos (presentación)",
+                link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/2018/archivos.pdf",
+             },
+             {
+                name: "TDAs (presentación)",
+                link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/2018/tipos_de_datos_abstractos.pdf",
              },
         ],
     },
