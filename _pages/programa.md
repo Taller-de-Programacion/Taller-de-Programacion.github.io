@@ -136,7 +136,7 @@ var lectures = [
              },
              {
                 name: "Memoria en C/C++ (handout)",
-                link: "https://github.com/Taller-de-Programacion/clases/raw/master/memoria/bin/memoria.7z",
+                link: "https://github.com/Taller-de-Programacion/clases/raw/master/memoria/bin/memoria-handout.pdf",
              },
              {
                 name: "Proceso de Compilación (presentación)",
@@ -157,7 +157,7 @@ var lectures = [
             [
              {
                 name: "Introducción a sockets TCP en C (handout)",
-                link: "https://github.com/Taller-de-Programacion/clases/raw/master/sockets/bin/sockets.7z",
+                link: "https://github.com/Taller-de-Programacion/clases/raw/master/sockets/bin/sockets-handout.pdf",
              },
              {
                 name: "Sockets TCP en C (ejemplos)",
@@ -182,11 +182,11 @@ var lectures = [
             [
              {
                 name: "struct y clases C++ (handout)",
-                link: "https://github.com/Taller-de-Programacion/clases/raw/master/classes/bin/classes.7z",
+                link: "https://github.com/Taller-de-Programacion/clases/raw/master/classes/bin/classes-handout.pdf",
              },
              {
                 name: "Pasaje de objetos (handout)",
-                link: "https://github.com/Taller-de-Programacion/clases/raw/master/moving/bin/moving.7z",
+                link: "https://github.com/Taller-de-Programacion/clases/raw/master/moving/bin/moving-handout.pdf",
              },
         ],
     },
@@ -212,7 +212,11 @@ var lectures = [
             [
              {
                 name: "Templates (handout)",
-                link: "https://github.com/Taller-de-Programacion/clases/raw/master/templates/bin/templates.7z",
+                link: "https://github.com/Taller-de-Programacion/clases/raw/master/templates/bin/templates-handout.pdf",
+             },
+             {
+                name: "STL (handout)",
+                link: "https://github.com/Taller-de-Programacion/clases/raw/master/stl/bin/stl-handout.pdf",
              },
          ],
     },
@@ -225,7 +229,7 @@ var lectures = [
             [
              {
                 name: "Manejo de Errores (handout)",
-                link: "https://github.com/Taller-de-Programacion/clases/raw/master/manejodeerrores/bin/manejodeerrores.7z",
+                link: "https://github.com/Taller-de-Programacion/clases/raw/master/manejodeerrores/bin/manejodeerrores-handout.pdf",
              },
             ],
     },
