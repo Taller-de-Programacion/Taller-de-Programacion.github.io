@@ -11,7 +11,7 @@ snippets: none
 
 ## Sitio de entregas/inscripción a la materia
 
-Para hacer efectiva la cursada, el alumno debe registrarse en el <a href="{{ site.sercom_url }}" target="_blank">sitio de entregas de la materia</a>. En el mismo se podrán entregar los trabajos prácticos semanales y final para la corrección docente. Es indispensable leer atentamente la <a href="/guia-entregas-tp-individual" target="_self">guía de entrega de trabajos individuales</a> y la del <a href="/guia-entregas-tp-final" target="_self">trabajo grupal</a>.
+Para hacer efectiva la cursada, el alumno debe registrarse en el <a href="{{ site.sercom_url }}" target="_blank">sitio de entregas de la materia</a>. En el mismo se podrán entregar los trabajos prácticos semanales y final para la corrección docente. Es indispensable leer atentamente las <a href="/normas-cpplint" target="_self">normas de codificación</a>, la <a href="/guia-entregas-tp-individual" target="_self">guía de entrega de trabajos individuales</a> y la <a href="/guia-entregas-tp-final" target="_self">guía del trabajo grupal</a>.
 
 
 ### Recursantes
