@@ -18,6 +18,13 @@ Para hacer efectiva la cursada, el alumno debe registrarse en el <a href="{{ sit
 
 Si el alumno es **recursante** de la materia, debe inscribirse en el curso actual desde la <a href="{{ site.sercom_url }}/upgrade_registration" target="_blank">sección correspondiente</a>.
 
+Si el alumno tiene algún TP aprobado de un cuatrimestre anterior con nota **mayor a 7** cuenta con la posibilidad de no realizarlo nuevamente.
+Para ello, se **debe** entregar una entrega simbólica en el Sercom y se **debe** entregar un informe con la carátula del TP anterior en donde conste la aprobación del mismo.
+
+Si bien los temas de los TPs son equivalentes entre cuatrimestres, es posible que la cátedra decida agregar o mover temas de un TP a otro.
+En cuyo caso el alumno recursante deberá realizar el TP del cuatrimestre corriente sin excepción.
+
+Ante cualquier duda respecto a la equivalencia de TPs, consulten al equipo docente para evitar confusiones.
 
 ## Asientos de la materia en la Libreta
 
