@@ -42,6 +42,21 @@ Las siguientes secciones detallan la forma y el momento en que deben realizarse 
 
 Durante las <strong>primeras 4 clases</strong> de la materia el alumno debe verificar que su libreta posea las correlatividades necesarias para cursar la materia con fecha de firma previa al inicio de Taller de Programación I. A tal fin, se recuerda el listado de correlativas y se sugiere la consulta al cuerpo docente.
 
+#### Licenciatura en Análisis de Sistemas (1986):
+ - Organización del Computador (75.03)
+ - Algoritmo y Programación II (75.41)
+
+#### Licenciatura  en Análisis de Sistemas (2014):
+ - Organización del Computador (95.57)
+ - Algoritmo y Programación III (95.02)
+
+#### Ingeniería en Informática:
+ - Estructura del Computador (66.70)
+ - Algoritmo y Programación II (75.41)
+ - Análisis Numérico (75.12)
+
+Si el alumno esta haciendo la *simultaneidad* de carreras, para la equivalencia de correlativas es necesario que la libreta u otro documento avale dicha simultaneidad.
+
 ### Aprobación de Cursada y Trabajos Prácticos
 
 Una vez aprobados los trabajos prácticos, el alumno debe presentar su libreta para que se asiente su nota. El Jefe de Trabajos Prácticos (JTP) verificará las correlatividades y rubricará la libreta quedando el alumno en condición regular para rendir el exámen final. Al hacer esto, la libreta debe contener los siguiente datos:
