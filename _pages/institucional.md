@@ -44,15 +44,15 @@ Durante las <strong>primeras 4 clases</strong> de la materia el alumno debe veri
 
 #### Licenciatura en Análisis de Sistemas (1986):
  - Organización del Computador (75.03)
- - Algoritmo y Programación II (75.41)
+ - Algoritmos y Programación II (75.41)
 
 #### Licenciatura  en Análisis de Sistemas (2014):
  - Organización del Computador (95.57)
- - Algoritmo y Programación III (95.02)
+ - Algoritmos y Programación III (95.02)
 
 #### Ingeniería en Informática:
  - Estructura del Computador (66.70)
- - Algoritmo y Programación II (75.41)
+ - Algoritmos y Programación II (75.41)
  - Análisis Numérico (75.12)
 
 Si el alumno esta haciendo la *simultaneidad* de carreras, para la equivalencia de correlativas es necesario que la libreta u otro documento avale dicha simultaneidad.
