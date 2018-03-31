@@ -18,7 +18,7 @@ Para el caso del trabajo práctico grupal existe <a href="/guia-entregas-tp-fina
 <a name="EP"></a>
 ## Entrega en papel
 
-El informe del ejercicio semanal debe ser entregado impreso en <strong>hoja A4</strong> abrochado o, dentro de un folio (también <strong>A4</strong>). Por favor <strong>NO</strong> entreguen los informes en carpeta ni en tamaños de hoja diferentes.
+El informe del ejercicio semanal debe ser entregado impreso en <strong>hoja A4</strong> dentro de un folio (también <strong>A4</strong>). Por favor <strong>NO</strong> entreguen los informes en carpeta ni abrochados o en tamaños de hoja diferentes.
 
 El informe <strong>debe</strong> contener carátula oficial, informe, diagrama y el código fuente devuelto por el sistema de entregas. Opcionalmente podrá contener aclaraciones del alumno.
 
