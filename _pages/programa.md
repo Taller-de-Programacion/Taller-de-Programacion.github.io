@@ -188,6 +188,10 @@ var lectures = [
                 name: "Pasaje de objetos (handout)",
                 link: "https://github.com/Taller-de-Programacion/clases/raw/master/moving/bin/moving-handout.pdf",
              },
+             {
+                name: "Herencia y Polimorfismo (handout)",                
+                link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/2018/polimorfismo-handout.pdf",
+             },
         ],
     },
     {
