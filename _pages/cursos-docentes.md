@@ -14,6 +14,6 @@ hide_post_meta: true
 
 ## Ayudantes
  - Matías Lafroce
- - Ezequiel Werner
+ - Ezequiel Werner (eze210 at gmail.com)
  - Martín Di Paola (martinp.dipaola at gmail.com)
 
