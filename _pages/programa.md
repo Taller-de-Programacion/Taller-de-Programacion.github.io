@@ -243,11 +243,16 @@ var lectures = [
     },
     {
         contents:
-            ["Sockets UDP (1hs)", "Programación Orientada a Eventos (3hs)"],
+            ["Sockets UDP (1hs)", "Features extra de C++ (1hs)", "Espacio para consultas (1hs)", "Programación Orientada a Eventos (1hs)"],
         events:
             ["Ejercicio 1 - Dev. Entrega 2", "Ejercicio 2 - Dev. Entrega 1"],
         links:
-            [],
+            [
+             {
+                name: "Programación Orientada a Eventos (handout)",
+                link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/2018/poe-handout.pdf",
+             },
+            ],
     },
     {
         contents:
