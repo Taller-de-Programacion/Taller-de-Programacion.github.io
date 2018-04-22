@@ -189,7 +189,7 @@ var lectures = [
                 link: "https://github.com/Taller-de-Programacion/clases/raw/master/moving/bin/moving-handout.pdf",
              },
              {
-                name: "Herencia y Polimorfismo (handout)",                
+                name: "Herencia y Polimorfismo (handout)",
                 link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/2018/polimorfismo-handout.pdf",
              },
         ],
@@ -234,6 +234,10 @@ var lectures = [
              {
                 name: "Manejo de Errores (handout)",
                 link: "https://github.com/Taller-de-Programacion/clases/raw/master/manejodeerrores/bin/manejodeerrores-handout.pdf",
+             },
+             {
+                name: "Cliente-Servidor (handout)",
+                link: "https://github.com/Taller-de-Programacion/clases/raw/master/client_server_arch/bin/client_server_arch-handout.pdf",
              },
             ],
     },
