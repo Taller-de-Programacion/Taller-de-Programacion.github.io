@@ -252,6 +252,10 @@ var lectures = [
                 name: "Programación Orientada a Eventos (handout)",
                 link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/2018/poe-handout.pdf",
              },
+             {
+                name: "Extra C++",
+                link: "https://github.com/Taller-de-Programacion/clases/tree/master/cpp-misc",
+             }
             ],
     },
     {
