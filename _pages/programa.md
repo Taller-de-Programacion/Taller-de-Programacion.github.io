@@ -252,15 +252,24 @@ var lectures = [
                 name: "Programación Orientada a Eventos (handout)",
                 link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/2018/poe-handout.pdf",
              },
+             {
+                name: "Extra C++",
+                link: "https://github.com/Taller-de-Programacion/clases/tree/master/cpp-misc",
+             }
             ],
     },
     {
         contents:
-            ["GTK+ (1h)", "gtkmm (3hs)"],
+            ["CMake (0.5h)", "SDL (1h)", "Qt5 (2.5h)"],
         events:
             ["Ejercicio 2 - Entrega 2", "Ejercicio 3 - Entrega 1"],
         links:
-            [],
+            [
+             {
+                name: "Bibliotecas GUI (En proceso)",
+                link: "https://github.com/Taller-de-Programacion/clases/tree/feature/bibliotecas-gui/bibliotecas-gui",
+             }
+            ]
     },
     {
         contents:
