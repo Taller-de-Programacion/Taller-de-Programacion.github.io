@@ -253,6 +253,10 @@ var lectures = [
                 link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/2018/poe-handout.pdf",
              },
              {
+                name: "Introducción a Sockets UDP en C (presentación)",
+                link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/2018/introduccion_sockets_udp.pdf",
+             },
+             {
                 name: "Extra C++",
                 link: "https://github.com/Taller-de-Programacion/clases/tree/master/cpp-misc",
              }
