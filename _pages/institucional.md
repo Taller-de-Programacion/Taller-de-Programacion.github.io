@@ -62,6 +62,10 @@ Durante las <strong>primeras 4 clases</strong> de la materia el alumno debe veri
  - Algoritmos y Programación II (75.41)
  - Análisis Numérico (75.12)
 
+#### Ingeniería en Electrónica (2009):
+ - Algoritmos y Programación II (95.12)
+
+
 Si el alumno esta haciendo la *simultaneidad* de carreras, para la equivalencia de correlativas es necesario que la libreta u otro documento avale dicha simultaneidad.
 
 ### Aprobación de Cursada y Trabajos Prácticos
