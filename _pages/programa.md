@@ -144,7 +144,11 @@ var lectures = [
              },
              {
                 name: "Proceso de Compilación (tutorial)",
-                link: "https://github.com/Taller-de-Programacion/compilacion",
+                link: "https://github.com/Taller-de-Programacion/compilacion/tree/master/gcc",
+             },
+             {
+                name: "Makefiles (tutorial)",
+                link: "https://github.com/Taller-de-Programacion/compilacion/tree/master/make",
              }
         ],
     },
