@@ -345,6 +345,6 @@ var lectures = [
     },
 ];
 
-fillLecturesTable(new Date("2018/03/13"), lectures);
+fillLecturesTable(new Date("2018/08/21"), lectures);
 </script>
 
