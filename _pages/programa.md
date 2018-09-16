@@ -209,6 +209,10 @@ var lectures = [
                 name: "Threads en C++ (tutorial)",
                 link: "https://github.com/Taller-de-Programacion/threads",
              },
+             {
+                name: "Recursos compartidos (handout)",
+                link: "https://github.com/eldipa/taller-clases/raw/master/shared-resources/bin/shared-resources-handout.pdf",
+             },
         ]
     },
     {
