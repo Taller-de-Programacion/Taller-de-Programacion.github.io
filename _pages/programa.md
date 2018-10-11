@@ -215,7 +215,7 @@ var lectures = [
              },
              {
                 name: "Introducción a Threads (presentación)",
-                link: "https://github.com/Taller-de-Programacion/clases/raw/master/introthreads/bin/introthreads-draft.pdf",
+                link: "https://github.com/Taller-de-Programacion/clases/raw/master/introthreads/bin/introathreads-draft.pdf",
              },
         ]
     },
