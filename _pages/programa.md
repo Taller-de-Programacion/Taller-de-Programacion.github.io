@@ -213,6 +213,10 @@ var lectures = [
                 name: "Recursos compartidos (handout)",
                 link: "https://github.com/eldipa/taller-clases/raw/master/shared-resources/bin/shared-resources-handout.pdf",
              },
+             {
+                name: "Introducción a Threads (presentación)",
+                link: "https://github.com/Taller-de-Programacion/clases/raw/master/introthreads/bin/introthreads-draft.pdf",
+             },
         ]
     },
     {
@@ -259,6 +263,10 @@ var lectures = [
              {
                 name: "Programación Orientada a Eventos (handout)",
                 link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/2018/poe-handout.pdf",
+             },
+             {
+                name: "Programación Orientada a Eventos (2) (handout)",
+                link: "https://github.com/Taller-de-Programacion/clases/raw/master/prog_orientada_a_eventos/bin/poe-handout.pdf",
              },
              {
                 name: "Introducción a Sockets UDP en C (presentación)",
