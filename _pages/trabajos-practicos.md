@@ -1,25 +1,23 @@
 ---
-layout: post
-title: Guías para los Trabajo Prácticos
+layout: main-topic-page
+title: Trabajos Prácticos
 permalink: /trabajos-practicos
-author: admin
-date: 21/08/2010
+sidebar-include: sidebar-trabajos-practicos.html
+secondary-content-include: secondary-content-trabajos-practicos-galeria.html
 hide_post_meta: true
-snippets: none
+nav-trabajos-practicos: active
+main-col-sz: col-sm-9
+sidebar-col-sz: col-sm-3
 
 ---
 
-  <ul class="post-list">
-    {% for post in site.pages %}
-      {% if post.tags contains 'Trabajos Prácticos' %}
-      <li>
-        <h2>
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-        </h2>
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
+Los enunciados de los trabajos prácticos de este y de los pasados
+cuatrimestres se encuentran en el [sitio de entregas de la materia]({{ site.sercom_url }}).
 
-      </li>
-      {% endif %}
-    {% endfor %}
-  </ul>
+Si eres alumno de la materia, debes leer atentamente las
+<a href="/normas-cpplint" target="_self">normas de codificación</a>,
+la <a href="/guia-entregas-tp-individual" target="_self">guía de entrega de trabajos individuales</a> y
+la <a href="/guia-entregas-tp-final" target="_self">guía del trabajo grupal</a>.
+
+Mostramos aquí algunos de los trabajos realizados en cuatrimestres pasados;
+la autoría de estos les corresponde únicamente a sus desarrolladores, los alumnos.

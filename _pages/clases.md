@@ -1,35 +1,41 @@
 ---
-layout: post
-title: Programa
-permalink: /programa
+layout: main-topic-page
+title: Clases
+permalink: /clases
+sidebar-include: sidebar-clases.html
+main-col-sz: col-sm-9
+sidebar-col-sz: col-sm-3
 hide_post_meta: true
+nav-clases: active
 
 ---
+
 A continuación se muestra un programa **orientativo** de la materia.
 
-Se suponen conocidos los conceptos básicos de C. Sólo se darán los conceptos más importantes y previamente se hará un repaso general.
+Se suponen conocidos los conceptos básicos de C. Sólo se darán los
+conceptos más importantes y previamente se hará un repaso general.
 
-## Clases
+## Programa
 
-<table class="table table-striped">
+<div class="table-responsive">
+<table class="table table-striped table-condensed">
 <thead>
   <tr>
-    <th>Fecha</th>
+    <th class="col-md-1">Fecha</th>
     <th>Temas</th>
-    <th>Recursos</th>
     <th>Trabajos Prácticos</th>
   </tr>
 </thead>
 <tbody id="lectures-table">
 </tbody>
 </table>
-
-**NOTA**: Este cuadro contiene duraciones de cada clase a modo orientativo.
-
+</div>
 
 ### Apuntes de otros cuatrimestres
 
 <ul>
+<li><a href="http://www.drk.com.ar/docs/development/conociendo_gdb.php">Tutorial de GDB (Leandro Fernández)</a></li>
+
 <li><a href="/assets/apuntes_legacy/C - Fundamentos.pdf.7z">C - Fundamentos</a></li>
 <li><a href="/assets/apuntes_legacy/C - Memoria.pdf.7z">C - Memoria</a></li>
 
@@ -53,6 +59,7 @@ Se suponen conocidos los conceptos básicos de C. Sólo se darán los conceptos 
 <script>
 createList = function(array) {
     var node = document.createElement("ul");
+    node.className = "list-unstyled";
     array.forEach(function(el) {
         var item = document.createElement("li");
         item.innerHTML = el;
@@ -63,6 +70,7 @@ createList = function(array) {
 
 createListOfLinks = function(array) {
     var node = document.createElement("ul");
+    node.className = "list-unstyled";
     array.forEach(function(el) {
         var item = document.createElement("li");
         var anchor = document.createElement("a");
@@ -109,12 +117,10 @@ fillLecturesTable = function(initial_date, lectures) {
             var dateNode = document.createTextNode(date_to_string(aDate));
         }
 
-        var contentSublist = createList(lectures[i].contents);
         var linkSublist = createListOfLinks(lectures[i].links);
         var eventSublist = createList(lectures[i].events);
 
         row.appendChild(wrapCell(dateNode));
-        row.appendChild(wrapCell(contentSublist));
         row.appendChild(wrapCell(linkSublist));
         row.appendChild(wrapCell(eventSublist));
 
@@ -128,7 +134,7 @@ var lectures = [
         contents:
             ["Introducción a la materia (1h)", "Conceptos de C avanzados (3hs)"],
         events:
-            ["Ejercicio 0 - Explicación (C)"],
+            ["Explicación TP 0"],
         links: [
              {
                 name: "Introducción a la Materia (presentación)",
@@ -156,7 +162,7 @@ var lectures = [
         contents:
             ["Introducción a Sockets (3hs)", "Repaso de Archivos y TDAs (1h)"],
         events:
-            ["Ejercicio 0 - Entrega", "Ejercicio 1 - Explicación (C)"],
+            ["Entrega TP 0", "Explicación TP 1"],
         links:
             [
              {
@@ -181,7 +187,7 @@ var lectures = [
         contents:
             ["Clases, RAII, Move Semantics en C++ (2hs)", "Herencia y Polimorfismo en C++ (2hs)"],
         events:
-            ["Ejercicio 0 - Dev. Entrega"],
+            ["Corrección TP 0"],
         links:
             [
              {
@@ -202,7 +208,7 @@ var lectures = [
         contents:
             ["Introducción a Threads (4hs)"],
         events:
-            ["Ejercicio 1 - Entrega 1", "Ejercicio 2 - Explicación (C++)"],
+            ["Entrega TP 1", "Explicación TP 2"],
         links:
             [
              {
@@ -219,7 +225,7 @@ var lectures = [
         contents:
             ["Templates/STL (3h)", "Operadores en C++ (1h)"],
         events:
-            ["Ejercicio 1 - Dev. Entrega 1"],
+            ["Corrección TP 1"],
         links:
             [
              {
@@ -236,7 +242,7 @@ var lectures = [
         contents:
             ["Excepciones (1hs)", "Introducción a la Arquitectura Cliente-Servidor (3hs)"],
         events:
-            ["Ejercicio 1 - Entrega 2", "Ejercicio 2 - Entrega 1", "Ejercicio 3 - Explicación (C++)"],
+            ["Reentrega TP 1", "Entrega TP 2", "Explicación TP 3"],
         links:
             [
              {
@@ -253,7 +259,7 @@ var lectures = [
         contents:
             ["Sockets UDP (1hs)", "Features extra de C++ (1hs)", "Espacio para consultas (1hs)", "Programación Orientada a Eventos (1hs)"],
         events:
-            ["Ejercicio 1 - Dev. Entrega 2", "Ejercicio 2 - Dev. Entrega 1"],
+            ["Corrección TP 1", "Corrección TP 2"],
         links:
             [
              {
@@ -274,7 +280,7 @@ var lectures = [
         contents:
             ["CMake (0.5h)", "SDL (1h)", "Qt5 (2.5h)"],
         events:
-            ["Ejercicio 2 - Entrega 2", "Ejercicio 3 - Entrega 1"],
+            ["Reentrega TP 2", "Entrega TP 3", "Explicación TP Final"],
         links:
             [
              {
@@ -287,7 +293,7 @@ var lectures = [
         contents:
             ["Desarrollo de Trabajo Grupal"],
         events:
-            ["Ejercicio 2 - Dev. Entrega 2", "Ejercicio 3 - Dev. Entrega 1", "Ejercicio final - Explicación (C++)"],
+            ["Corrección TP 2", "Corrección TP 3"],
         links:
             [],
     },
@@ -295,7 +301,7 @@ var lectures = [
         contents:
             ["Desarrollo de Trabajo Grupal"],
         events:
-            ["Ejercicio 3 - Entrega 2"],
+            ["Reentrega TP 3"],
         links:
             [],
     },
@@ -303,15 +309,7 @@ var lectures = [
         contents:
             ["Desarrollo de Trabajo Grupal"],
         events:
-            ["Ejercicio 3 - Dev. Entrega 2"],
-        links:
-            [],
-    },
-    {
-        contents:
-            ["Desarrollo de Trabajo Grupal"],
-        events:
-            [],
+            ["Corrección TP 3"],
         links:
             [],
     },
@@ -327,7 +325,7 @@ var lectures = [
         contents:
             ["Desarrollo de Trabajo Grupal"],
         events:
-            ["Ejercicio final - Pre-entrega"],
+            [],
         links:
             [],
     },
@@ -335,7 +333,7 @@ var lectures = [
         contents:
             ["Desarrollo de Trabajo Grupal"],
         events:
-            ["Ejercicio final - Dev. Pre-entrega"],
+            ["Entrega TP Final"],
         links:
             [],
     },
@@ -343,12 +341,21 @@ var lectures = [
         contents:
             ["Desarrollo de Trabajo Grupal"],
         events:
-            ["Ejercicio final - Entrega"],
+            ["Corrección TP Final"],
+        links:
+            [],
+    },
+    {
+        contents:
+            ["Desarrollo de Trabajo Grupal"],
+        events:
+            ["Reentrega TP Final"],
         links:
             [],
     },
 ];
 
-fillLecturesTable(new Date("2018/08/21"), lectures);
+fillLecturesTable(new Date("{{ site.current_quater }}"), lectures);
 </script>
+
 

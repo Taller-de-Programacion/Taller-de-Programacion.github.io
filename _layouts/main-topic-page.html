@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% include common-head.html %}
+    </head>
+
+    <body>
+
+        <div class="blog-masthead">
+            <div class="container">
+                <nav class="blog-nav">
+                    <a class="blog-nav-item {{ page.nav-institucional }}" href="/institucional">Institucional</a>
+                    <a class="blog-nav-item {{ page.nav-clases }}" href="/clases">Clases</a>
+                    <a class="blog-nav-item {{ page.nav-trabajos-practicos }}" href="/trabajos-practicos">Trabajos Prácticos</a>
+                </nav>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <div class="blog-header">
+                <h1 class="blog-title">{{ page.title }}</h1>
+                <p class="lead blog-description">{{ page.subtitle }}</p>
+            </div>
+
+            <div class="row">
+
+                {% if page.sidebar-include %}
+                <div class="{{ page.main-col-sz | default:'col-sm-8' }} blog-main">
+                {% else %}
+                <div class="{{ page.main-col-sz | default:'col-sm-12' }} blog-main">
+                {% endif %}
+
+                    <div class="blog-post">
+                        {{ content }}
+                    </div>
+
+                </div><!-- /.blog-main -->
+
+                {% if page.sidebar-include %}
+                <div class="{{ page.sidebar-col-sz | default:'col-sm-3 col-sm-offset-1' }} blog-sidebar">
+                    {% include {{ page.sidebar-include }} %}
+                </div><!-- /.blog-sidebar -->
+                {% endif %}
+
+            </div><!-- /.row -->
+
+            {% if page.secondary-content-include %}
+            {% include {{ page.secondary-content-include }} %}
+            {% endif %}
+
+        </div><!-- /.container -->
+
+        {% include common-tail.html %}
+        <script>
+            $(document).ready(function() {
+                $(".unhide-by-date").filter(function (idx, el) {
+                    var pdate = new Date($(el).attr('date'));
+                    var qdate = new Date("{{ site.current_quater }}");
+
+                    var days_old = (qdate - pdate) / 86400000;
+
+                    return days_old < (365*2); // filter out posts older than ~2 years
+                }).css("display", "inherit");
+            });
+        </script>
+    </body>
+</html>
+

@@ -1,11 +1,12 @@
 ---
-layout: post
+layout: main-topic-page
+sidebar-include: sidebar-trabajos-practicos.html
 title: Normas de Codificación – CPPLint
 author: Pablo Roca
 date: 21/08/2013
-tags: [Trabajos Prácticos] 
+tags: [Trabajos Prácticos]
 hide_post_meta: true
-snippets: 
+snippets:
     - |
         ```cpp
         #include <stdio.h>
