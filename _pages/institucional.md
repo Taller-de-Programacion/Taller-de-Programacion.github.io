@@ -8,9 +8,9 @@ nav-institucional: active
 
 ---
 
-Este es el sitio oficial de la materia **Taller de programación I – 7542**
+Este es el sitio oficial de la materia **Taller de programación I – 7542/9508**
 
-Aquí encontrará las últimas [novedades](/noticias) sobre la cátedra
+Aquí encontrará las últimas novedades sobre la cátedra
 y los eventos del cuatrimestre en curso.
 
 ## Sitio de entregas/inscripción a la materia
@@ -62,7 +62,7 @@ la materia, a saber:
 La siguiente imagen muestra un modelo de libreta correspondiente a un
 alumno que, habiendo aprobado la práctica, se encuentra en condiciones
 de rendir examen. La misma se provee a forma de ejemplo y como ayuda
-para clarificar qué datos debe completar el alumno (en azul) y cuales
+para clarificar **qué datos debe completar el alumno (en azul)** y cuales
 serán completados por los docentes  (en rojo).
 
 <a href="/assets/2010/08/libreta.jpg"><img title="Inicialización de libreta" src="/assets/2010/08/libreta.jpg" alt="" width="521" height="402"></a>
@@ -141,10 +141,9 @@ y Calificación y rubrique la aprobación.
  - Andrés Veiga
 
 #### JTP
- - Pablo D. Roca  (pablodroca at gmail.com)
+ - Martín Di Paola (martinp.dipaola at gmail.com)
 
 #### Ayudantes
  - Matías Lafroce
  - Ezequiel Werner (eze210 at gmail.com)
- - Martín Di Paola (martinp.dipaola at gmail.com)
-
+ - Federico Gomez Peter

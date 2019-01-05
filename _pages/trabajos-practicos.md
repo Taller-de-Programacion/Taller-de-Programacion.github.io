@@ -19,5 +19,8 @@ Si eres alumno de la materia, debes leer atentamente las
 la <a href="/guia-entregas-tp-individual" target="_self">guía de entrega de trabajos individuales</a> y
 la <a href="/guia-entregas-tp-final" target="_self">guía del trabajo grupal</a>.
 
+<!--
+*Proximamente*
 Mostramos aquí algunos de los trabajos realizados en cuatrimestres pasados;
 la autoría de estos les corresponde únicamente a sus desarrolladores, los alumnos.
+-->
