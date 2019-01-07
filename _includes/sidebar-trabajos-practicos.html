@@ -1,0 +1,12 @@
+                    <div class="sidebar-module">
+                        <h4>Guías de Entregas</h4>
+                        <ol class="list-unstyled">
+                            {% for page in site.pages %}
+                            {% if page.tags contains 'Trabajos Prácticos' %}
+                            <li>
+                                <a class="post-link" href="{{ page.url | relative_url }}">{{ page.title | escape }}</a>
+                            </li>
+                            {% endif %}
+                            {% endfor %}
+                        </ol>
+                    </div>

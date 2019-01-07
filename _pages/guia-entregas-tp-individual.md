@@ -1,10 +1,11 @@
 ---
-layout: post
+layout: main-topic-page
+sidebar-include: sidebar-trabajos-practicos.html
 title: Guía de Entregas – Trabajo Práctico Individual
 permalink: /guia-entregas-tp-individual
 author: admin
 date: 20/08/2010
-tags: [Trabajos Prácticos] 
+tags: [Trabajos Prácticos]
 hide_post_meta: true
 snippets: none
 

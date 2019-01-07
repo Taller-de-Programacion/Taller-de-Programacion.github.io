@@ -1,0 +1,31 @@
+                    <div class="sidebar-module">
+                        <h4>Referencias</h4>
+                        <ol class="list-unstyled">
+                        <li><a class="post-link" href="http://www.cplusplus.com/reference/">Referencias de la biblioteca estándar de C++ (cplusplus)</a></li>
+                        <li><a class="post-link" href="https://en.cppreference.com/w/">Referencias de la biblioteca estándar de C++ (cppreference)</a></li>
+                        </ol>
+                    </div>
+                    <div class="sidebar-module">
+                        <h4>Software</h4>
+                        <ol class="list-unstyled">
+                        <li><a class="post-link" href="https://www.virtualbox.org/">VirtualBox</a></li>
+                        <li><a class="post-link" href="https://gcc.gnu.org/">GCC</a></li>
+                        <li><a class="post-link" href="http://valgrind.org/">Valgrind</a></li>
+                        </ol>
+                    </div>
+                    <div class="sidebar-module">
+                        <h4>Notas Técnicas</h4>
+                        <ol class="list-unstyled">
+                            {% for post in site.posts %}
+                            {% unless post.tags contains 'Noticias' %}
+                            {% unless post.tags contains 'Trabajos Prácticos' %}
+                            {% unless post.tags contains 'Trabajo Práctico Demo' %}
+                            <li>
+                                <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+                            </li>
+                            {% endunless %}
+                            {% endunless %}
+                            {% endunless %}
+                            {% endfor %}
+                        </ol>
+                    </div>

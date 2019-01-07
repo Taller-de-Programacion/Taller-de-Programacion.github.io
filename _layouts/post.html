@@ -1,42 +1,26 @@
-<html>
-{% include head.html %}
-<body>
-{% include header.html %}
-      <div class="container container-center">
-        <div class="row">
-          <div class="col-sm-9">
-              <div>
-                <h1>{{ page.title }}</h1>
-                {% unless page.hide_post_meta %}
-                <div class="post-meta">
-                    <div>
-                        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-                        <span class="post-meta">{{ page.date | date: date_format }} por {{ page.author | default: 'admin' }}</span>
-                    </div>
-                    {% if page.tags != empty and page.tags != black and page.tags != false %}
-                    <div>
-                        <span>Tags: </span>
-                        {% for tag in page.tags %}
-                        <span>{{ tag }} </span>
-                        {% endfor %}
-                    </div>
-                    {% endif %}
-                </div>
-                {% endunless %}
-              </div>
-          </div>
-          <div class="col-sm-3 hidden-xs">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-9">
-              {{ content }}
-          </div>
-          <div class="col-sm-3 hidden-xs">
-            {% include sidebar.html %}
-          </div>
-        </div>
-      </div>
-{% include footer.html %}
-</body>
-</html>
+---
+layout: main-topic-page
+
+---
+
+{% unless page.hide_post_meta %}
+<div class="post-meta">
+    <div>
+        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+        <span class="post-meta">{{ page.date | date: date_format }} por {{ page.author | default: 'admin' }}</span>
+    </div>
+    {% if page.tags != empty and page.tags != black and page.tags != false %}
+    <div>
+        <span>Tags: </span>
+        {% for tag in page.tags %}
+        <span>{{ tag }} </span>
+        {% endfor %}
+    </div>
+    {% endif %}
+</div>
+{% endunless %}
+<div class="row">
+    <div class="col-sm-9">
+        {{ content }}
+    </div>
+</div>
