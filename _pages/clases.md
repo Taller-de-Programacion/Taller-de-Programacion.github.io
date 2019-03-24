@@ -107,7 +107,7 @@ fillLecturesTable = function(initial_date, lectures) {
     for (var i = 0; i < lectures.length; i++) {
         var row = document.createElement("tr");
 
-        if ( today < aDate && nextLectureFound === false ) {
+        if ( today <= aDate && nextLectureFound === false ) {
             nextLectureFound = true;
             row.className = "info";
 
