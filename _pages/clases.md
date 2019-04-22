@@ -206,9 +206,17 @@ var lectures = [
     },
     {
         contents:
-            ["Introducción a Threads (4hs)"],
+            ["Feriado"],
         events:
             ["Entrega TP 1", "Explicación TP 2"],
+        links:
+            []
+    },
+    {
+        contents:
+            ["Introducción a Threads (4hs)"],
+        events:
+            ["Corrección TP 1"],
         links:
             [
              {
@@ -229,7 +237,7 @@ var lectures = [
         contents:
             ["Templates/STL (3h)", "Operadores en C++ (1h)"],
         events:
-            ["Corrección TP 1"],
+            ["Reentrega TP 1", "Entrega TP 2", "Explicación TP 3"],
         links:
             [
              {
@@ -244,9 +252,9 @@ var lectures = [
     },
     {
         contents:
-            ["Excepciones (1hs)", "Introducción a la Arquitectura Cliente-Servidor (3hs)"],
+            ["Excepciones (1hs)", "Introducción a la Arquitectura Cliente-Servidor (2hs)", "Programación Orientada a Eventos (1hs)"],
         events:
-            ["Reentrega TP 1", "Entrega TP 2", "Explicación TP 3"],
+            ["Corrección TP 1", "Corrección TP 2"],
         links:
             [
              {
@@ -257,15 +265,6 @@ var lectures = [
                 name: "Cliente-Servidor (handout)",
                 link: "https://github.com/Taller-de-Programacion/clases/raw/master/client_server_arch/bin/client_server_arch-handout.pdf",
              },
-            ],
-    },
-    {
-        contents:
-            ["Sockets UDP (1hs)", "Features extra de C++ (1hs)", "Espacio para consultas (1hs)", "Programación Orientada a Eventos (1hs)"],
-        events:
-            ["Corrección TP 1", "Corrección TP 2"],
-        links:
-            [
              {
                 name: "Programación Orientada a Eventos (handout)",
                 link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/2018/poe-handout.pdf",
@@ -273,14 +272,6 @@ var lectures = [
              {
                 name: "Programación Orientada a Eventos (2) (handout)",
                 link: "https://github.com/Taller-de-Programacion/clases/raw/master/prog_orientada_a_eventos/bin/poe-handout.pdf",
-             },
-             {
-                name: "Introducción a Sockets UDP en C (presentación)",
-                link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/2018/introduccion_sockets_udp.pdf",
-             },
-             {
-                name: "Extra C++",
-                link: "https://github.com/Taller-de-Programacion/clases/tree/master/cpp-misc",
              }
             ],
     },
@@ -292,18 +283,28 @@ var lectures = [
         links:
             [
              {
-                name: "Bibliotecas GUI (En proceso)",
+                name: "Bibliotecas GUI",
                 link: "https://github.com/Taller-de-Programacion/clases/tree/feature/bibliotecas-gui/bibliotecas-gui",
              }
             ]
     },
     {
         contents:
-            ["Desarrollo de Trabajo Grupal"],
+            ["Sockets UDP (1hs)", "Features extra de C++ (1hs)", "Espacio para consultas (1hs)"],
         events:
             ["Corrección TP 2", "Corrección TP 3"],
         links:
-            [],
+            [
+             
+             {
+                name: "Introducción a Sockets UDP en C (presentación)",
+                link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/2018/introduccion_sockets_udp.pdf",
+             },
+             {
+                name: "Extra C++",
+                link: "https://github.com/Taller-de-Programacion/clases/tree/master/cpp-misc",
+             }
+            ]
     },
     {
         contents:
@@ -318,6 +319,14 @@ var lectures = [
             ["Desarrollo de Trabajo Grupal"],
         events:
             ["Corrección TP 3"],
+        links:
+            [],
+    },
+    {
+        contents:
+            ["Desarrollo de Trabajo Grupal"],
+        events:
+            [],
         links:
             [],
     },
