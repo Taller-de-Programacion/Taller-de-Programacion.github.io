@@ -248,6 +248,10 @@ var lectures = [
                 name: "STL (handout)",
                 link: "https://github.com/Taller-de-Programacion/clases/raw/master/stl/bin/stl-handout.pdf",
              },
+             {
+                name: "Sobrecarga de Operadores (presentación)",
+                link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/2018/sobrecarga_de_operadores.pdf",
+             },
          ],
     },
     {
