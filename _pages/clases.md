@@ -167,11 +167,11 @@ var lectures = [
             [
              {
                 name: "Introducción a sockets TCP en C (handout)",
-                link: "https://github.com/Taller-de-Programacion/clases/raw/master/sockets/bin/sockets-handout.pdf",
+                link: "https://github.com/Taller-de-Programacion/clases/raw/master/sockets-mdipaola/bin/sockets-handout.pdf",
              },
              {
                 name: "Sockets TCP en C (ejemplos)",
-                link: "https://github.com/Taller-de-Programacion/clases/tree/master/sockets/src",
+                link: "https://github.com/Taller-de-Programacion/clases/tree/master/sockets-mdipaola/src",
              },
              {
                 name: "Archivos (presentación)",
@@ -294,12 +294,11 @@ var lectures = [
     },
     {
         contents:
-            ["Sockets UDP (1hs)", "Features extra de C++ (1hs)", "Espacio para consultas (1hs)"],
+            ["Sockets UDP (1hs)", "Features extra de C++ (1hs)", "Espacio para consultas (1hs)","Desarrollo de Trabajo Grupal"],
         events:
             ["Corrección TP 2", "Corrección TP 3"],
         links:
             [
-             
              {
                 name: "Introducción a Sockets UDP en C (presentación)",
                 link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/2018/introduccion_sockets_udp.pdf",
@@ -323,22 +322,6 @@ var lectures = [
             ["Desarrollo de Trabajo Grupal"],
         events:
             ["Corrección TP 3"],
-        links:
-            [],
-    },
-    {
-        contents:
-            ["Desarrollo de Trabajo Grupal"],
-        events:
-            [],
-        links:
-            [],
-    },
-    {
-        contents:
-            ["Desarrollo de Trabajo Grupal"],
-        events:
-            [],
         links:
             [],
     },
