@@ -337,6 +337,14 @@ var lectures = [
         contents:
             ["Desarrollo de Trabajo Grupal"],
         events:
+            [],
+        links:
+            [],
+    },
+    {
+        contents:
+            ["Desarrollo de Trabajo Grupal"],
+        events:
             ["Entrega TP Final"],
         links:
             [],
