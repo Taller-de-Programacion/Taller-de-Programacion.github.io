@@ -10,7 +10,7 @@ snippets: none
 
 Las fechas de final publicadas para el primer cuatrimestre del 2019 son:
 
- - 06/07/19 - de 18:00 a 20:30
+ - 02/07/19 - de 18:00 a 20:30
  - 16/07/19 - de 18:00 a 20:30
  - 23/07/19 - de 18:00 a 20:30
  - 06/08/19 - de 18:00 a 20:30
