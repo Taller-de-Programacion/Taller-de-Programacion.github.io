@@ -206,17 +206,9 @@ var lectures = [
     },
     {
         contents:
-            ["Feriado"],
-        events:
-            ["Entrega TP 1", "Explicación TP 2"],
-        links:
-            []
-    },
-    {
-        contents:
             ["Introducción a Threads (4hs)"],
         events:
-            ["Corrección TP 1"],
+            ["Entrega TP 1", "Explicación TP 2"],
         links:
             [
              {
@@ -237,7 +229,7 @@ var lectures = [
         contents:
             ["Templates/STL (3h)", "Operadores en C++ (1h)"],
         events:
-            ["Reentrega TP 1", "Entrega TP 2", "Explicación TP 3"],
+            ["Corrección TP 1"],
         links:
             [
              {
@@ -258,7 +250,7 @@ var lectures = [
         contents:
             ["Excepciones (1hs)", "Introducción a la Arquitectura Cliente-Servidor (2hs)", "Programación Orientada a Eventos (1hs)"],
         events:
-            ["Corrección TP 1", "Corrección TP 2"],
+            ["Reentrega TP 1", "Entrega TP 2", "Explicación TP 3"],
         links:
             [
              {
@@ -283,7 +275,7 @@ var lectures = [
         contents:
             ["CMake (0.5h)", "SDL (1h)", "Qt5 (2.5h)"],
         events:
-            ["Reentrega TP 2", "Entrega TP 3", "Explicación TP Final"],
+            ["Corrección TP 1", "Corrección TP 2"],
         links:
             [
              {
@@ -296,7 +288,7 @@ var lectures = [
         contents:
             ["Sockets UDP (1hs)", "Features extra de C++ (1hs)", "Espacio para consultas (1hs)","Desarrollo de Trabajo Grupal"],
         events:
-            ["Corrección TP 2", "Corrección TP 3"],
+            ["Reentrega TP 2", "Entrega TP 3", "Explicación TP Final"],
         links:
             [
              {
@@ -313,6 +305,14 @@ var lectures = [
         contents:
             ["Desarrollo de Trabajo Grupal"],
         events:
+            ["Corrección TP 2", "Corrección TP 3"],
+        links:
+            [],
+    },
+    {
+        contents:
+            ["Desarrollo de Trabajo Grupal"],
+        events:
             ["Reentrega TP 3"],
         links:
             [],
@@ -322,14 +322,6 @@ var lectures = [
             ["Desarrollo de Trabajo Grupal"],
         events:
             ["Corrección TP 3"],
-        links:
-            [],
-    },
-    {
-        contents:
-            ["Desarrollo de Trabajo Grupal"],
-        events:
-            [],
         links:
             [],
     },
