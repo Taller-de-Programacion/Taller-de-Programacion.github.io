@@ -275,7 +275,7 @@ var lectures = [
         contents:
             ["CMake (0.5h)", "SDL (1h)", "Qt5 (2.5h)"],
         events:
-            ["Corrección TP 1", "Corrección TP 2"],
+            ["Corrección TP 1", "Corrección TP 2", "Entrega TP 3"],
         links:
             [
              {
@@ -288,7 +288,7 @@ var lectures = [
         contents:
             ["Sockets UDP (1hs)", "Features extra de C++ (1hs)", "Espacio para consultas (1hs)","Desarrollo de Trabajo Grupal"],
         events:
-            ["Reentrega TP 2", "Entrega TP 3", "Explicación TP Final"],
+            ["Reentrega TP 2", "Corrección TP 3", "Explicación TP Final"],
         links:
             [
              {
@@ -305,15 +305,7 @@ var lectures = [
         contents:
             ["Desarrollo de Trabajo Grupal"],
         events:
-            ["Corrección TP 2", "Corrección TP 3"],
-        links:
-            [],
-    },
-    {
-        contents:
-            ["Desarrollo de Trabajo Grupal"],
-        events:
-            ["Reentrega TP 3"],
+            ["Corrección TP 2", "Reentrega TP 3"],
         links:
             [],
     },
@@ -322,6 +314,14 @@ var lectures = [
             ["Desarrollo de Trabajo Grupal"],
         events:
             ["Corrección TP 3"],
+        links:
+            [],
+    },
+    {
+        contents:
+            ["Desarrollo de Trabajo Grupal"],
+        events:
+            [],
         links:
             [],
     },
