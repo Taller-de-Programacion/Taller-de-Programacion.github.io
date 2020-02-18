@@ -13,7 +13,7 @@ Las fechas de final publicadas para el segundo cuatrimestre del 2019 son:
  - 10/12/19 - 18:30 hs
  - 17/12/19 - 18:30 hs
  - 18/02/20 - 18:30 hs
- - 25/02/20 - 18:30 hs
+ - 27/02/20 - 18:30 hs
  - 03/03/20 - 18:30 hs
 
 Para concurrir al exámen deben tener la libreta inicializada como se indica
