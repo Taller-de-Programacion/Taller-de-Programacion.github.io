@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Inicio de Clases - 1er Cuat. 2020 (desactualizado)
+title: Inicio de Clases - 1er Cuat. 2020 (actualizado)
 author: Di Paola Martin
-date: 09/03/2020
+date: 13/04/2020
 tags: [Noticias]
 snippets: none
 
