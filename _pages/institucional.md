@@ -10,12 +10,17 @@ nav-institucional: active
 
 Este es el sitio oficial de la materia **Taller de programación I – 7542/9508**
 
-Aquí encontrará las últimas novedades sobre la cátedra
-y los eventos del cuatrimestre en curso.
+Aquí encontrará toda la información administrativa necesaria para inscribirse,
+cursar y rendir los exámenes.
+
+## Campus de la facultad
+
+Es **requerido** que los alumnos se inscriban en el
+[campus de la facultad](https://campus.fi.uba.ar/course/view.php?id=1921).
 
 ## Sitio de entregas/inscripción a la materia
 
-Para hacer efectiva la cursada, el alumno debe registrarse en el
+Para hacer efectiva la cursada, el alumno debe **registrarse** en el
 <a href="{{ site.sercom_url }}" target="_blank">sitio de entregas de la materia</a>.
 En el mismo se podrán entregar los trabajos prácticos semanales y final para
 la corrección docente.
