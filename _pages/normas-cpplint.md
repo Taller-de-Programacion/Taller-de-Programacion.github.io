@@ -4,6 +4,7 @@ sidebar-include: sidebar-trabajos-practicos.html
 title: Normas de Codificación – CPPLint
 author: Pablo Roca
 date: 21/08/2013
+nav-trabajos-practicos: active
 tags: [Trabajos Prácticos]
 hide_post_meta: true
 snippets:

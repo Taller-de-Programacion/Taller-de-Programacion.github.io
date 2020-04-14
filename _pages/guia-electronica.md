@@ -5,7 +5,7 @@ sidebar-include: sidebar-guia-electronica.html
 permalink: /guia-electronica
 hide_post_meta: true
 tags: [Trabajos Prácticos]
-nav-institucional: active
+nav-trabajos-practicos: active
 
 ---
 
