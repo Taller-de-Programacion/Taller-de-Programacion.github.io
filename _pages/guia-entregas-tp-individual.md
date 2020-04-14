@@ -12,66 +12,116 @@ snippets: none
 ---
 ## Consideraciones acerca de los ejercicios semanales.
 
-La entrega de los trabajos prácticos consta de dos partes: la <a href="/guia-entregas-tp-individual#EE">entrega electrónica</a> y la <a href="/guia-entregas-tp-individual#EP">entrega en papel</a>. Ambas son necesarias para la corrección del trabajo y no puede realizarse la entrega en papel si no se entregó correctamente en forma electrónica. Es muy importante leer la guía de entrega completa para evitar inconvenientes.
+La entrega de los trabajos prácticos consta de tres partes:
+
+ - la resolución del trabajo (<a href="/guia-entregas-tp-individual#CF">código fuente</a>)
+ - el armado de un <a href="/guia-entregas-tp-individual#IF">informe</a>
+ - y la publicación del código y del informe en un repositorio de Github y en el Sercom
+
+Es muy importante leer esta guía de entrega completa para evitar inconvenientes
+ya que todas las partes son necesarias para la corrección del trabajo.
 
 Para el caso del trabajo práctico grupal existe <a href="/guia-entregas-tp-final" target="_self">una guía particular</a>.
 
-<a name="EP"></a>
-## Entrega en papel
-
-El informe del ejercicio semanal debe ser entregado impreso en <strong>hoja A4</strong> dentro de un folio (también <strong>A4</strong>). Por favor <strong>NO</strong> entreguen los informes en carpeta ni abrochados o en tamaños de hoja diferentes.
-
-El informe <strong>debe</strong> contener carátula oficial, informe, diagrama y el código fuente devuelto por el sistema de entregas. Opcionalmente podrá contener aclaraciones del alumno.
-
-En caso de tratarse de una reentrega, se <strong>debe</strong> incluir la entrega anterior con las correcciones del docente.
-
-A continuación se detallan cada uno de los puntos mencionados anteriormente.
-
-### Carátula
-
-Debe ser la oficial de la materia. Y no debe cambiarse cuando un trabajo es entregado en segunda oportunidad. Es decir que debe mantenerse en la caratula la primera nota y la lista de correcciones original del trabajo.
-
-<img class="alignnone size-full wp-image-71" title="Archivo PDF" src="/assets/2010/08/file-pdf.gif" alt="Archivo PDF" width="39" height="38"><a href="/assets/2010/08/caratula.pdf">Carátula</a>
-
-### Informe
-
-Una descripción textual de al menos una carilla donde se describa un tema relevante relacionado con la solución del trabajo. Puede tratarse de la forma en la que se solucionó el problema más complejo que presentaba el ejercicio o una lista descriptiva de las funciones o clases más importantes.
-
-### Esquema del diseño
-
-Debe ser una descripción gráfica (se espera un diagrama) de cómo esta constituido y/o resuelto el ejercicio, con una breve descripción coloquial sólo de ser necesario. Se apreciará que el diagrama demuestre una parte especifica de la solución. Por ejemplo no tiene mucho sentido que se imprima un diagrama completo de treinta clases. En cambio aporta información un gráfico que centra la atención en una clase de alta importancia y aquellas relacionadas con la primera.
-
-En aplicaciones que no ameriten un diagrama de clases o secuencia por su escasa complejidad, o por no poder identificar clases u objetos en un programa estructurado, se recomienda explorar otro tipo de diagramas. Una posibilidad es el empleo de diagramas de flujo o gráficos sobre las estructuras de datos utilizadas y la lógica utilizada para su recorrido.
-
-<strong>Nota: El esquema de diseño o diagrama aclaratorio es obligatorio para la aprobación de un trabajo práctico.</strong>
-
-### Aclaraciones del alumno
-
-En el caso excepcional en que no se haya cumplido con la totalidad de los requerimientos de la entrega es indispensable incluir una hoja titulada <em>Aclaraciones del alumno</em> donde se explique la excepción y la justificación pertinente. También es necesario que se informe a un ayudante al momento de entregar el trabajo. Todo esto no garantiza la aceptación de la excepción por parte de la cátedra, pero es condición necesaria.
-
 <a name="CF"></a>
-### Código fuente
+## Código fuente
 
-Se requiere que el código fuente sea prolijo y contenga los comentarios pertinentes. Asimismo es obligatorio incluir sangría (<em>indent</em>) en el código fuente con longitud de entre dos y cuatro espacios. Esto puede hacerse utilizando utilizando espacios o el caracter TAB (tabulación). En el último caso el sistema de entregas ajustará el tamaño del TAB automáticamente.
+Se requiere que el código fuente sea prolijo y contenga los
+comentarios pertinentes.
 
-En caso de tratarse de una reentrega, se <strong>debe</strong> incluir el código fuente de la entrega anterior con las correcciones del docente.
+Asimismo es obligatorio incluir sangría (<em>indent</em>) en el código
+fuente con longitud de entre dos y cuatro espacios.
 
-Se debe utilizar el conjunto de caracteres <a href="http://es.wikipedia.org/wiki/UTF8" target="_blank">UTF-8</a> para la codificación de los archivos que conforman el código fuente. Si no dispone de un editor que permita seleccionar la codificación puede recurrir al utilitario <a href="http://en.wikipedia.org/wiki/Iconv" target="_blank">iconv</a> para procesar los archivos antes de crear el paquete ZIP y enviarlo.
+Se debe utilizar el conjunto de caracteres
+<a href="http://es.wikipedia.org/wiki/UTF8" target="_blank">UTF-8</a>
+para la codificación de los archivos que conforman el código fuente.
 
-El código fuente debe ser impreso en base al PDF que devuelve el sistema de entregas electrónicas de la cátedra. Deben imprimirse dos carillas de código por cada carilla de papel. Es decir que cada hoja contendrá cuatro carillas de código fuente; dos por cada faz. Esto se debe a la intención de reducir el uso de papel.
+Nota: cuando el enunciado no mencione el tratamiento de errores,
+el programa deberá retornar al sistema operativo cero en caso de
+ejecución exitosa y uno ante una situación de error.
+Si el alumno decidiera retornar varios código de error para
+diferentes situaciones deberán enumerarlos en el informe.
 
-NOTA: Cuando el enunciado no mencione el tratamiento de errores, el programa deberá retornar al sistema operativo cero en caso de ejecución exitosa y uno ante una situación de error. Si el alumno decidiera retornar varios código de error para diferentes situaciones deberán enumerarlos en el informe.
+<a name="IF"></a>
+## Armado del Informe
+
+El informe <strong>debe</strong> contener:
+
+ - nombre y padrón
+ - el link al repositorio de Github
+ - una descripción de la resolución del trabajo
+ - uno o varios diagramas que ayuden al lector a entender la solución
+ - y opcionalmente aclaraciones del alumno.
+
+El informe debe ser escrito en formato
+[markdown](https://guides.github.com/features/mastering-markdown/)
+y guardarse en el `README` del repositorio.
+
+La descripción textual debe de ser de al menos una carilla donde se describa
+un tema relevante relacionado con la solución del trabajo.
+
+Puede tratarse de la forma en la que se solucionó el problema más
+complejo que presentaba el ejercicio o una lista descriptiva de las
+funciones o clases más importantes.
+
+El o los diagramas deben graficar cómo esta constituido y/o resuelto
+el ejercicio, con una breve descripción coloquial sólo de ser necesario.
+
+Deben permitirle al lector entender las partes mas complejas del trabajo
+y guiarlo en la solución.
+
+Por ejemplo **no** tiene mucho sentido un diagrama completo de treinta clases
+o un diagrama tan genérico que podría ser el diagrama de cualquier trabajo.
+
+En cambio aporta información un gráfico que centra la atención en una
+clase de alta importancia y aquellas relacionadas con la primera.
+
+Se recomienda usar algunos de los diagramas UML. Use un generador
+como [PlantUML](https://plantuml.com/) que son basados en texto
+en vez de uno gráfico.
+
+<strong>Nota: El diagrama aclaratorio es obligatorio para la aprobación de un trabajo práctico.</strong>
+
+Finalmente las aclaraciones del alumno pueden contener,
+en el caso excepcional en que no se haya cumplido con la totalidad
+de los requerimientos de la entrega, explicación del por qué
+y la justificación pertinente.
+
+Esto no garantiza la aceptación de la excepción por parte de la cátedra,
+pero es condición necesaria.
 
 <a name="EE"></a>
+
 ## Entrega Electrónica
 
-La entrega electrónica se realiza a través del sitio <a href="{{ site.sercom_url }}" target="_blank">{{ site.sercom_url }}</a> que cuenta con su propio sistema de registro de usuarios. Una vez correctamente identificado se dispone de un menú en forma de combo en la esquina superior derecha. En el mismo se selecciona la opción <strong>Mis entregas</strong> que nos lleva al listado de entregas realizadas y donde, presionando la opción <strong>Agregar</strong>, se puede realizar la entrega del trabajo. El formulario contiene las instrucciones específicas.
+La entrega electrónica consta de subir el código fuente y
+el informe a un repositorio privado en Github, realizar
+un release y hacer una entrega en el Sercom
+donde se realizaran las pruebas automáticas.
+
+Una [guía](/guia-electronica) paso a paso esta disponible.
+
+Recorda que el repositorio de Github solo debe
+contener código C o C++ con extensiones .c, .cpp y .h y
+el `README` (el informe)
+
+**No** debe incluir:
+
+ - Binarios, sean archivos objeto (.o), ejecutables u otros.
+ - Carpetas
+ - Archivos del sistema de control de versiones (típicamente .git, .svn)
+
 
 ## Corrección
 
-Con el objetivo de lograr un criterio uniforme de corrección y calificación, se estableció el siguiente modo de corrección:
+Con el objetivo de lograr un criterio uniforme de corrección y calificación,
+se estableció el siguiente modo de corrección:
 
-Una vez comprobado que el trabajo práctico cumpla (en forma parcial o total) el objetivo enunciado, se supondrá un trabajo práctico perfecto (10 puntos) y se restarán puntos por cada error encontrado, en base a una tabla general y una particular para cada trabajo práctico.
+Una vez comprobado que el trabajo práctico cumpla
+(en forma parcial o total) el objetivo enunciado, se supondrá un
+trabajo práctico perfecto (10 puntos) y se restarán puntos
+por cada error encontrado, en base a una tabla general y
+una particular para cada trabajo práctico.
 
 Entre otros serán evaluados en los siguientes puntos generales:
 

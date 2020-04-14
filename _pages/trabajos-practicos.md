@@ -16,8 +16,9 @@ cuatrimestres se encuentran en el [sitio de entregas de la materia]({{ site.serc
 
 Si eres alumno de la materia, debes leer atentamente las
 <a href="/normas-cpplint" target="_self">normas de codificación</a>,
-la <a href="/guia-entregas-tp-individual" target="_self">guía de entrega de trabajos individuales</a> y
-la <a href="/guia-entregas-tp-final" target="_self">guía del trabajo grupal</a>.
+la <a href="/guia-entregas-tp-individual" target="_self">guía de entrega de trabajos individuales</a>
+la <a href="/guia-entregas-tp-final" target="_self">guía del trabajo grupal</a>
+y la <a href="/guia-electronica" target="_self">guía de entrega digital</a>
 
 Recuerda que tienes a tu disposición el
 [Grupo de Google](https://groups.google.com/forum/#!forum/tallerdeprogramacion)
@@ -26,6 +27,8 @@ para realizar consultas sobre los temas de la materia y los trabajos prácticos.
 Sin embargo **no puedes publicar la solución a un tp**, completa o parcial;
 cuando hagas una consulta trata de publicar un *código pequeño* que ejemplifique
 *sólo* tu duda.
+
+Sólo una vez **terminada** la cursada podrás liberar tu código.
 
 <!--
 *Proximamente*
