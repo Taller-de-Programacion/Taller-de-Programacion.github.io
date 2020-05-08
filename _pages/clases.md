@@ -89,33 +89,75 @@ wrapCell = function (child) {
 }
 
 
+nextweek = function (aDate, nweeks){
+    nweeks = nweeks || 1;
+    return new Date(aDate.getTime() + nweeks * 7 * 24 * 60 * 60 * 1000);
+}
 
-nextweek = function (aDate){
-    return new Date(aDate.getTime() + 7 * 24 * 60 * 60 * 1000);
+advanceToDayWeek = function (aDate) {
+    // XXX README
+    // We assume that aDate is on Monday. The classes take place
+    // on Thuesdays so we need a +1 day.
+    return new Date(aDate.getTime() + 1 * 24 * 60 * 60 * 1000);
 }
 
 date_to_string = function (aDate) {
     return aDate.getDate() + '/' + (aDate.getMonth() + 1) + '/' + aDate.getFullYear();
 }
 
-fillLecturesTable = function(initial_date, lectures) {
+findDate = function (aDate, aListOfDates) {
+    for (var i = 0; i < aListOfDates.length; ++i) {
+        if (aDate*1 == aListOfDates[i]*1) {
+            return i;
+        }
+    }
+    return -1;
+}
+
+fillLecturesTable = function(initial_date, lectures, holidays) {
     var today = new Date();
     var nextLectureFound = false;
     var table = document.getElementById("lectures-table");
-    var aDate = initial_date;
+    var aDate = advanceToDayWeek(initial_date);
+    var final_date = nextweek(initial_date, 16);
+
+    for (var i = 0; i < holidays.length; i++) {
+        holidays[i] = new Date(holidays[i]);
+    }
 
     for (var i = 0; i < lectures.length; i++) {
         var row = document.createElement("tr");
 
+        var skip = [];
+        while (findDate(aDate, holidays) != -1) {
+           skip.push(aDate);
+           aDate = nextweek(aDate);
+        }
+
+        var dateText = "";
         if ( today <= aDate && nextLectureFound === false ) {
             nextLectureFound = true;
             row.className = "info";
 
-            var dateNode = document.createTextNode(date_to_string(aDate) + "  \n(próxima clase)");
+            dateText += date_to_string(aDate) + "  \n(próxima clase)";
         }
         else {
-            var dateNode = document.createTextNode(date_to_string(aDate));
+            dateText += date_to_string(aDate);
         }
+
+        if (skip.length >= 1) {
+           dateText += "\n(";
+           for (var j = 0; j < skip.length; j++) {
+              dateText += date_to_string(skip[j]) + " ";
+           }
+           dateText += "no hay clases)";
+        }
+
+        if (aDate > final_date) {
+           dateText += "\n(*)";
+        }
+
+        var dateNode = document.createTextNode(dateText);
 
         var linkSublist = createListOfLinks(lectures[i].links);
         var eventSublist = createList(lectures[i].events);
@@ -208,7 +250,7 @@ var lectures = [
         contents:
             ["Introducción a Threads (4hs)"],
         events:
-            ["Entrega TP 1", "Explicación TP 2"],
+            ["Reentrega TP 0", "Entrega TP 1", "Explicación TP 2"],
         links:
             [
              {
@@ -229,7 +271,7 @@ var lectures = [
         contents:
             ["Templates/STL (3h)", "Operadores en C++ (1h)"],
         events:
-            ["Corrección TP 1"],
+            ["Corrección TP 0", "Corrección TP 1"],
         links:
             [
              {
@@ -359,7 +401,7 @@ var lectures = [
     },
 ];
 
-fillLecturesTable(new Date("{{ site.current_quater }}"), lectures);
+fillLecturesTable(new Date("{{ site.current_quater }}"), lectures, {{ site.current_quater_holidays }});
 </script>
 
 
