@@ -115,7 +115,7 @@ findDate = function (aDate, aListOfDates) {
 }
 
 fillLecturesTable = function(initial_date, lectures, holidays) {
-    var today = new Date();
+    var today = new Date((new Date()).toDateString()); // Today's date without time
     var nextLectureFound = false;
     var table = document.getElementById("lectures-table");
     var aDate = advanceToDayWeek(initial_date);
