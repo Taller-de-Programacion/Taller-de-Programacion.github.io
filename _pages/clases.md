@@ -305,7 +305,7 @@ var lectures = [
              },
              {
                 name: "Programación Orientada a Eventos (handout)",
-                link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/2018/poe-handout.pdf",
+                link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/2020/poe-2020.pdf",
              },
              {
                 name: "Programación Orientada a Eventos (2) (handout)",
