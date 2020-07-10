@@ -3,7 +3,7 @@ layout: post
 title: Windows y los threads
 author: admin
 date: 21/08/2010
-tags: [Notas técnicas]
+tags: [C windows threads]
 snippets: 
     - |
         ```cpp

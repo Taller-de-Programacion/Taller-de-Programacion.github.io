@@ -3,7 +3,7 @@ layout: post
 title: Combos complejos en gtkmm
 author: Pablo Roca
 date: 09/03/2011
-tags: [gtkmm]
+tags: [C++ gtkmm]
 snippets: 
     - |
         ```cpp

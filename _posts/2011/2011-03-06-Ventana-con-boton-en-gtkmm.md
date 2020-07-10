@@ -3,7 +3,8 @@ layout: post
 title: Ventana con botón en gtkmm
 author: Pablo Roca
 date: 06/03/2011
-snippets: 
+tags: [C++ gtkmm]
+snippets:
     - |
         ```cpp
         #include <gtkmm.h>

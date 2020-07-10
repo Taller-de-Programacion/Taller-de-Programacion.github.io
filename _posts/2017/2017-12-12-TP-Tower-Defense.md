@@ -8,7 +8,6 @@ date: 12/12/2017
 tags: [Trabajo Práctico Demo]
 snippets: none
 video-url: https://www.youtube.com/embed/RLAoDbgdZdY?rel=0
-
 ---
 
 Eres la última línea de defensa. Una horda de enemigos intentaran cruzar y tú deberas impedirlo.

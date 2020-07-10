@@ -3,7 +3,7 @@ layout: post
 title: STL y templates
 author: admin
 date: 21/08/2010
-tags: [C]
+tags: [C++]
 snippets: 
     - |
         ```cpp

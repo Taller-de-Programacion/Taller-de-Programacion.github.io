@@ -3,7 +3,7 @@ layout: post
 title: Timers en Windows
 author: admin
 date: 21/08/2010
-tags: [Notas técnicas]
+tags: [C timer windows]
 snippets: none
 
 ---

@@ -3,7 +3,7 @@ layout: post
 title: Combos simples en gtkmm
 author: Pablo Roca
 date: 10/03/2011
-tags: [GTK]
+tags: [C++ gtkmm]
 ---
 Agregamos un [combo](http://library.gnome.org/devel/gtkmm-tutorial/stable/sec-combobox.html) simple que admite sólo los textos que mostrará (string). Este caso se simplifica en gran medida si utilizamos un [combo de texto](http://library.gnome.org/devel/gtkmm-tutorial/stable/sec-comboboxtext.html) que hereda del combo original, ocultando la complejidad del esquema model-view y agregando funcionalidad sólo para textos.
 

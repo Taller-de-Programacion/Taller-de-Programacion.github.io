@@ -3,8 +3,9 @@ layout: post
 title: Orden de constructores - constructor copia
 author: admin
 date: 21/08/2010
-tags: [C]
+tags: [C++]
 ---
+
 # Orden de la llamada de constructores
 
 Implementamos las siguientes clases:

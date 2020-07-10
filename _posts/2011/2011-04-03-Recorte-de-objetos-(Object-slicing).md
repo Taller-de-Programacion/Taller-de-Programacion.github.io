@@ -3,7 +3,7 @@ layout: post
 title: Recorte de objetos (Object slicing)
 author: admin
 date: 03/04/2011
-tags: [C++]
+tags: [C++ gtkmm]
 snippets: 
     - |
         ```cpp

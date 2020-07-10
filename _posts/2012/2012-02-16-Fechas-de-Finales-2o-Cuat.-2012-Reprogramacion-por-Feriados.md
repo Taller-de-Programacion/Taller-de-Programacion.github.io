@@ -7,6 +7,5 @@ tags: [Noticias]
 snippets: none
 
 ---
-<div class="entry-content">
-						<p>Debido a que el día Martes 21/02 es feriado nacional, la fecha del final correspondiente fue reprogramada al día Miércoles 22/02.</p>
-											</div>
+
+Debido a que el día Martes 21/02 es feriado nacional, la fecha del final correspondiente fue reprogramada al día Miércoles 22/02.
