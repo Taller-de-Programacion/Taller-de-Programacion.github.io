@@ -53,8 +53,6 @@ compress_html:
   profile: false
   startings: []
 
-highlighter: rouge
-
 
 # Tracker
 analytics: UA-83979019-1

@@ -1,56 +1,17 @@
 ---
 layout: post
-title: Constructor de copia – Orden
+title: Orden de constructores - constructor copia
 author: admin
 date: 21/08/2010
 tags: [C]
-snippets: 
-    - |
-        ```cpp
-        #include <iostream>
-        #include <string>
-         class CCadena
-        {
-         private:
-          char *cadena;
-          public:
-          CCadena( char *cad )
-         {
-         cadena = new char[ strlen( cad ) + 1 ];
-         strcpy( cadena, cad );
-         }
-          CCadena( const CCadena &v )
-         {
-         cadena = new char[ strlen( v.cadena ) + 1 ];
-         strcpy( cadena, v.cadena );
-         }
-          void Print()
-         {
-         std::cout << cadena;
-         }
-          ~CCadena()
-         {
-         delete[] cadena;
-         }
-        };
-         void print( CCadena param )
-        {
-         param.Print();
-        }
-         int main( void )
-        {
-         CCadena cadena( "Hola" );
-         print( cadena );
-          return 0;
-        }
-        ```
-
 ---
-Constructor copia: Orden
+# Orden de la llamada de constructores
 
 Implementamos las siguientes clases:
 
 ![Diagrama de clases](/assets/2010/08/2010-08-21-Constructor-de-copia-Orden.svg)
+
+Implementamos las clases A, B y C
 
 ```cpp
 #include <iostream>
@@ -83,7 +44,11 @@ class CC {
    std::cout << "Destr CC" << std::endl;
   }
 };
+```
 
+Padre 1 y 2
+
+```cpp
 class P1 {
  private:
   CC c;
@@ -105,7 +70,11 @@ class P2 {
    std::cout << "Destr P2" << std::endl;
   }
 };
+```
 
+Y la clase hija
+
+```cpp
 class H : public P1, P2 {
  private:
   CA a;
@@ -118,23 +87,75 @@ class H : public P1, P2 {
    std::cout << "Destr H" << std::endl;
   }
 };
- 
+```
+
+Instanciamos a la clase hija en el stack.
+
+Primero se construyen los padres, en el orden que aparecen. Para cada clase que se construya, antes de su constructor se invocan los constructores de cada uno de los miembros, en el orden en el que aparecen.
+
+```cpp
 int main(void) {
  H h;
- // Const CC              primero se construyen los padres, en el orden que aparecen
- // Const P1
- // Const P2              para cada clase que se construya, antes de su constructor se
- // Const CA                   invocan los constructores de cada uno de los miembros,
- // Const CB                   en el orden en el que aparecen.
- // Const H
- // Destr H
- // Destr CB
- // Destr CA
- // Destr P2
- // Destr P1
- // Destr CC
  return 0;
 }
 ```
-<p>orden.cpp</p>
-<div><div>{{page.snippets[0] | markdownify }}</div></div>
+
+La salida será
+
+```
+Const CC
+Const P1
+Const P2
+Const CA
+Const CB
+Const H
+Destr H
+Destr CB
+Destr CA
+Destr P2
+Destr P1
+Destr CC
+```
+
+## Copia de parámetros
+
+Implementamos la clase `CCadena`
+
+```cpp
+#include <iostream>
+#include <string>
+
+class CCadena {
+ private:
+  char *cadena;
+ public:
+  CCadena( char *cad ) {
+   cadena = new char[ strlen( cad ) + 1 ];
+   strcpy( cadena, cad );
+  }
+  CCadena( const CCadena &v ) {
+   cadena = new char[ strlen( v.cadena ) + 1 ];
+   strcpy( cadena, v.cadena );
+  }
+  void Print() {
+   std::cout << cadena;
+  }
+  ~CCadena() {
+   delete[] cadena;
+  }
+};
+```
+
+Y luego implementamos el método print, que recibe un objeto `CCadena` por **copia**
+
+```cpp
+void print( CCadena param ) {
+ param.Print();
+}
+
+int main( void ) {
+ CCadena cadena( "Hola" );
+ print( cadena );
+ return 0;
+}
+```
