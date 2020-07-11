@@ -10,12 +10,10 @@
                     <div class="sidebar-module">
                         <h4>Últimas Noticias</h4>
                         <ol class="list-unstyled">
-                            {% for post in site.posts %}
-                            {% if post.tags contains 'Noticias' %}
+                            {% for post in site.categories.news %}
                             <li class="unhide-by-date" style="display: none;" date="{{ post.date | date: '%Y/%m/%d' }}">
                                 <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
                             </li>
-                            {% endif %}
                             {% endfor %}
                         </ol>
                     </div>

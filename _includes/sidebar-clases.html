@@ -16,15 +16,11 @@
                     <div class="sidebar-module">
                         <h4>Notas Técnicas</h4>
                         <ol class="list-unstyled">
-                            {% for post in site.posts %}
-                            {% unless post.tags contains 'Noticias' %}
-                            {% unless post.tags contains 'Trabajos Prácticos' %}
+                            {% for post in site.categories.blog %}
                             {% unless post.tags contains 'Trabajo Práctico Demo' %}
                             <li>
                                 <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
                             </li>
-                            {% endunless %}
-                            {% endunless %}
                             {% endunless %}
                             {% endfor %}
                         </ol>
