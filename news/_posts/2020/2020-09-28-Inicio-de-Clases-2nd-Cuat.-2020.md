@@ -14,8 +14,6 @@ el 21/12/20 y el 07/02/21.
 
 Se les recuerda a los alumnos que **deben** inscribirse en el sitio de entregas
 <a href="{{ site.sercom_url }}" target="_blank">Sercom</a>.
-Para alumnos recursantes la inscripción es
-<a href="{{ site.sercom_url }}/upgrade_registration" target="_blank">aquí</a>.
 
 Ademas, es requerida la **inscripción** en el
 [campus de la facultad](https://campus.fi.uba.ar/course/view.php?id=1921).

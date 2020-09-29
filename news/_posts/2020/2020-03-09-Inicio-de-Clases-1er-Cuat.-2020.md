@@ -13,8 +13,6 @@ que abarca del 13/04/20 al 20/07/20.
 
 Se les recuerda a los alumnos que deben inscribirse en el sitio de entregas
 <a href="{{ site.sercom_url }}" target="_blank">Sercom</a>.
-Para alumnos recursantes la inscripción es
-<a href="{{ site.sercom_url }}/upgrade_registration" target="_blank">aquí</a>.
 
 Para los trabajos prácticos, no se olviden de ver la
 [guía de entrega de trabajos individuales](/guia-entregas-tp-individual).

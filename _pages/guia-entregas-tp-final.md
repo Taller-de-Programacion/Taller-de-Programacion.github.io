@@ -87,7 +87,7 @@ Si la aplicación tiene códigos de error, poner aquí su descripción, posible 
 
 ## Entrega Electrónica
 
-Como frente a cualquier instancia de corrección resulta indispensable realizar una entrega electrónica a través del [SERCOM]({{ site.sercom_url }}dashboard). Dicha entrega deberá contemplar:
+Como frente a cualquier instancia de corrección resulta indispensable realizar una entrega electrónica a través del [SERCOM]({{ site.sercom_url }}). Dicha entrega deberá contemplar:
 
 <ul>
 <li>Fuentes y recursos multimedia (*)</li>

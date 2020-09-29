@@ -11,8 +11,7 @@ snippets: none
 Damos inicio al segundo ciclo de clases del 2018 que abarca del 21/08/18 al 7/12/18.
 
 Se les recuerda a los alumnos que deben inscribirse en el sitio de entregas
-<a href="{{ site.sercom_url }}" target="_blank">Sercom</a>. Para alumnos recursantes la inscripción
-es <a href="{{ site.sercom_url }}/upgrade_registration" target="_blank">aquí</a>.
+<a href="{{ site.sercom_url }}" target="_blank">Sercom</a>.
 
 Para los trabajos prácticos, no se olviden de ver la [guía de entrega de trabajos individuales](/guia-entregas-tp-individual).
 

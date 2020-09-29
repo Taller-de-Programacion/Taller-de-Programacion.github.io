@@ -33,7 +33,7 @@ la <a href="/guia-entregas-tp-final" target="_self">guía del trabajo grupal</a>
 ### Recursantes
 
 Si el alumno es **recursante** de la materia, debe inscribirse en el
-curso actual desde la <a href="{{ site.sercom_url }}/upgrade_registration" target="_blank">sección correspondiente</a>.
+curso actual desde la <a href="{{ site.sercom_url }}" target="_blank">sección correspondiente</a>.
 
 Si el alumno tiene algún TP aprobado de un cuatrimestre anterior con
 nota **mayor a 7** cuenta con la posibilidad de no realizarlo nuevamente.
