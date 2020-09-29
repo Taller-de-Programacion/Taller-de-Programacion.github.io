@@ -20,7 +20,7 @@ current_quater_holidays: '[]'
 github_username:  Taller-de-programacion
 repository: Taller-de-Programacion/Taller-de-Programacion.github.io
 
-sercom_url: https://sercom.7542.fi.uba.ar/
+sercom_url: http://206.189.71.102:8080/
 
 # Build settings
 markdown: kramdown
