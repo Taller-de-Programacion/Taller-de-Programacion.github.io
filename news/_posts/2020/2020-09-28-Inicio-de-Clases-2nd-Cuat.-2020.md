@@ -9,7 +9,7 @@ snippets: none
 ---
 
 Damos inicio al segundo ciclo de clases del 2020
-que abarca del 28/09/20 al 05/03/20 con un receso entre
+que abarca del 28/09/20 al 05/03/21 con un receso entre
 el 21/12/20 y el 07/02/21.
 
 Se les recuerda a los alumnos que **deben** inscribirse en el sitio de entregas
