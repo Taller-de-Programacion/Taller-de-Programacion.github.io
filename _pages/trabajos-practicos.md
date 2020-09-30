@@ -34,4 +34,14 @@ Sólo una vez **terminada** la cursada podrás liberar tu código.
 *Proximamente*
 Mostramos aquí algunos de los trabajos realizados en cuatrimestres pasados;
 la autoría de estos les corresponde únicamente a sus desarrolladores, los alumnos.
+
+2020 - 1C
+Argentum Online
+https://www.youtube.com/embed/okrdMPxOTbg
+https://mauro7x.github.io/argentum/
+mauro7x, sankle y tonyhuang07.
+
+2017 - 2C
+https://www.youtube.com/watch?v=RLAoDbgdZdY
+https://github.com/JuampiRombola/TowerDefense
 -->
