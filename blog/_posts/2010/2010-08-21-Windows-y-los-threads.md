@@ -169,7 +169,7 @@ DispatchMessage (&amp;Msg);<br>
 <p>1) Cuando un programa encola un mensaje para una ventana utilizando la función <em>PostMessage()</em>, el mismo es insertado dentro de la cola de mensajes de la <em>thread </em>de la ventana, y en el campo <em>hWnd </em>del mensaje indica la ventana destino. Función <em>PostMessage()</em> retorna inmediatamente y la <em>thread </em>que encoló el mensaje continúa su procesamiento normal.</p>
 <p>Existe también la función <em>PostThreadMessage()</em>, que trabaja en forma similar a <em>PostMessage()</em>, sólo que en lugar de indicarse un ventana como destino, se indica una <em>thread</em>. En este caso, el mensaje será encolado en forma idéntica, pero el campo <em>hWnd </em>tendrá un valor NULL.</p>
 <p>2) La función <em>GetMessage()</em> / <em>PeekMessage()</em> lee y/o retira un mensaje de la cola. Los mensajes encolados por la propia thread tienen prioridad por los encolados por cualquier otra <em>thread</em>.</p>
-<p>3) La función <em>TranslateMessage()</em>, realiza ciertas conversiones, como por ejemplo, modificar un click en el botón <img src="http://www.7542.fi.uba.ar/tutorials/threads/Threads02.gif" alt="" width="18" height="16" border="0"> en un mensaje WM_CLOSE.</p>
+<p>3) La función <em>TranslateMessage()</em>, realiza ciertas conversiones, como por ejemplo, modificar un click en el botón  en un mensaje WM_CLOSE.</p>
 <p>4) La función <em>DispatchMessage()</em> llama a la función <em>callback </em>de la ventana correspondiente, la cual procesa el mensaje y devuelve una respuesta.</p>
 <p>5) Si la función que envió el mensaje fue <em>PostMessage()</em> / <em>PostThreadMessage()</em>, esta respuesta se descarta.</p>
 <h2>Envío de mensajes</h2>
