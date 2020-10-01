@@ -91,10 +91,19 @@ fillLecturesTable = function(initial_date, lectures, holidays) {
 
         if (skip.length >= 1) {
            dateText += "\n(";
-           for (var j = 0; j < skip.length; j++) {
-              dateText += date_to_string(skip[j]) + " ";
+           if (skip.length == 1) {
+               dateText += date_to_string(skip[0]);
            }
-           dateText += "no hay clases)";
+           else if (skip.length == 2) {
+               dateText += date_to_string(skip[0]);
+               dateText += " y ";
+               dateText += date_to_string(skip[1]);
+           }
+           else {
+               dateText += "del " + date_to_string(skip[0]);
+               dateText += " al " + date_to_string(skip[-1]);
+           }
+           dateText += " no hay clases)";
         }
 
         if (aDate > final_date) {
