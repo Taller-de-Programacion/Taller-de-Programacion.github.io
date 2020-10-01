@@ -101,7 +101,7 @@ fillLecturesTable = function(initial_date, lectures, holidays) {
            }
            else {
                dateText += "del " + date_to_string(skip[0]);
-               dateText += " al " + date_to_string(skip[-1]);
+               dateText += " al " + date_to_string(skip[skip.length-1]);
            }
            dateText += " no hay clases)";
         }
