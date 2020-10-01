@@ -106,9 +106,9 @@ fillLecturesTable = function(initial_date, lectures, holidays) {
            dateText += " no hay clases)";
         }
 
-        if (aDate > final_date) {
+        /*if (aDate > final_date) {
            dateText += "\n(*)";
-        }
+        }*/
 
         var dateNode = document.createTextNode(dateText);
 
