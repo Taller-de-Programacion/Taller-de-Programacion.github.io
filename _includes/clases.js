@@ -162,7 +162,7 @@ var lectures = [
             [
              {
                 name: "Introducción a sockets TCP en C (handout)",
-                link: "https://github.com/Taller-de-Programacion/clases/raw/master/sockets-mdipaola/bin/sockets-handout.pdf",
+                link: "https://github.com/eldipa/taller-clases/raw/master/sockets/bin/sockets-handout.pdf",
              },
              {
                 name: "Sockets TCP en C (ejemplos)",
