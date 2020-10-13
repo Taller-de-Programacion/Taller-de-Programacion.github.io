@@ -187,11 +187,11 @@ var lectures = [
             [
              {
                 name: "struct y clases C++ (handout)",
-                link: "https://github.com/Taller-de-Programacion/clases/raw/master/classes/bin/classes-handout.pdf",
+                link: "https://github.com/eldipa/taller-clases/raw/master/classes/bin/classes-handout.pdf",
              },
              {
                 name: "Pasaje de objetos (handout)",
-                link: "https://github.com/Taller-de-Programacion/clases/raw/master/moving/bin/moving-handout.pdf",
+                link: "https://github.com/eldipa/taller-clases/raw/master/moving/bin/moving-handout.pdf",
              },
              {
                 name: "Herencia y Polimorfismo (handout)",
