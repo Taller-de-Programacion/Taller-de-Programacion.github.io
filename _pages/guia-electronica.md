@@ -16,6 +16,9 @@ en GitHub, hacer un release y subir el release al
 Este es un *proceso habitual en la industria* desde el control
 de versiones al release.
 
+La [guía de registración](/inscripcion-sercom) les muestra paso a paso
+como registrarse en el Sercom.
+
 ## Creación de un repositorio en GitHub
 
 Para ello deberás tener una cuenta en [GitHub](https://github.com/).

@@ -25,10 +25,16 @@ Para hacer efectiva la cursada, el alumno debe **registrarse** en el
 En el mismo se podrán entregar los trabajos prácticos semanales y final para
 la corrección docente.
 
+La [guía de registración](/inscripcion-sercom) les muestra paso a paso
+como registrarse en el Sercom.
+
 Es indispensable leer atentamente las
 <a href="/normas-cpplint" target="_self">normas de codificación</a>,
 la <a href="/guia-entregas-tp-individual" target="_self">guía de entrega de trabajos individuales</a> y
 la <a href="/guia-entregas-tp-final" target="_self">guía del trabajo grupal</a>.
+
+En especial, leer la [guía de entrega electrónica](/guia-electronica)
+que muestra paso a paso como realizar una entrega en el Sercom.
 
 ### Recursantes
 
@@ -122,7 +128,7 @@ Al hacer esto, la libreta debe contener los siguiente datos:
 </ul>
 
 El Jefe de Trabajos Prácticos completará la nota y rubricará la
-libreta quedando el alumno en condición de redir exámen final.
+libreta quedando el alumno en condición de rendir exámen final.
 
 ### Exámen final
 
@@ -149,6 +155,7 @@ y Calificación y rubrique la aprobación.
  - Martín Di Paola (martinp.dipaola at gmail.com)
 
 #### Ayudantes
- - Matías Lafroce
  - Ezequiel Werner (eze210 at gmail.com)
  - Federico Gomez Peter
+ - Leo Bellaera
+ - Eliana Gamarra
