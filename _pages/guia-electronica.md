@@ -1,6 +1,6 @@
 ---
 layout: main-topic-page
-title: Entrega digital en Github y Sercom
+title: Entrega digital en GitHub y Sercom
 sidebar-include: sidebar-guia-electronica.html
 permalink: /guia-electronica
 hide_post_meta: true
@@ -10,15 +10,15 @@ nav-trabajos-practicos: active
 ---
 
 La entrega digital consta de subir el trabajo a un repositorio
-en Github, hacer un release y subir el release al
+en GitHub, hacer un release y subir el release al
 <a href="{{ site.sercom_url }}" target="_blank">Sercom</a>.
 
 Este es un *proceso habitual en la industria* desde el control
 de versiones al release.
 
-## Creación de un repositorio en Github
+## Creación de un repositorio en GitHub
 
-Para ello deberás tener una cuenta en [Github](https://github.com/).
+Para ello deberás tener una cuenta en [GitHub](https://github.com/).
 Estas son gratuitas y solo requieren de un mail de confirmación.
 
 Una vez logueado deberás crear un repositorio de Git por cada
@@ -34,7 +34,7 @@ la cursada. Una vez terminada la cursada podes hacer pública tu solución.
 
 <img style="max-width: 100%;" src="assets/img/git/02_private_repo.png" />
 
-Copia la dirección del repositorio en Github. Asegurate de seleccionar
+Copia la dirección del repositorio en GitHub. Asegurate de seleccionar
 *https*.
 
 <img style="max-width: 100%;" src="assets/img/git/03_copy_name.png" />
@@ -59,7 +59,7 @@ repositorio.
 Con `git add` podes seleccionar que cambios se incluiran en el siguiente
 commit; con `git commit` consolidas tus cambios en un commit, es recomendable
 hacer buenos mensajes de commit. Finalmente un `git push` copia tus commits
-locales y los publica en el repositorio de Github.
+locales y los publica en el repositorio de GitHub.
 
 Se recomienda hacer el ciclo de `git add`, `git commit` y `git push`
 *frecuentemente* introduciendo cambios pequeños y con buenos comentarios.
@@ -71,7 +71,7 @@ Se recomienda hacer el ciclo de `git add`, `git commit` y `git push`
 Una vez que consideres que tu trabajo esta listo para ser subido al
 <a href="{{ site.sercom_url }}" target="_blank">Sercom</a>, tenes
 que hacer un *release*. No te olvides de verificar que hayas subido
-a Github todos tus cambios con un `git push`.
+a GitHub todos tus cambios con un `git push`.
 
 <img style="max-width: 100%;" src="assets/img/git/07_check.png" />
 
@@ -84,30 +84,40 @@ siguiendo un [versionado semántico](https://semver.org/lang/es/).
 
 ## Entrega en el Sercom
 
-Con el release creado descargate el zip que te da Github.
+Con el release creado descargate el zip que te da GitHub.
 
 <img style="max-width: 80%;" src="assets/img/git/09_download_code.png" />
 
 El Sercom (<a href="{{ site.sercom_url }}" target="_blank">{{ site.sercom_url }}</a>)
-cuenta con su propio sistema de registro de usuarios y deberas estar
+cuenta con su propio sistema de registro de usuarios y deberás estar
 registrado previamente.
 
-Una vez correctamente identificado se dispone de un menú en forma de
-combo en la esquina superior derecha.
+Una vez correctamente identificado deberás entrar al curso y seleccionar
+el ejercicio que estas resolviendo.
 
-Selecciona la opción <strong>Mis entregas</strong> que
-te llevara al listado de entregas realizadas y donde, presionando la
-opción <strong>Agregar</strong>, se puede realizar la entrega del trabajo.
-
-<img style="max-width: 100%;" src="assets/img/git/10_agregar_entrega.png" />
-
-Selecciona el TP y subi el zip tal cual lo descargaste de Github.
+Cada entrega o *submission* requiere completar 3 items:
+ - subir el zip que te descargaste desde GitHub
+ - poner el link al repositorio de GitHub en el cual esta el código
+ - poner tu padrón.
 
 <img style="max-width: 100%;" src="assets/img/git/11_subir_entrega.png" />
 
 El proceso de hacer un release y subirlo al Sercom lo podes realizar
-varias veces. Sin embargo *no abuses del sistema*: asegurate que
+varias veces pero hay un limite por hora.
+
+**No abuses del sistema**: asegurate que
 tu código compila, pasa las pruebas y no tiene leaks de *manera local*.
+Es **mucho** más rápido que estar subiendo las entregas al Sercom ademas
+que podrás debuggearlo.
+
+El Sercom compilará tu código y lo ejecutará contra los tests públicos y
+privados.
+
+Cuando termine podrás ver los resultados:
+ - output de la compilación
+ - diferencias entre el output generador por tu código y el esperado por
+las pruebas
+ - verificación con Valgrind, thread-sanitizer y otras herramientas.
 
 ## Semana de Code Review
 
@@ -117,10 +127,10 @@ revisión o *code review*.
 El *code review* es un proceso estándar que fomenta la colaboración
 y la mejora continua.
 
-El docente le enviará al alumno un mail pidiendole que lo agregue como
-*colaborador* al repositiorio.
+El docente le enviará al alumno un mail pidiéndole que lo agregue como
+*colaborador* al repositorio.
 
-El alumno debera configurar el proyecto
+El alumno deberá configurar el proyecto
 
 <img style="max-width: 100%;" src="assets/img/git/12_settings.png" />
 
@@ -137,6 +147,9 @@ y crear tickets o issues:
 
 <img style="max-width: 100%;" src="assets/img/git/15_fill_issue.png" />
 
+*Es muy importante que el alumno repase los temas de la clase en
+compañía de las correcciones.*
+
 El alumno entonces tendrá una lista de los puntos a mejorar
 para una posible reentrega.
 
@@ -145,6 +158,6 @@ para una posible reentrega.
 La mencionada forma de trabajo tiene como objetivo familiarizar
 al alumno con herramientas y metodologías de actual uso en la industria.
 
-Un sistema de control de versiones como `git` es escencial para manejar
+Un sistema de control de versiones como `git` es esencial para manejar
 proyectos de mayor escala y el proceso de *code review* es una buena
 práctica para mejorar el código.
