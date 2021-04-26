@@ -1,0 +1,24 @@
+---
+layout: post
+title: Compilación y linkeo
+author: Ezequiel Werner
+date: 26/04/2021
+tags: [correccion, Compilacion, Linkeo]
+snippets: none
+
+---
+
+Los tipos no definidos causan errores en tiempo de compilación
+
+Las funciones usadas pero no declaradas causan warnings al usar -Wall, 
+que son tratados como errores en tiempo de compilación cuando se usar -Werror
+Si no se usa -Wall y -Werror, una función no declarada no frena la compilación, 
+y el que va a detectar la falta de una definición es el linker.
+
+Los tipos conflictivos son detectados por el compilador.
+
+Una vez que cada unidad de compilación (un .c) se tradujo en un .o, la falta de 
+definición de una función hace que el linker no sepa a qué dirección de memoria 
+tiene que saltar la ejecución cuando es llamada, y eso provoca un error en la 
+etapa de linkeo.
+
