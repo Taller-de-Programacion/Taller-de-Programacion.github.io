@@ -1,6 +1,6 @@
 ---
 layout: post
-title: EOF
+title: Flujos Estándar
 author: Ezequiel Werner
 date: 26/04/2021
 tags: [correccion, Files]
