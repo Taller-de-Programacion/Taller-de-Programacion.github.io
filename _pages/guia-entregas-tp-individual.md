@@ -152,16 +152,14 @@ Entre otros serán evaluados en los siguientes puntos generales:
 ## ¿Cómo compilar en Linux?
 
 
-Para compilar en Linux (o cualquier otro <em>sabor</em> de Unix) se utiliza el comando <strong>make</strong> en conjunto con uno de los siguientes archivos de <em>scripts</em>:
+Para compilar en Linux (o cualquier otro <em>sabor</em> de Unix) se utiliza
+el comando <strong>make</strong>.
 
-<blockquote><em><em><a href="/assets/2010/08/file-zip.gif"><img title="Archivo ZIP" src="/assets/2010/08/file-zip.gif" alt="Archivo ZIP" width="37" height="37"></a></em> <a href="/assets/2016/09/Makefile.zip">Makefile</a><br>
-</em>
-<em><a href="/assets/2010/08/file-zip.gif"><img title="Archivo ZIP" src="/assets/2010/08/file-zip.gif" alt="Archivo ZIP" width="37" height="37"></a> <a href="/assets/2016/09/Makefile_client_server.zip">Makefile Cliente/Servidor</a><br>
-</em></blockquote>
+El archivo <strong>Makefile</strong> y los casos de prueba públicos
+se podran descargar desde los respectivos ejercicios subidos al Sercom.
 
-Ambos Makefiles deben descomprimirse en el directorio donde se encuentran todos los fuentes del ejercicio. Luego se edita el <tt>Makefile</tt> con tu editor de texto para configurar la sección llamada&nbsp; <strong><tt>#CONFIGURACION</tt></strong> para indicar el nombre del ejecutable, si se trata de un ejercicio en C o C++, si usa GTK+, gtkmm o la biblioteca matemática (math.h).
-En la sección de <strong><tt>#CONFIGURACION "AVANZADA"</tt></strong> se encuentra el detalle de los valores de configuración que puede ser modificado si la configuración simple no es suficiente.
-Una vez hecho esto sólo tenés que ejecutar, en la línea de comandos y dentro del directorio de fuentes, el comando&nbsp;<strong><strong>make</strong></strong> (si el archivo de scripts se llama&nbsp;<strong>Makefile</strong> y encuentra en dicho directorio) o <strong>make -f &lt;ruta-archivo-makefile&gt;</strong> (para especificar de forma explícita al archivo de scripts)
+Dependiendo del ejercicio el Makefile estara configurado para compilar
+archivos `.c` o archivos `.cpp`.
 
 <strong>¡Prestar particular atención a los errores y/o advertencias!</strong>
 
@@ -170,19 +168,9 @@ Notas
 <ul>
 <li>Que compile bien con estas instrucciones no significa que el ejercicio esté perfecto, ni siquiera que sea ISO C/C++ puro. Es sólo una herramienta más (y bastante buena) pero no es garantizala calidad del código.</li>
 <li>Si querés aprender más del comando <strong><tt>make</tt></strong> y el <strong><tt>Makefile</tt></strong> ejecutá en la línea de comandos: <strong><tt>man make</tt></strong> o <strong><tt>info make</tt></strong>.</li>
-<li>Obviamente necesitás un compilador de C y C++. La cátedra recomienda el GCC/G++ (versiones 4.9 o superior).</li>
+<li>Obviamente necesitás un compilador de C y C++.</li>
 </ul>
 
-### Utilizando Makefile Cliente/Servidor
-
-Para compilar programas cliente-servidor, podes usar el Makefile especial para Cliente/Servidor. Para usarlo tenes que renombrarlo como <strong><tt>Makefile </tt></strong>y ponerle nombres especiales a tus archivos:
-
-<ul>
-<li><strong><tt>client*</tt></strong> a los archivos especificos para el cliente (por ejemplo: <tt>client_main.cpp</tt>).</li>
-<li><strong><tt>server*</tt></strong> a los archivos especificos para el servidor (por ejemplo: <tt>server_main.cpp</tt>).</li>
-<li><strong><tt>common*</tt></strong> a los archivos generales, compartidos por ambos procesos, cliente y servidor (por ejemplo: <tt>common_socket.cpp</tt> o <tt>common_thread.cpp</tt>).</li>
-<li>Luego, compilas tambien con <tt>make</tt> y te genera los ejecutables <strong><tt>client</tt></strong> con el cliente y <strong><tt>server</tt></strong> con el servidor.</li>
-</ul>
 
 ## Estándares de Codificación
 
