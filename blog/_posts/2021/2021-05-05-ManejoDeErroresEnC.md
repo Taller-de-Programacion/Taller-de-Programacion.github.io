@@ -47,18 +47,15 @@ int main(int argc, const char *argv[]) {
 		// Como no alloqué nada antes de esta función, no hago nada
 		// (Se asume que lo que alloque la función socket_init fue liberado si
 		// tuvo alguna falla interna)
-		fprintf(stderr, "Falló socket_init (%s)\n", strerror(errno));
 		return -1;
 	}
 
-	if ( (file = fopen(argv[ARGV_FILEPATH_INDEX], "r")) == NULL) {
-		fprintf(stderr, "No pude abrir el archivo (%s)\n", strerror(errno));
+	if ((file = fopen(argv[ARGV_FILEPATH_INDEX], "r")) == NULL) {
 		socket_uninit(&skt);
 		return -1;
 	}
 
 	if (socket_connect(&skt, argv[ARGV_HOSTNAME_INDEX], argv[ARGV_SERVICE_INDEX]) < 0) {
-		fprintf(stderr, "No pude conectarme (%s)\n", strerror(errno));
 		fclose(file);
 		socket_uninit(&skt);
 		return -1;
@@ -76,6 +73,97 @@ int main(int argc, const char *argv[]) {
 Cualquiera de estas funciones pueden fallar, y si lo hacen, nos imposibilitaría a continuar la ejecución.
 Por esta razon, se chequean errores y se liberan los recursos de forma ordenada. La contra es que 
 el código se hace mas ilegible. En clases posteriores vamos a ver cómo en C++ podemos tener la misma robustez
-que este programa, conservando la legibilidad del primer programa. Mientras tanto, en C nos tenemos que conformar
-con esto (en C existen otros métodos para mejorar la legibilidad, pero requieren el uso del infame `goto` y 
-en la facultad eso es palabra prohibida).
+que este programa, conservando la legibilidad del primer programa. Mientras tanto, en C podemos hacer algunas
+mejoras. La primera es utilizar funciones auxiliares, para ir manejando de a 1 los recursos allocados en
+cada capa.
+
+```c
+#define ARGV_HOSTNAME_INDEX 1
+#define ARGV_SERVICE_INDEX 2
+#define ARGV_FILEPATH_INDEX 3
+#define ARGC_MANDATORY_QUANTITY 4
+
+static int _open_file_and_do_something(socket_t *skt, const char *filepath) {
+	FILE *file;
+	if ((file = fopen(filepath, "r")) == NULL) {
+		return -1;
+	}
+
+	int ret = do_something(skt, file);
+	fclose(file);
+	return ret;
+}
+
+int main(int argc, const char *argv[]) {
+	if (argc != ARGC_MANDATORY_QUANTITY) {
+		fprintf(stderr, "Uso: %s <hostname> <servicio> <path al archivo>\n", argv[0]);
+		return -1;
+	}
+
+	socket_t skt;
+
+	if (socket_init(&skt) < 0) {
+		// Como no alloqué nada antes de esta función, no hago nada
+		// (Se asume que lo que alloque la función socket_init fue liberado si
+		// tuvo alguna falla interna)
+		return -1;
+	}
+
+	if (socket_connect(&skt, argv[ARGV_HOSTNAME_INDEX], argv[ARGV_SERVICE_INDEX]) < 0) {
+		socket_uninit(&skt);
+		return -1;
+	}
+
+	int ret = _open_file_and_do_something(&skt, argv[ARGV_FILEPATH_INDEX]);
+	socket_uninit(&skt);
+	return ret;
+}
+```
+
+De esta forma manejaríamos de a 1 recurso por función. La desventaja es que estarías llamando a varias funciones
+anidadas (se podría solucionar con funciones `inline`). Otra alternativa es el uso del infame `goto`
+
+
+```c
+#define ARGV_HOSTNAME_INDEX 1
+#define ARGV_SERVICE_INDEX 2
+#define ARGV_FILEPATH_INDEX 3
+#define ARGC_MANDATORY_QUANTITY 4
+
+int main(int argc, const char *argv[]) {
+	if (argc != ARGC_MANDATORY_QUANTITY) {
+		fprintf(stderr, "Uso: %s <hostname> <servicio> <path al archivo>\n", argv[0]);
+		return -1;
+	}
+
+	socket_t skt;
+	FILE *file;
+	int ret = 0;
+	if ((ret = socket_init(&skt)) < 0) {
+		goto socket_init_failed;
+	}
+
+	if ((file = fopen(argv[ARGV_FILEPATH_INDEX], "r")) == NULL) {
+		ret = -1;
+		goto file_open_failed;
+	}
+
+	if ((ret = socket_connect(&skt, argv[ARGV_HOSTNAME_INDEX], argv[ARGV_SERVICE_INDEX])) < 0) {
+		goto socket_connect_failed;
+	}
+
+	ret = do_something(&skt, file);
+
+socket_connect_failed:
+	fclose(file);
+file_open_failed:
+	socket_uninit(&skt);
+socket_init_failed:
+	return ret;
+}
+```
+
+Notar como la liberación de recursos se apilan al final de la función y cada goto libera
+**solo los recursos que fueron allocados hasta el momento de esa falla**. De esta forma se
+logra un comportamiento similar a lo que sucede con los objetos en C++. Sin embargo,
+el uso de `goto` en esta materia (y en esta facultad), está prohibido.
