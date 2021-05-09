@@ -3,7 +3,7 @@ layout: post
 title: Socket - File Descriptor
 author: Martin Di Paola
 date: 07/05/2021
-tags: [correccion, socket, fd]
+tags: [correccion, socket, fd, RAII]
 snippets: none
 
 ---
@@ -29,4 +29,63 @@ if (fd >= 0) {
 }
 ```
 
+Como todo recurso, este debe ser protegido en un `struct` (C) o clase
+(C++) **ocultando** el file descriptor de la interfaz
+(funciones/métodos) públicos.
 
+```cpp
+/***** Archivo socket.h *****/
+struct socket_t {
+  int fd;
+};
+
+// Mal: el usuario del struct socket_t *sabe* y *manipula*
+// file descriptors. Leakea la implementación y no es RAII.
+void socket_set_fd(struct socket_t* self, int fd);
+/***** Fin de socket.h *****/
+```
+
+```cpp
+/***** Archivo socket.h *****/
+struct socket_t {
+  int fd;
+};
+/***** Fin de socket.h *****/
+
+/***** Archivo socket.c *****/
+// Bien: esta función es privada: el usuario del struct socket_t
+// *no* puede llamarla.
+static void socket_set_fd(struct socket_t* self, int fd) {
+  self->fd = fd;
+}
+/***** Fin de socket.c *****/
+```
+
+```cpp
+/***** Archivo socket.h *****/
+class Socket {
+  private:
+    int fd;
+  public:
+    // Mal: el usuario de la clase Socket *sabe* y *manipula*
+    // file descriptors. Leakea la implementación y no es RAII.
+    Socket(int fd);
+    /*...*/
+};
+/***** Fin de socket.h *****/
+```
+
+
+```cpp
+/***** Archivo socket.h *****/
+class Socket {
+  private:
+    int fd;
+    // Bien: este método (constructor) es privado: el usuario de la clase
+    // Socket *no* puede llamarlo.
+    explicit Socket(int fd);
+  public:
+    /*...*/
+};
+/***** Fin de socket.h *****/
+```
