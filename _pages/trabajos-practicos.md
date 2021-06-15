@@ -49,7 +49,7 @@ su propia <a href="https://ramamont.github.io/taller-tp-grupal/">página web</a>
     <div class="col-md-3">
 <iframe width="200" height="200" src="https://www.youtube.com/embed/okrdMPxOTbg" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <p>Remake de un clásico argentino, el Argentum Online de Morgolock. Hecho por 
-Mauro Parafatim
+Mauro Parafati,
 Santiago Klein y
 Yuhong Huang
 durante la cursada 2020 - 1d cuatrimestre.
