@@ -157,5 +157,6 @@ y Calificación y rubrique la aprobación.
 #### Ayudantes
  - Ezequiel Werner (eze210 at gmail.com)
  - Federico Gomez Peter
+ - Francisco Vazquez
+ - Leonardo Giampieri
  - Leo Bellaera
- - Eliana Gamarra
