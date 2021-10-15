@@ -71,12 +71,11 @@ fillLecturesTable = function(initial_date, lectures, holidays) {
 
     var event_ix = 0;
     for (var i = 0; i < lectures.length; i++) {
-        //var skip = [];
         while (findDate(aDate, holidays) != -1) {
            var row = document.createElement("tr");
 
            var dateText = date_to_string(aDate);
-           dateText "  \n(feriado)"
+           dateText += "  \n(feriado)";
            var dateNode = document.createTextNode(dateText);
 
            var no_class_msj = document.createElement("div");
@@ -90,7 +89,6 @@ fillLecturesTable = function(initial_date, lectures, holidays) {
            table.appendChild(row);
 
            event_ix += 1;
-           //skip.push(aDate);
            aDate = nextweek(aDate);
         }
 
@@ -105,25 +103,6 @@ fillLecturesTable = function(initial_date, lectures, holidays) {
         else {
             dateText += date_to_string(aDate);
         }
-
-        /*
-        if (skip.length >= 1) {
-           dateText += "\n(";
-           if (skip.length == 1) {
-               dateText += date_to_string(skip[0]);
-           }
-           else if (skip.length == 2) {
-               dateText += date_to_string(skip[0]);
-               dateText += " y ";
-               dateText += date_to_string(skip[1]);
-           }
-           else {
-               dateText += "del " + date_to_string(skip[0]);
-               dateText += " al " + date_to_string(skip[skip.length-1]);
-           }
-           dateText += " no hay clases)";
-        }
-        */
 
         var dateNode = document.createTextNode(dateText);
 
