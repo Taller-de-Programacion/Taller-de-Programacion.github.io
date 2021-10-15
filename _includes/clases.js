@@ -69,15 +69,32 @@ fillLecturesTable = function(initial_date, lectures, holidays) {
         holidays[i] = new Date(holidays[i]);
     }
 
+    var event_ix = 0;
     for (var i = 0; i < lectures.length; i++) {
-        var row = document.createElement("tr");
-
-        var skip = [];
+        //var skip = [];
         while (findDate(aDate, holidays) != -1) {
-           skip.push(aDate);
+           var row = document.createElement("tr");
+
+           var dateText = date_to_string(aDate);
+           dateText "  \n(feriado)"
+           var dateNode = document.createTextNode(dateText);
+
+           var no_class_msj = document.createElement("div");
+           no_class_msj.innerHTML = "No se dictan clases";
+           var eventSublist = createList(lectures[event_ix].events);
+
+           row.appendChild(wrapCell(dateNode, {class: "col-md-1"}));
+           row.appendChild(wrapCell(no_class_msj, {class: "col-md-7"}));
+           row.appendChild(wrapCell(eventSublist, {class: "col-md-4"}));
+
+           table.appendChild(row);
+
+           event_ix += 1;
+           //skip.push(aDate);
            aDate = nextweek(aDate);
         }
 
+        var row = document.createElement("tr");
         var dateText = "";
         if ( today <= aDate && nextLectureFound === false ) {
             nextLectureFound = true;
@@ -89,6 +106,7 @@ fillLecturesTable = function(initial_date, lectures, holidays) {
             dateText += date_to_string(aDate);
         }
 
+        /*
         if (skip.length >= 1) {
            dateText += "\n(";
            if (skip.length == 1) {
@@ -105,15 +123,13 @@ fillLecturesTable = function(initial_date, lectures, holidays) {
            }
            dateText += " no hay clases)";
         }
-
-        /*if (aDate > final_date) {
-           dateText += "\n(*)";
-        }*/
+        */
 
         var dateNode = document.createTextNode(dateText);
 
         var linkSublist = createListOfLinks(lectures[i].links);
-        var eventSublist = createList(lectures[i].events);
+        var eventSublist = createList(lectures[event_ix].events);
+        event_ix += 1;
 
         row.appendChild(wrapCell(dateNode, {class: "col-md-1"}));
         row.appendChild(wrapCell(linkSublist, {class: "col-md-7"}));
@@ -126,8 +142,6 @@ fillLecturesTable = function(initial_date, lectures, holidays) {
 
 var lectures = [
     {
-        contents:
-            ["Introducción a la materia (1h)", "Conceptos de C avanzados (3hs)"],
         events:
             ["Explicación TP 0"],
         links: [
@@ -154,8 +168,6 @@ var lectures = [
         ],
     },
     {
-        contents:
-            ["Introducción a Sockets (3hs)", "Repaso de Archivos y TDAs (1h)"],
         events:
             ["Entrega TP 0", "Explicación TP 1"],
         links:
@@ -179,8 +191,6 @@ var lectures = [
         ],
     },
     {
-        contents:
-            ["Clases, RAII, Move Semantics en C++ (2hs)", "Herencia y Polimorfismo en C++ (2hs)"],
         events:
             ["Corrección TP 0"],
         links:
@@ -200,8 +210,6 @@ var lectures = [
         ],
     },
     {
-        contents:
-            ["Introducción a Threads (4hs)"],
         events:
             ["Reentrega TP 0", "Entrega TP 1", "Explicación TP 2"],
         links:
@@ -221,8 +229,6 @@ var lectures = [
         ]
     },
     {
-        contents:
-            ["Templates/STL (3h)", "Operadores en C++ (1h)"],
         events:
             ["Corrección TP 0", "Corrección TP 1"],
         links:
@@ -242,8 +248,6 @@ var lectures = [
          ],
     },
     {
-        contents:
-            ["Excepciones (1hs)", "Introducción a la Arquitectura Cliente-Servidor (2hs)", "Programación Orientada a Eventos (1hs)"],
         events:
             ["Reentrega TP 1", "Entrega TP 2", "Explicación TP 3"],
         links:
@@ -267,8 +271,6 @@ var lectures = [
             ],
     },
     {
-        contents:
-            ["CMake (0.5h)", "SDL (1h)", "Qt5 (2.5h)"],
         events:
             ["Corrección TP 1", "Corrección TP 2", "Entrega TP 3"],
         links:
@@ -280,8 +282,6 @@ var lectures = [
             ]
     },
     {
-        contents:
-            ["Sockets UDP (1hs)", "Features extra de C++ (1hs)", "Espacio para consultas (1hs)","Desarrollo de Trabajo Grupal"],
         events:
             ["Reentrega TP 2", "Corrección TP 3", "Explicación TP Final"],
         links:
@@ -297,56 +297,42 @@ var lectures = [
             ]
     },
     {
-        contents:
-            ["Desarrollo de Trabajo Grupal"],
         events:
             ["Corrección TP 2", "Reentrega TP 3"],
         links:
             [],
     },
     {
-        contents:
-            ["Desarrollo de Trabajo Grupal"],
         events:
             ["Corrección TP 3"],
         links:
             [],
     },
     {
-        contents:
-            ["Desarrollo de Trabajo Grupal"],
         events:
             [],
         links:
             [],
     },
     {
-        contents:
-            ["Desarrollo de Trabajo Grupal"],
         events:
             [],
         links:
             [],
     },
     {
-        contents:
-            ["Desarrollo de Trabajo Grupal"],
         events:
             ["Entrega TP Final"],
         links:
             [],
     },
     {
-        contents:
-            ["Desarrollo de Trabajo Grupal"],
         events:
             ["Corrección TP Final"],
         links:
             [],
     },
     {
-        contents:
-            ["Desarrollo de Trabajo Grupal"],
         events:
             ["Reentrega TP Final"],
         links:

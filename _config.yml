@@ -15,7 +15,7 @@ current_quater: 2021/09/06
 # Don't forget to double quote like:
 #   current_quater_holidays: '[]'  # no holidays
 #   current_quater_holidays: '["2010/04/13", "2010/05/13"]'  # two holidays
-current_quater_holidays: '[]'
+current_quater_holidays: '["2020/09/21"]'
 
 github_username:  Taller-de-programacion
 repository: Taller-de-Programacion/Taller-de-Programacion.github.io
