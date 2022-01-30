@@ -17,45 +17,43 @@ Este es un *proceso habitual en la industria* desde el control
 de versiones al release.
 
 La [guía de registración](/inscripcion-sercom) les muestra paso a paso
-como registrarse en el Sercom.
+como registrarse en el Sercom donde deberas tener una cuenta gratuita
+en [GitHub](https://github.com/) previamente creada.
 
-## Creación de un repositorio en GitHub
+Una vez que te registres en el Sercom y te hayas anotado en el curso
+correspondiente al cuatrimestre en curso, el Sercom te creeara 3
+repositorios en Github **privados**.
 
-Para ello deberás tener una cuenta en [GitHub](https://github.com/).
-Estas son gratuitas y solo requieren de un mail de confirmación.
+Estos son:
 
-Una vez logueado deberás crear un repositorio de Git por cada
-trabajo práctico:
+ - `onboarding`
+ - `sockets`
+ - `threads`
 
-<img style="max-width: 100%;" src="assets/img/git/01_create_repo.png" />
-
-El nombre del repositorio no es importante aunque se sugiere que
-coincida con el nombre del trabajo.
-
-Lo que sí es importante es que el repositorio sea **privado** durante
-la cursada. Una vez terminada la cursada podes hacer pública tu solución.
-
-<img style="max-width: 100%;" src="assets/img/git/02_private_repo.png" />
-
-Copia la dirección del repositorio en GitHub. Asegurate de seleccionar
-*https*.
-
-<img style="max-width: 100%;" src="assets/img/git/03_copy_name.png" />
-
-En una terminal en tu máquina podes clonar tu repositorio. Esto es
-tener una copia local donde puedas trabajar.
-
-<img style="max-width: 100%;" src="assets/img/git/04_clone.png" />
-
+Los repositorios son **privados** y no deben ser compartidos para evitar
+plagios.
 
 ## Evolución del proyecto
 
-A partir de aquí comienza tu desarrollo. Es importante que todo el
+El proyecto consta de 2 partes: la parte de entregas **individuales** y
+la parte de entregas **grupales**.
+
+La parte grupal la discutirás con tu grupo y con el docente a cargo pero
+eso recién será a partir de la mitad del cuatrimestre.
+
+Por ahora, enfocate en la parte individual.
+
+La parte individual a su vez consta de 3 partes, cada una asociado a su
+correspondiente repositorio en Github.
+
+Para las entregas individuales el Sercom te habrá creado 3 repositorios
+en donde deberás ir resolviendo distintas partes del proyecto.
+
+Es importante que todo el
 código que crees esten dentro del repositorio **sin** subcarpetas.
 
-Ademas del código deberas crear un `README` con el **informe del trabajo**.
-Asegurate que en el informe incluyas tu nombre, padrón y la URL del
-repositorio.
+Ademas del código deberás crear un `README` con el **informe del trabajo**.
+Asegurate que en el informe incluyas tu nombre y padrón.
 
 <img style="max-width: 100%;" src="assets/img/git/05_code_and_readme.png" />
 
@@ -68,6 +66,9 @@ Se recomienda hacer el ciclo de `git add`, `git commit` y `git push`
 *frecuentemente* introduciendo cambios pequeños y con buenos comentarios.
 
 <img style="max-width: 100%;" src="assets/img/git/06_commit_push.png" />
+
+Podes leer mas sobre `git` en el libro público y gratuito [Pro
+Git](https://git-scm.com/book/en/v2)
 
 ## Release de la solución
 
@@ -87,26 +88,13 @@ siguiendo un [versionado semántico](https://semver.org/lang/es/).
 
 ## Entrega en el Sercom
 
-Con el release creado descargate el zip que te da GitHub.
-
-<img style="max-width: 80%;" src="assets/img/git/09_download_code.png" />
-
-El Sercom (<a href="{{ site.sercom_url }}" target="_blank">{{ site.sercom_url }}</a>)
-cuenta con su propio sistema de registro de usuarios y deberás estar
-registrado previamente.
-
-Una vez correctamente identificado deberás entrar al curso y seleccionar
-el ejercicio que estas resolviendo.
-
-Cada entrega o *submission* requiere completar 3 items:
- - subir el zip que te descargaste desde GitHub
- - poner el link al repositorio de GitHub en el cual esta el código
- - poner tu padrón.
-
-<img style="max-width: 100%;" src="assets/img/git/11_subir_entrega.png" />
+Con el release creado deberás ir al Sercom, seleccionar el ejercicio
+correspondiente y hacer una entrega o *submission* donde tendrás que
+poner el nombre del release (el mismo que usaste en Github).
 
 El proceso de hacer un release y subirlo al Sercom lo podes realizar
-varias veces pero hay un limite por hora.
+varias veces como desees
+pero el Sercom impone un **límite** por hora.
 
 **No abuses del sistema**: asegurate que
 tu código compila, pasa las pruebas y no tiene leaks de *manera local*.
@@ -122,6 +110,9 @@ Cuando termine podrás ver los resultados:
 las pruebas
  - verificación con Valgrind, thread-sanitizer y otras herramientas.
 
+Recordá que las entregas **son obligatorias** y que tienen fechas de
+cierre.
+
 ## Semana de Code Review
 
 Una vez que se cierre el período de entregas comienza la semana de
@@ -133,15 +124,7 @@ y la mejora continua.
 El docente le enviará al alumno un mail pidiéndole que lo agregue como
 *colaborador* al repositorio.
 
-El alumno deberá configurar el proyecto
-
-<img style="max-width: 100%;" src="assets/img/git/12_settings.png" />
-
-y agregarlo como colaborador:
-
-<img style="max-width: 60%;" src="assets/img/git/13_add_collaborator.png" />
-
-El docente entonces podrá hacer un code review. Podrá
+El docente podrá
 seleccionar fragmentos de código
 
 <img style="max-width: 60%;" src="assets/img/git/14_file_issue.png" />
