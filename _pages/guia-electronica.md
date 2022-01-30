@@ -70,6 +70,74 @@ Se recomienda hacer el ciclo de `git add`, `git commit` y `git push`
 Podes leer mas sobre `git` en el libro público y gratuito [Pro
 Git](https://git-scm.com/book/en/v2)
 
+## Consideraciones acerca de las entregas
+
+### Código fuente
+
+Se requiere que el código fuente sea prolijo y contenga los
+comentarios pertinentes.
+
+Asimismo es obligatorio incluir sangría (<em>indent</em>) en el código
+fuente con longitud de entre dos y cuatro espacios.
+
+Se debe utilizar el conjunto de caracteres
+<a href="http://es.wikipedia.org/wiki/UTF8" target="_blank">UTF-8</a>
+para la codificación de los archivos que conforman el código fuente.
+
+Nota: cuando el enunciado no mencione el tratamiento de errores,
+el programa deberá retornar al sistema operativo cero en caso de
+ejecución exitosa y uno ante una situación de error.
+Si el alumno decidiera retornar varios código de error para
+diferentes situaciones deberán enumerarlos en el informe.
+
+### Armado del informe
+
+El informe <strong>debe</strong> contener:
+
+ - nombre y padrón
+ - una descripción de la resolución del trabajo
+ - uno o varios diagramas que ayuden al lector a entender la solución
+ - y opcionalmente aclaraciones del alumno.
+
+El informe debe ser escrito en formato
+[markdown](https://guides.github.com/features/mastering-markdown/)
+y guardarse en el `README` del repositorio.
+
+Puede tratarse de la forma en la que se solucionó el problema más
+complejo que presentaba el ejercicio o una lista descriptiva de las
+funciones o clases más importantes.
+
+**No** es necesario que describas todas y cada una de las clases de tu
+trabajo. Nos importa que puedas explicar tu solución, que se entienda,
+sin llegar a dar todos los detalles.
+
+El o los diagramas deben graficar cómo esta constituido y/o resuelto
+el ejercicio, con una breve descripción coloquial sólo de ser necesario.
+
+Deben permitirle al lector entender las partes mas complejas del trabajo
+y guiarlo en la solución.
+
+Por ejemplo **no** tiene mucho sentido un diagrama completo de treinta clases
+o un diagrama tan genérico que podría ser el diagrama de cualquier trabajo.
+
+En cambio aporta información un gráfico que centra la atención en una
+clase de alta importancia y aquellas relacionadas con la primera.
+
+Se recomienda usar algunos de los diagramas UML. Use un generador
+como [PlantUML](https://plantuml.com/) que son basados en texto
+en vez de uno gráfico.
+
+<strong>Nota: El diagrama aclaratorio es obligatorio para la aprobación de un trabajo práctico.</strong>
+
+Finalmente las aclaraciones del alumno pueden contener,
+en el caso excepcional en que no se haya cumplido con la totalidad
+de los requerimientos de la entrega, explicación del por qué
+y la justificación pertinente.
+
+Esto no garantiza la aceptación de la excepción por parte de la cátedra,
+pero es condición necesaria.
+
+
 ## Release de la solución
 
 Una vez que consideres que tu trabajo esta listo para ser subido al
@@ -138,6 +206,40 @@ compañía de las correcciones.*
 
 El alumno entonces tendrá una lista de los puntos a mejorar
 para una posible reentrega.
+
+### Corrección
+
+Con el objetivo de lograr un criterio uniforme de corrección y calificación,
+se estableció el siguiente modo de corrección:
+
+Una vez comprobado que el trabajo práctico cumpla
+(en forma parcial o total) el objetivo enunciado, se supondrá un
+trabajo práctico perfecto (10 puntos) y se restarán puntos
+por cada error encontrado, en base a una tabla general y
+una particular para cada trabajo práctico.
+
+Entre otros serán evaluados en los siguientes puntos generales:
+
+<ul>
+<li>Cumplimiento de los objetivos planteados</li>
+<li>Código ordenado y eficiente</li>
+<li>Documentación del código fuente</li>
+<li>Claridad del informe del trabajo práctico</li>
+<li>Conceptos de programación utilizados</li>
+<li>Perdida de memoria y/o recursos
+<ul>
+<li>No se permite el uso de variables globales</li>
+</ul>
+</li>
+<li>Eficiencia de la solución adoptada
+<ul>
+<li>No se permite la carga completa de archivos de entrada a memoria (1)</li>
+<li>No se permite limitar las entradas a tamaños arbitrarios (1)</li>
+</ul>
+</li>
+</ul>
+
+<em>(1) Salvo indicación explícita del enunciado o del profesor</em>
 
 ## Comentarios finales
 

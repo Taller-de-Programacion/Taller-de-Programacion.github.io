@@ -28,13 +28,9 @@ la corrección docente.
 La [guía de registración](/inscripcion-sercom) les muestra paso a paso
 como registrarse en el Sercom.
 
-Es indispensable leer atentamente las
+Es indispensable leer atentamente
+la [guía de entrega electrónica](/guia-electronica) y las
 <a href="/normas-cpplint" target="_self">normas de codificación</a>,
-la <a href="/guia-entregas-tp-individual" target="_self">guía de entrega de trabajos individuales</a> y
-la <a href="/guia-entregas-tp-final" target="_self">guía del trabajo grupal</a>.
-
-En especial, leer la [guía de entrega electrónica](/guia-electronica)
-que muestra paso a paso como realizar una entrega en el Sercom.
 
 ### Recursantes
 

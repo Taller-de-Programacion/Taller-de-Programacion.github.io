@@ -14,11 +14,9 @@ sidebar-col-sz: col-sm-3
 Los enunciados de los trabajos prácticos de este y de los pasados
 cuatrimestres se encuentran en el [sitio de entregas de la materia]({{ site.sercom_url }}).
 
-Si eres alumno de la materia, debes leer atentamente las
-<a href="/normas-cpplint" target="_self">normas de codificación</a>,
-la <a href="/guia-entregas-tp-individual" target="_self">guía de entrega de trabajos individuales</a>
-la <a href="/guia-entregas-tp-final" target="_self">guía del trabajo grupal</a>
-y la <a href="/guia-electronica" target="_self">guía de entrega digital</a>
+Si eres alumno de la materia, debes leer atentamente
+la <a href="/guia-electronica" target="_self">guía de entrega digital</a>
+y las <a href="/normas-cpplint" target="_self">normas de codificación</a>,
 
 Recuerda que tienes a tu disposición el
 [Grupo de Google](https://groups.google.com/forum/#!forum/tallerdeprogramacion)
