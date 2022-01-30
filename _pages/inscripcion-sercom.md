@@ -64,5 +64,12 @@ Luego podrás seleccionar el curso correspondiente a tu cuatrimestre.
 
 Y listo!
 
+El Sercom te creará 3 repositorios **privados** en Github y te agregará
+como colaborador.
+
+Debería llegar unos mails donde tendrás q aceptar la invitación para
+tener acceso a los repos.
+
+
 
 
