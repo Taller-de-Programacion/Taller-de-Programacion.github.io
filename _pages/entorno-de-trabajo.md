@@ -200,3 +200,11 @@ consola, podes abrir consolas adicionales corriendo:
 ```shell
 $ sudo docker exec -it taller bash
 ```
+
+### Gotcha
+
+Al compartir una carpeta puede que tengas el ownership/permisos de los
+files compartidos incorrectos.
+
+El por que pasa y como solucionarlo esta en
+[Fix Ownership of Files in a Mounted Volume](https://book-of-gehn.github.io/articles/2022/02/01/Fix-Ownership-of-Files-in-a-Mounted-Volume.html)
