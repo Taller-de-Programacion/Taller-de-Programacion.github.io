@@ -58,7 +58,8 @@ En el menú de la izquierda podrás iniciar la registración al curso.
 
 <img style="max-width: 100%;" src="assets/img/sercom/06_public_course_menu.png" />
 
-Luego podrás seleccionar el curso correspondiente a tu cuatrimestre.
+Luego podrás seleccionar el curso correspondiente a tu cuatrimestre (te
+pedirá un password que te será dado en clase, no faltes!)
 
 <img style="max-width: 100%;" src="assets/img/sercom/07_register_course.png" />
 
