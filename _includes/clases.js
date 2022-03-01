@@ -122,7 +122,7 @@ fillLecturesTable = function(initial_date, lectures, holidays) {
 var lectures = [
     {
         events:
-            ["Explicación TP 0"],
+            ["Explicación TP", "Explicación Onboarding"],
         links: [
              {
                 name: "Introducción a la Materia (presentación)",
@@ -131,24 +131,12 @@ var lectures = [
              {
                 name: "Memoria en C/C++ (handout)",
                 link: "https://github.com/Taller-de-Programacion/clases/raw/master/memoria/bin/memoria-handout.pdf",
-             },
-             {
-                name: "Proceso de Compilación (presentación)",
-                link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/2018/proceso_de_compilacion.pdf",
-             },
-             {
-                name: "Proceso de Compilación (tutorial)",
-                link: "https://github.com/Taller-de-Programacion/compilacion/tree/master/gcc",
-             },
-             {
-                name: "Makefiles (tutorial)",
-                link: "https://github.com/Taller-de-Programacion/compilacion/tree/master/make",
              }
         ],
     },
     {
         events:
-            ["Entrega TP 0", "Explicación TP 1"],
+            [],
         links:
             [
              {
@@ -160,37 +148,36 @@ var lectures = [
                 link: "https://github.com/Taller-de-Programacion/clases/tree/master/sockets-mdipaola/src",
              },
              {
-                name: "Archivos (presentación)",
-                link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/2018/archivos.pdf",
-             },
-             {
-                name: "TDAs (presentación)",
-                link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/2018/tipos_de_datos_abstractos.pdf",
-             },
+                name: "struct y clases C++ (handout)",
+                link: "https://github.com/eldipa/taller-clases/raw/master/classes/bin/classes-handout.pdf",
+             }
         ],
     },
     {
         events:
-            ["Corrección TP 0"],
+            ["Entrega final Onboarding", "Explicación TP (parte sockets)"],
         links:
             [
              {
-                name: "struct y clases C++ (handout)",
-                link: "https://github.com/eldipa/taller-clases/raw/master/classes/bin/classes-handout.pdf",
-             },
-             {
                 name: "Pasaje de objetos (handout)",
                 link: "https://github.com/eldipa/taller-clases/raw/master/moving/bin/moving-handout.pdf",
-             },
-             {
-                name: "Herencia y Polimorfismo (handout)",
-                link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/2018/polimorfismo-handout.pdf",
-             },
+             }
         ],
     },
     {
         events:
-            ["Reentrega TP 0", "Entrega TP 1", "Explicación TP 2"],
+            ["Entrega obligatoria TP (parte sockets)"],
+        links:
+            [
+             {
+                name: "Manejo de Errores (handout)",
+                link: "https://github.com/Taller-de-Programacion/clases/raw/master/manejodeerrores/bin/manejodeerrores-handout.pdf",
+             },
+        ]
+    },
+    {
+        events:
+            ["Devolucion de correcciones"],
         links:
             [
              {
@@ -205,39 +192,47 @@ var lectures = [
                 name: "Introducción a Threads (presentación)",
                 link: "https://github.com/Taller-de-Programacion/clases/raw/master/introthreads/bin/introathreads-draft.pdf",
              },
-        ]
+             {
+                name: "Cliente-Servidor (handout)",
+                link: "https://github.com/Taller-de-Programacion/clases/raw/master/client_server_arch/bin/client_server_arch-handout.pdf",
+             }
+
+         ],
     },
     {
         events:
-            ["Corrección TP 0", "Corrección TP 1"],
+            ["Entrega final TP (parte sockets)", "Explicación TP (parte threads)"],
         links:
             [
              {
-                name: "Templates (handout)",
-                link: "https://github.com/Taller-de-Programacion/clases/raw/master/templates/bin/templates-handout.pdf",
-             },
+                name: "Queues Thread Safe",
+                link: "#",
+             }
+            ],
+    },
+    {
+        events:
+            ["Entrega obligatoria TP (parte threads)"],
+        links:
+            [
              {
-                name: "STL (handout)",
-                link: "https://github.com/Taller-de-Programacion/clases/raw/master/stl/bin/stl-handout.pdf",
+                name: "Herencia y Polimorfismo (handout)",
+                link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/2018/polimorfismo-handout.pdf",
              },
              {
                 name: "Sobrecarga de Operadores (presentación)",
                 link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/2018/sobrecarga_de_operadores.pdf",
              },
-         ],
+            ]
     },
     {
         events:
-            ["Reentrega TP 1", "Entrega TP 2", "Explicación TP 3"],
+            ["Devolucion de correcciones"],
         links:
             [
              {
-                name: "Manejo de Errores (handout)",
-                link: "https://github.com/Taller-de-Programacion/clases/raw/master/manejodeerrores/bin/manejodeerrores-handout.pdf",
-             },
-             {
-                name: "Cliente-Servidor (handout)",
-                link: "https://github.com/Taller-de-Programacion/clases/raw/master/client_server_arch/bin/client_server_arch-handout.pdf",
+                name: "Bibliotecas GUI",
+                link: "https://github.com/Taller-de-Programacion/clases/tree/feature/bibliotecas-gui/bibliotecas-gui",
              },
              {
                 name: "Programación Orientada a Eventos (handout)",
@@ -247,74 +242,101 @@ var lectures = [
                 name: "Programación Orientada a Eventos (2) (handout)",
                 link: "https://github.com/Taller-de-Programacion/clases/raw/master/prog_orientada_a_eventos/bin/poe-handout.pdf",
              }
-            ],
-    },
-    {
-        events:
-            ["Corrección TP 1", "Corrección TP 2", "Entrega TP 3"],
-        links:
-            [
-             {
-                name: "Bibliotecas GUI",
-                link: "https://github.com/Taller-de-Programacion/clases/tree/feature/bibliotecas-gui/bibliotecas-gui",
-             }
             ]
     },
     {
         events:
-            ["Reentrega TP 2", "Corrección TP 3", "Explicación TP Final"],
+            ["Entrega final TP (parte threads)", "Explicación TP (parte grupal)"],
+        links:
+            [
+             {
+                name: "Makefiles & CMake",
+                link: "#"
+             }
+            ],
+    },
+    {
+        events:
+            [],
+        links:
+            [
+             {
+                name: "Pointers and more",
+                link: "https://github.com/Taller-de-Programacion/clases/tree/master/cpp-misc",
+             }
+            ],
+    },
+    {
+        events:
+            [],
         links:
             [
              {
                 name: "Introducción a Sockets UDP en C (presentación)",
                 link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/2018/introduccion_sockets_udp.pdf",
+             }
+            ],
+    },
+    {
+        events:
+            [],
+        links:
+            [
+             {
+                name: "Templates (handout)",
+                link: "https://github.com/Taller-de-Programacion/clases/raw/master/templates/bin/templates-handout.pdf",
+             }
+            ],
+    },
+    {
+        events:
+            ["Entrega obligatoria TP (parte grupal)"],
+        links:
+            [],
+    },
+    {
+        events:
+            ["Devolucion de correcciones"],
+        links:
+            [],
+    },
+    {
+        events:
+            ["Reentrega final TP (parte grupal)"],
+        links:
+            [],
+    },
+];
+
+
+/*
+
+             {
+                name: "Proceso de Compilación (presentación)",
+                link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/2018/proceso_de_compilacion.pdf",
+             },
+             {
+                name: "Proceso de Compilación (tutorial)",
+                link: "https://github.com/Taller-de-Programacion/compilacion/tree/master/gcc",
+             },
+             {
+                name: "Makefiles (tutorial)",
+                link: "https://github.com/Taller-de-Programacion/compilacion/tree/master/make",
+             }
+             {
+                name: "Archivos (presentación)",
+                link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/2018/archivos.pdf",
+             },
+             {
+                name: "TDAs (presentación)",
+                link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/2018/tipos_de_datos_abstractos.pdf",
+             },
+             {
+                name: "STL (handout)",
+                link: "https://github.com/Taller-de-Programacion/clases/raw/master/stl/bin/stl-handout.pdf",
              },
              {
                 name: "Extra C++",
                 link: "https://github.com/Taller-de-Programacion/clases/tree/master/cpp-misc",
              }
-            ]
-    },
-    {
-        events:
-            ["Corrección TP 2", "Reentrega TP 3"],
-        links:
-            [],
-    },
-    {
-        events:
-            ["Corrección TP 3"],
-        links:
-            [],
-    },
-    {
-        events:
-            [],
-        links:
-            [],
-    },
-    {
-        events:
-            [],
-        links:
-            [],
-    },
-    {
-        events:
-            ["Entrega TP Final"],
-        links:
-            [],
-    },
-    {
-        events:
-            ["Corrección TP Final"],
-        links:
-            [],
-    },
-    {
-        events:
-            ["Reentrega TP Final"],
-        links:
-            [],
-    },
-];
+*/
