@@ -33,6 +33,9 @@ Estos son:
 Los repositorios son **privados** y no deben ser compartidos para evitar
 plagios.
 
+Los podrás encontrar en el grupo <a href="https://github.com/Taller-de-Programacion-TPs"
+target="_blank">Taller-de-Programacion-TPs (Github)</a>
+
 ## Evolución del proyecto
 
 El proyecto consta de 2 partes: la parte de entregas **individuales** y
