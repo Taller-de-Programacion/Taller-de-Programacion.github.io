@@ -136,7 +136,7 @@ var lectures = [
     },
     {
         events:
-            [],
+            ["Disponible cuestionario recap de Socket"],
         links:
             [
              {
@@ -166,7 +166,7 @@ var lectures = [
     },
     {
         events:
-            ["Entrega obligatoria TP (parte sockets)"],
+            ["Entrega obligatoria TP (parte sockets) y recaps"],
         links:
             [
              {
@@ -177,7 +177,7 @@ var lectures = [
     },
     {
         events:
-            ["Devolucion de correcciones"],
+            ["Devolucion de correcciones", "Disponible cuestionario recap de Threads"],
         links:
             [
              {
@@ -212,12 +212,16 @@ var lectures = [
     },
     {
         events:
-            ["Entrega obligatoria TP (parte threads)"],
+            ["Entrega obligatoria TP (parte threads) y recaps"],
         links:
             [
              {
                 name: "Herencia y Polimorfismo (handout)",
                 link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/2018/polimorfismo-handout.pdf",
+             },
+             {
+                name: "Herencia y Polimorfismo (presentación)",
+                link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/herencia_y_polimorfismo.pdf",
              },
              {
                 name: "Sobrecarga de Operadores (presentación)",
@@ -261,8 +265,8 @@ var lectures = [
         links:
             [
              {
-                name: "Pointers and more",
-                link: "https://github.com/Taller-de-Programacion/clases/tree/master/cpp-misc",
+                name: "Namespaces, friends and smart pointers (presentación)",
+                link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/namespaces_friends_smart_pointers.pdf",
              }
             ],
     },
@@ -285,6 +289,10 @@ var lectures = [
              {
                 name: "Templates (handout)",
                 link: "https://github.com/Taller-de-Programacion/clases/raw/master/templates/bin/templates-handout.pdf",
+             },
+             {
+                name: "Templates (presentación)",
+                link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/templates.pdf",
              }
             ],
     },
