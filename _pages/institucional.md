@@ -97,7 +97,6 @@ la consulta al cuerpo docente.
 #### Ingeniería en Informática:
  - Estructura del Computador (66.70)
  - Algoritmos y Programación II (75.41)
- - Análisis Numérico (75.12)
 
 #### Ingeniería en Electrónica (2009):
  - Algoritmos y Programación II (95.12)
