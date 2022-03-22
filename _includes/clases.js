@@ -130,7 +130,7 @@ var lectures = [
              },
              {
                 name: "Memoria en C/C++ (handout)",
-                link: "https://github.com/Taller-de-Programacion/clases/raw/master/memoria/bin/memoria-handout.pdf",
+                link: "https://github.com/eldipa/taller-clases/raw/master/memoria/bin/memoria-handout.pdf",
              }
         ],
     },
