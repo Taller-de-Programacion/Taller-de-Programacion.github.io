@@ -129,6 +129,10 @@ var lectures = [
                 link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/2018/introduccion.pdf",
              },
              {
+                name: "Onboarding",
+                link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/onboarding.pdf",
+             },
+             {
                 name: "Memoria en C/C++ (handout)",
                 link: "https://github.com/eldipa/taller-clases/raw/master/memoria/bin/memoria-handout.pdf",
              }
