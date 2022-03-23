@@ -135,6 +135,14 @@ var lectures = [
              {
                 name: "Memoria en C/C++ (handout)",
                 link: "https://github.com/eldipa/taller-clases/raw/master/memoria/bin/memoria-handout.pdf",
+             },
+             {
+                name: "Buffer overflow (código)",
+                link: "https://github.com/eldipa/taller-clases/tree/master/memoria/src/cookie-buffer-overflow",
+             },
+             {
+                name: "Java más rápido que C (código)",
+                link: "https://github.com/eldipa/taller-clases/tree/master/memoria/src/java-faster-than-c",
              }
         ],
     },
