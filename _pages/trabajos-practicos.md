@@ -18,10 +18,6 @@ Si eres alumno de la materia, debes leer atentamente
 la <a href="/guia-electronica" target="_self">guía de entrega digital</a>
 y las <a href="/normas-cpplint" target="_self">normas de codificación</a>,
 
-Recuerda que tienes a tu disposición el
-[Grupo de Google](https://groups.google.com/forum/#!forum/tallerdeprogramacion)
-para realizar consultas sobre los temas de la materia y los trabajos prácticos.
-
 Sin embargo **no puedes publicar la solución a un tp**, completa o parcial;
 cuando hagas una consulta trata de publicar un *código pequeño* que ejemplifique
 *sólo* tu duda.
