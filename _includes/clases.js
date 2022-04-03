@@ -152,16 +152,28 @@ var lectures = [
         links:
             [
              {
-                name: "Introducción a sockets TCP en C (handout)",
-                link: "https://github.com/eldipa/taller-clases/raw/master/sockets/bin/sockets-handout.pdf",
+                name: "Introducción a stack IP-TCP-HTTP (handout)",
+                link: "https://github.com/eldipa/taller-clases/raw/master/sockets/bin/stack-web-handout.pdf",
              },
              {
-                name: "Sockets TCP en C (ejemplos)",
-                link: "https://github.com/Taller-de-Programacion/clases/tree/master/sockets-mdipaola/src",
+                name: "Introducción a redes TCP/IP (handout)",
+                link: "https://github.com/eldipa/taller-clases/raw/master/sockets/bin/tcp_ip_network_overview-handout.pdf",
+             },
+             {
+                name: "Sockets TCP/IP (handout)",
+                link: "https://github.com/eldipa/taller-clases/raw/master/sockets/bin/sockets-tcp-handout.pdf",
+             },
+             {
+                name: "Sockets TCP/IP en C++ (codigo + ejemplos)",
+                link: "https://github.com/Taller-de-Programacion/sockets-en-cpp",
              },
              {
                 name: "struct y clases C++ (handout)",
-                link: "https://github.com/eldipa/taller-clases/raw/master/classes/bin/classes-handout.pdf",
+                link: "https://github.com/eldipa/taller-clases/raw/master/classes/bin/struct_and_classes-handout.pdf",
+             },
+             {
+                name: "Const C++ (handout)",
+                link: "https://github.com/eldipa/taller-clases/raw/master/classes/bin/const-handout.pdf",
              }
         ],
     },
@@ -171,8 +183,16 @@ var lectures = [
         links:
             [
              {
-                name: "Pasaje de objetos (handout)",
-                link: "https://github.com/eldipa/taller-clases/raw/master/moving/bin/moving-handout.pdf",
+                name: "RAII C++ (handout)",
+                link: "https://github.com/eldipa/taller-clases/raw/master/classes/bin/raii-handout.pdf",
+             },
+             {
+                name: "Pasaje de objetos (Move Semantics) (handout)",
+                link: "https://github.com/eldipa/taller-clases/raw/master/moving/bin/moving_types-handout.pdf",
+             },
+             {
+                name: "Asignacion de objetos (handout)",
+                link: "https://github.com/eldipa/taller-clases/raw/master/moving/bin/assign-handout.pdf",
              }
         ],
     },
