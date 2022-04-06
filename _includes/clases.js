@@ -170,10 +170,6 @@ var lectures = [
              {
                 name: "struct y clases C++ (handout)",
                 link: "https://github.com/eldipa/taller-clases/raw/master/classes/bin/struct_and_classes-handout.pdf",
-             },
-             {
-                name: "Const C++ (handout)",
-                link: "https://github.com/eldipa/taller-clases/raw/master/classes/bin/const-handout.pdf",
              }
         ],
     },
@@ -187,12 +183,12 @@ var lectures = [
                 link: "https://github.com/eldipa/taller-clases/raw/master/classes/bin/raii-handout.pdf",
              },
              {
-                name: "Pasaje de objetos (Move Semantics) (handout)",
-                link: "https://github.com/eldipa/taller-clases/raw/master/moving/bin/moving_types-handout.pdf",
-             },
+                name: "Const y Member Initialization List (handout)",
+                link: "https://github.com/eldipa/taller-clases/raw/master/classes/bin/const-handout.pdf",
+             }
              {
-                name: "Asignacion de objetos (handout)",
-                link: "https://github.com/eldipa/taller-clases/raw/master/moving/bin/assign-handout.pdf",
+                name: "Pasaje y asignacion de objetos (Move Semantics) (handout)",
+                link: "https://github.com/eldipa/taller-clases/raw/master/moving/bin/moving-handout.pdf",
              }
         ],
     },
