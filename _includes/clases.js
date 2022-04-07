@@ -185,7 +185,7 @@ var lectures = [
              {
                 name: "Const y Member Initialization List (handout)",
                 link: "https://github.com/eldipa/taller-clases/raw/master/classes/bin/const-handout.pdf",
-             }
+             },
              {
                 name: "Pasaje y asignacion de objetos (Move Semantics) (handout)",
                 link: "https://github.com/eldipa/taller-clases/raw/master/moving/bin/moving-handout.pdf",
