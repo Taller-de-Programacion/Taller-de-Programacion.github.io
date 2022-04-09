@@ -154,4 +154,6 @@ y Calificación y rubrique la aprobación.
  - Federico Gomez Peter
  - Francisco Vazquez
  - Leonardo Giampieri
- - Leo Bellaera
+ - Mateo Capon
+ - Eliana Gamarra
+ - Andres Zambrano
