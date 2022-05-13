@@ -326,6 +326,12 @@ var lectures = [
     },
     {
         events:
+            [],
+        links:
+            [],
+    },
+    {
+        events:
             ["Entrega obligatoria TP (parte grupal)"],
         links:
             [],
