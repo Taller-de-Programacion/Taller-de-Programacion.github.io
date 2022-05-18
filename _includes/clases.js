@@ -283,7 +283,7 @@ var lectures = [
             [
              {
                 name: "Makefiles & CMake",
-                link: "#"
+                link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/2022/cmake.pdf"
              }
             ],
     },
