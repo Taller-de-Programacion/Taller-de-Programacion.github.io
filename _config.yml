@@ -9,7 +9,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # This MUST be on Monday, otherwise _pages/clases.md may not
 # yield the correct calendar
-current_quater: 2022/03/21
+current_quater: 2022/08/22
 
 # This MUST be a string of Comma Separated Dates as a Javascript Array
 # Don't forget to double quote like:
