@@ -27,9 +27,7 @@ para las clases (videos, diapositvas, handouts, tutoriales).
 En esta <a href="/guia-electronica" target="_blank">guía</a> encontraras
 los pasos para hacer las entregas.
 
-Les recordamos ademas **inscribirse** al
-<a href="https://groups.google.com/forum/#!forum/tallerdeprogramacion" target="_blank">grupo de Google</a>
-donde podrán consultar sobre cualquier tema relacionado con la materia
-y al Discord.
+Les recordamos ademas **inscribirse** al Discord que le pasaremos por
+mail antes de arrancar las clases.
 
 Que tengan un buen comienzo de clases!
