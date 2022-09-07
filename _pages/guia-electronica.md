@@ -33,7 +33,7 @@ Estos son:
 Los repositorios son **privados** y no deben ser compartidos para evitar
 plagios.
 
-Los podrás encontrar en el grupo <a href="https://github.com/Taller-de-Programacion-TPs"
+Los podrás **encontrar** en el grupo <a href="https://github.com/Taller-de-Programacion-TPs"
 target="_blank">Taller-de-Programacion-TPs (Github)</a>
 
 ## Evolución del proyecto
@@ -72,6 +72,11 @@ Se recomienda hacer el ciclo de `git add`, `git commit` y `git push`
 
 Podes leer mas sobre `git` en el libro público y gratuito [Pro
 Git](https://git-scm.com/book/en/v2)
+
+Para poder pushear commits, Github requiere que tengas configurada una
+**clave SSH**, de otro modo no podrás subir tus commits.
+Github provee un [guía](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
+y el procedimiento es super standard.
 
 ## Consideraciones acerca de las entregas
 
@@ -150,18 +155,26 @@ a GitHub todos tus cambios con un `git push`.
 
 <img style="max-width: 100%;" src="assets/img/git/07_check.png" />
 
-Un *release* no es mas que una marca o tag que indica un momento
+Un *release* no es más que una marca o tag que indica un momento
 fijo en la historia de tu repositorio. El nombre del tag es
 arbitrario pero se sugiere el uso de números de versión incrementales
 siguiendo un [versionado semántico](https://semver.org/lang/es/).
 
+Usa un **número incremental** en cada uno de tus **releases** y toma nota de
+ellos.
+
+Pone como **título del release** el **mismo** número.
+
 <img style="max-width: 80%;" src="assets/img/git/08_release.png" />
+
+Recorda que podrás **encontrar** en el grupo <a href="https://github.com/Taller-de-Programacion-TPs"
+target="_blank">Taller-de-Programacion-TPs (Github)</a> **tus** proyectos.
 
 ## Entrega en el Sercom
 
 Con el release creado deberás ir al Sercom, seleccionar el ejercicio
 correspondiente y hacer una entrega o *submission* donde tendrás que
-poner el nombre del release (el mismo que usaste en Github).
+poner el **nombre del release** (el mismo que usaste en Github).
 
 El proceso de hacer un release y subirlo al Sercom lo podes realizar
 varias veces como desees
@@ -183,6 +196,11 @@ las pruebas
 
 Recordá que las entregas **son obligatorias** y que tienen fechas de
 cierre.
+
+Si el Sercom tira error durante la descarga del release, verifica que
+hayas puesto bien el nombre: que sean números incrementales y que tanto
+el tag release como el título del release tengan el **mismo número**
+(como esta explicado en la sección anterior)
 
 ## Semana de Code Review
 
