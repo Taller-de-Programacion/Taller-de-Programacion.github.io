@@ -165,7 +165,7 @@ var lectures = [
              },
              {
                 name: "Sockets TCP/IP en C++ (codigo + ejemplos)",
-                link: "https://github.com/Taller-de-Programacion/sockets-en-cpp",
+                link: "https://github.com/eldipa/sockets-en-cpp",
              },
              {
                 name: "struct y clases C++ (handout)",
