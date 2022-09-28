@@ -208,23 +208,30 @@ var lectures = [
             ["Devolucion de correcciones", "Disponible cuestionario recap de Threads"],
         links:
             [
+             // {
+             //    name: "Threads en C++ (tutorial - Lafroce)",
+             //    link: "https://github.com/Taller-de-Programacion/threads",
+             // },
              {
-                name: "Threads en C++ (tutorial)",
-                link: "https://github.com/Taller-de-Programacion/threads",
+                name: "Introducción a Threads en C++ (handout)",
+                link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/2022/threads.pdf",
              },
              {
-                name: "Recursos compartidos (handout)",
-                link: "https://github.com/eldipa/taller-clases/raw/master/shared-resources/bin/shared-resources-handout.pdf",
-             },
-             {
-                name: "Introducción a Threads (presentación)",
-                link: "https://github.com/Taller-de-Programacion/clases/raw/master/introthreads/bin/introathreads-draft.pdf",
-             },
-             {
-                name: "Cliente-Servidor (handout)",
-                link: "https://github.com/Taller-de-Programacion/clases/raw/master/client_server_arch/bin/client_server_arch-handout.pdf",
+                name: "Cliente-Servidor Multithread (handout)",
+                link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/2022/client-server-multithread.pdf",
              }
-
+             // {
+             //    name: "Recursos compartidos (handout - Di Paola)",
+             //    link: "https://github.com/eldipa/taller-clases/raw/master/shared-resources/bin/shared-resources-handout.pdf",
+             // },
+             // {
+             //    name: "Introducción a Threads (presentación - Di Paola)",
+             //    link: "https://github.com/Taller-de-Programacion/clases/raw/master/introthreads/bin/introathreads-draft.pdf",
+             // },
+             // {
+             //    name: "Cliente-Servidor (handout - Di Paola)",
+             //    link: "https://github.com/Taller-de-Programacion/clases/raw/master/client_server_arch/bin/client_server_arch-handout.pdf",
+             // },
          ],
     },
     {
@@ -233,8 +240,12 @@ var lectures = [
         links:
             [
              {
+                name: "Práctica de Threads en C++",
+                link: "https://github.com/Taller-de-Programacion/ejercicio_threads",
+             },
+             {
                 name: "Queues Thread Safe",
-                link: "#",
+                link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/2022/queues.pdf",
              }
             ],
     },
