@@ -201,6 +201,10 @@ var lectures = [
                 name: "Manejo de Errores (handout)",
                 link: "https://github.com/Taller-de-Programacion/clases/raw/master/manejodeerrores/bin/manejodeerrores-handout.pdf",
              },
+             {
+                name: "Introducción a Threads (presentación)",
+                link: "https://github.com/Taller-de-Programacion/clases/raw/master/introthreads/bin/introathreads-draft.pdf",
+             },
         ]
     },
     {
@@ -217,12 +221,8 @@ var lectures = [
                 link: "https://github.com/eldipa/taller-clases/raw/master/shared-resources/bin/shared-resources-handout.pdf",
              },
              {
-                name: "Introducción a Threads (presentación)",
-                link: "https://github.com/Taller-de-Programacion/clases/raw/master/introthreads/bin/introathreads-draft.pdf",
-             },
-             {
-                name: "Cliente-Servidor (handout)",
-                link: "https://github.com/Taller-de-Programacion/clases/raw/master/client_server_arch/bin/client_server_arch-handout.pdf",
+                name: "Queues Thread Safe",
+                link: "#",
              }
 
          ],
@@ -233,8 +233,8 @@ var lectures = [
         links:
             [
              {
-                name: "Queues Thread Safe",
-                link: "#",
+                name: "Cliente-Servidor (handout)",
+                link: "https://github.com/Taller-de-Programacion/clases/raw/master/client_server_arch/bin/client_server_arch-handout.pdf",
              }
             ],
     },
