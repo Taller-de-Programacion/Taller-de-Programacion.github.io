@@ -201,6 +201,14 @@ var lectures = [
                 name: "Manejo de Errores (handout)",
                 link: "https://github.com/Taller-de-Programacion/clases/raw/master/manejodeerrores/bin/manejodeerrores-handout.pdf",
              },
+             {
+                name: "Introducción a Threads (presentación)",
+                link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/2022/threads.pdf",
+             },
+             {
+                name: "Práctica de Threads en C++",
+                link: "https://github.com/Taller-de-Programacion/ejercicio_threads",
+             }
         ]
     },
     {
@@ -213,12 +221,12 @@ var lectures = [
              //    link: "https://github.com/Taller-de-Programacion/threads",
              // },
              {
-                name: "Introducción a Threads en C++ (handout)",
-                link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/2022/threads.pdf",
+                name: "Recursos compartidos (handout)",
+                link: "https://github.com/eldipa/taller-clases/raw/master/shared-resources/bin/shared-resources-handout.pdf",
              },
              {
-                name: "Cliente-Servidor Multithread (handout)",
-                link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/2022/client-server-multithread.pdf",
+                name: "Queues Thread Safe",
+                link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/2022/queues.pdf",
              }
              // {
              //    name: "Recursos compartidos (handout - Di Paola)",
@@ -240,12 +248,8 @@ var lectures = [
         links:
             [
              {
-                name: "Práctica de Threads en C++",
-                link: "https://github.com/Taller-de-Programacion/ejercicio_threads",
-             },
-             {
-                name: "Queues Thread Safe",
-                link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/2022/queues.pdf",
+                name: "Cliente-Servidor (handout)",
+                link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/2022/client-server-multithread.pdf",
              }
             ],
     },
