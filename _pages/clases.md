@@ -15,6 +15,9 @@ A continuación se muestra un programa **orientativo** de la materia.
 Se suponen conocidos los conceptos básicos de C. Sólo se darán los
 conceptos más importantes y previamente se hará un repaso general.
 
+Si no lo hiciste aun, lee [los consejos](/consejos)
+para cursar Taller.
+
 ## Programa
 
 <div class="table-responsive-sm">
