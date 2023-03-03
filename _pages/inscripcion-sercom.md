@@ -38,7 +38,7 @@ pide estas credenciales: el Sercom **nunca** ve tus credenciales.
 
 <img style="max-width: 100%;" src="assets/img/sercom/03_authenticate_github.png" />
 
-## Completado de los datos
+## Completado de los datos (Obligatorio)
 
 Una vez logueado deberás completar tus datos.
 
@@ -68,9 +68,10 @@ Y listo!
 El Sercom te creará 3 repositorios **privados** en Github y te agregará
 como colaborador.
 
-Debería llegar unos mails donde tendrás q aceptar la invitación para
+Debería llegar unos mails donde tendrás q **aceptar la invitación** para
 tener acceso a los repos.
 
-
+Las invitaciones expiran a la semana:
+**aceptalas antes de que se te venzan!**
 
 
