@@ -107,31 +107,26 @@ El detalle de las normas se puede encontrar en la guía de estilos provista por 
 
 A fin de verificar el cumplimiento de los estándares de codificación, se utiliza el sistema de ‘lint’ propuesto por Google, llamado <strong>Cpplint</strong>. Ciertas normas fueron relajadas según el criterio de la cátedra para permitir cierta flexibilidad al programador.
 
-Antes de realizar una entrega, es necesario comprobar el cumplimiento de los estándares de la misma forma en que lo verifica el servidor. Por este motivo, se proveen los scripts utilizados por la cátedra:
+Antes de realizar una entrega, es necesario comprobar el cumplimiento de los
+estándares de la misma forma en que lo verifica el servidor.
+Por este motivo, se proveen los scripts utilizados por la cátedra:
 
 <ul>
-<li><a href="/assets/2013/08/cpplint.zip">Cpplint y Reglas de Codificación utilizadas por SERCOM</a></li>
+<li><a href="{{ site.sercom_url }}/course/2023c1/$common/cpplint.py">cpplint.py</a></li>
+<li><a href="{{ site.sercom_url }}/course/2023c1/$common/filter_options">configuración predeterminada</a></li>
 </ul>
 
-Una vez descargado el archivo Cpplint, se puede utilizar el script <strong>execute.sh</strong> para verificar las normas de todos los archivos de extensión .c,.cpp,.h,.hpp bajo la carpeta actual. Para ejecutar el script, es necesario asegurarse que se cuenta con un interprete bash apropiado. Existen dos formas de hacer esto:
+Una vez descargado ambos archivos se debe ejecutar:
 
-<div>
-<ol>
-<li>Utilizar el comando <strong>bash</strong> e indicarle el archivo de script:
-<ul>
-<li>&gt; <strong>bash execute.sh &nbsp;</strong>o bien:</li>
-<li><strong>&gt;</strong> <strong>sh execute.sh</strong></li>
-</ul>
-</li>
-<li>Entregar al archivo los permisos de ejecución necesarios y agregar la ruta al comando bash en la cabecera:
-<ul>
-<li>Controlar que el comando <strong>bash</strong> se encuentre en <strong>/bin/bash</strong> y que esta ruta esté indicada en la cabecera de <strong>execute.sh</strong>:</li>
-<li><strong>&gt; chmod +x execute.sh</strong></li>
-<li><strong>./execute.sh</strong></li>
-</ul>
-</li>
-</ol>
-</div>
+```bash
+$ python3 SCRIPT/cpplint.py  --extensions=h,hpp,cpp  --filter=$(cat SCRIPT/filter_options) $(find TARGET -regextype posix-egrep -regex '.*\.(h|hpp|cpp)')
+```
+
+Donde `SCRIPT` es la ruta a la carpeta donde se estan tanto `cpplint.py`
+como `filter_options` (los 2 archivos que te descargaste); `TARGET`
+es la ruta a la carpeta que tiene el código fuente (`.cpp`) a verificar.
+
+
 
 <div><span style="line-height: 24px;"><br>
 </span></div>
