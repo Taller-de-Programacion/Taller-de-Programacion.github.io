@@ -112,8 +112,8 @@ estándares de la misma forma en que lo verifica el servidor.
 Por este motivo, se proveen los scripts utilizados por la cátedra:
 
 <ul>
-<li><a href="{{ site.sercom_url }}/course/2023c1/$common/cpplint.py">cpplint.py</a></li>
-<li><a href="{{ site.sercom_url }}/course/2023c1/$common/filter_options">configuración predeterminada</a></li>
+<li><a href="{{ site.sercom_url }}course/2023c1/$common/cpplint.py">cpplint.py</a></li>
+<li><a href="{{ site.sercom_url }}course/2023c1/$common/filter_options">configuración predeterminada</a></li>
 </ul>
 
 Una vez descargado ambos archivos se debe ejecutar:
