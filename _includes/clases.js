@@ -248,8 +248,12 @@ var lectures = [
         links:
             [
              {
+                name: "Cliente-Servidor (slides)",
+                link: "https://github.com/eldipa/taller-clases/raw/master/client_server_arch/bin/client_server_arch.pdf",
+             },
+             {
                 name: "Cliente-Servidor (handout)",
-                link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/2022/client-server-multithread.pdf",
+                link: "https://github.com/eldipa/taller-clases/raw/master/client_server_arch/bin/client_server_arch-handout.pdf",
              }
             ],
     },
