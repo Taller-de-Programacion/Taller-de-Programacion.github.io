@@ -55,8 +55,7 @@ en donde deberás ir resolviendo distintas partes del proyecto.
 Es importante que todo el
 código que crees esten dentro del repositorio **sin** subcarpetas.
 
-Ademas del código deberás crear un `README` con el **informe del trabajo**.
-Asegurate que en el informe incluyas tu nombre y padrón.
+Ademas del código deberás crear un `README` con tu nombre y padrón.
 
 <img style="max-width: 100%;" src="assets/img/git/05_code_and_readme.png" />
 
@@ -97,54 +96,6 @@ el programa deberá retornar al sistema operativo cero en caso de
 ejecución exitosa y uno ante una situación de error.
 Si el alumno decidiera retornar varios código de error para
 diferentes situaciones deberán enumerarlos en el informe.
-
-### Armado del informe
-
-El informe <strong>debe</strong> contener:
-
- - nombre y padrón
- - una descripción de la resolución del trabajo
- - uno o varios diagramas que ayuden al lector a entender la solución
- - y opcionalmente aclaraciones del alumno.
-
-El informe debe ser escrito en formato
-[markdown](https://guides.github.com/features/mastering-markdown/)
-y guardarse en el `README` del repositorio.
-
-Puede tratarse de la forma en la que se solucionó el problema más
-complejo que presentaba el ejercicio o una lista descriptiva de las
-funciones o clases más importantes.
-
-**No** es necesario que describas todas y cada una de las clases de tu
-trabajo. Nos importa que puedas explicar tu solución, que se entienda,
-sin llegar a dar todos los detalles.
-
-El o los diagramas deben graficar cómo esta constituido y/o resuelto
-el ejercicio, con una breve descripción coloquial sólo de ser necesario.
-
-Deben permitirle al lector entender las partes mas complejas del trabajo
-y guiarlo en la solución.
-
-Por ejemplo **no** tiene mucho sentido un diagrama completo de treinta clases
-o un diagrama tan genérico que podría ser el diagrama de cualquier trabajo.
-
-En cambio aporta información un gráfico que centra la atención en una
-clase de alta importancia y aquellas relacionadas con la primera.
-
-Se recomienda usar algunos de los diagramas UML. Use un generador
-como [PlantUML](https://plantuml.com/) que son basados en texto
-en vez de uno gráfico.
-
-<strong>Nota: El diagrama aclaratorio es obligatorio para la aprobación de un trabajo práctico.</strong>
-
-Finalmente las aclaraciones del alumno pueden contener,
-en el caso excepcional en que no se haya cumplido con la totalidad
-de los requerimientos de la entrega, explicación del por qué
-y la justificación pertinente.
-
-Esto no garantiza la aceptación de la excepción por parte de la cátedra,
-pero es condición necesaria.
-
 
 ## Release de la solución
 
