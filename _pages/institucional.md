@@ -150,10 +150,9 @@ y Calificación y rubrique la aprobación.
  - Martín Di Paola (martinp.dipaola at gmail.com)
 
 #### Ayudantes
- - Ezequiel Werner (eze210 at gmail.com)
- - Federico Gomez Peter
  - Francisco Vazquez
  - Leonardo Giampieri
  - Mateo Capon
- - Eliana Gamarra
  - Andres Zambrano
+ - Ezequiel Werner
+ - Federico Gomez Peter
