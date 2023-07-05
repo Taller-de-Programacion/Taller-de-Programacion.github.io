@@ -51,36 +51,10 @@ cuatrimestre corriente sin excepción.
 Ante cualquier duda respecto a la equivalencia de TPs,
 consulten al equipo docente para evitar confusiones.
 
-## Asientos de la materia en la Libreta
-
-### Generalidades:
-
-La presente sección explica la forma en que debe completarse la
-libreta para realizar los diversos asientos administrativos referidos a
-la materia, a saber:
-
-<ol>
-<li>Inicio de Cursada</li>
-<li>Aprobación de Cursada y Trabajos Prácticos</li>
-<li>Examen Final</li>
-<li>Firma de la Materia</li>
-</ol>
-
-La siguiente imagen muestra un modelo de libreta correspondiente a un
-alumno que, habiendo aprobado la práctica, se encuentra en condiciones
-de rendir examen. La misma se provee a forma de ejemplo y como ayuda
-para clarificar **qué datos debe completar el alumno (en azul)** y cuales
-serán completados por los docentes  (en rojo).
-
-<a href="/assets/2010/08/libreta.jpg"><img title="Inicialización de libreta" src="/assets/2010/08/libreta.jpg" alt="" width="521" height="402"></a>
-
-Las siguientes secciones detallan la forma y el momento en que deben
-realizarse cada uno de los asientos.
-
 ### Inicio de Cursada:
 
-Durante las **primeras 4 clases** de la materia el alumno debe verificar
-que su libreta posea las correlatividades necesarias para cursar la materia
+El alumno debe verificar
+que posea las correlatividades necesarias para cursar la materia
 con fecha de firma previa al inicio de Taller de Programación I.
 
 A tal fin, se recuerda el listado de correlativas y se sugiere
@@ -102,28 +76,18 @@ la consulta al cuerpo docente.
  - Algoritmos y Programación II (95.12)
 
 
-Si el alumno esta haciendo la *simultaneidad* de carreras,
-para la equivalencia de correlativas es necesario que la libreta u
-otro documento avale dicha simultaneidad.
+Si el alumno esta haciendo la *simultaneidad* de carrerasm tiene
+equivalencia de correlativas o excepción de correlativas, es necesario que el alumno tenga
+algun documento que avale dicha simultaneidad/equivalencia/excepción.
 
-### Aprobación de Cursada y Trabajos Prácticos
+### Promoción
 
-Una vez aprobados los trabajos prácticos, el alumno debe presentar su
-libreta para que se asiente su nota. El Jefe de Trabajos Prácticos (JTP)
-verificará las correlatividades y rubricará la libreta quedando el alumno en
-condición regular para rendir el exámen final.
+Para promocionar la materia y no rendir el examen final el alumno debe
+tener:
 
-Al hacer esto, la libreta debe contener los siguiente datos:
-
-<ul>
-<li><strong>Código y nombre de la Materia (Alumno)</strong>: en la parte superior</li>
-<li><strong>Curso (Alumno)</strong>: Se trata de un código de la forma “T.C.AA” donde T es el <strong>Turno</strong> (corresponde ‘1’ para materias dictadas en un único turno), C es el <strong>Cuatrimestre</strong> (1 o 2) y AA el <strong>Año</strong>.</li>
-<li><strong>Fecha de Inicio de Cursada (JTP)</strong>: Primer día de clases según el calendario académico del cuatrimestre en cuestión.</li>
-<li><strong>Fecha de Firma de TP (JTP)</strong>: Último día de clases según el calendario académico del cuatrimestre en cuestión.</li>
-</ul>
-
-El Jefe de Trabajos Prácticos completará la nota y rubricará la
-libreta quedando el alumno en condición de rendir exámen final.
+ - Promedio de las entregas individuales **mayor o igual a 8** (se
+   redondea por truncamiento).
+ - Trabajo grupal con nota **mayor o igual a 7**.
 
 ### Exámen final
 
