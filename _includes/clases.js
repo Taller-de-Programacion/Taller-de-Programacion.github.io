@@ -363,7 +363,10 @@ var lectures = [
     },
     {
         events:
-            ["Reentrega final TP (parte grupal)"],
+            [
+              "Reentrega final TP (parte grupal)",
+              "Examen oral sobre el TP",
+            ],
         links:
             [],
     },
