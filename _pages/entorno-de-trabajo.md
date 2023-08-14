@@ -15,7 +15,7 @@ testea los trabajos en un Ubuntu Focal 20.04 de 64 bits.
 
 Como compilador de C/C++ se usa el GCC 9.3.0; y para la verificación se
 usa [cppcheck](http://cppcheck.sourceforge.net/) 1.90,
-[cpplint](https://github.com/cpplint/cpplint) 1.4.5 (verificación estática),
+[cpplint](https://github.com/cpplint/cpplint) 1.6.0 (verificación estática),
 [valgrind](https://valgrind.org/) 3.15.0 (verificación dinámica) y
 [tiburoncin](https://github.com/eldipa/tiburoncin) 2.1.1 (verificación
 de protocolo).
