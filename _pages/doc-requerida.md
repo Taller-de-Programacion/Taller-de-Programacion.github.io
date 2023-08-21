@@ -1,6 +1,6 @@
 ---
 layout: main-topic-page
-title: Documentación requerida
+title: Documentación requerida para el TP Grupal Final
 permalink: /documentacion-requerida
 sidebar-include: sidebar-trabajos-practicos.html
 hide_post_meta: true
