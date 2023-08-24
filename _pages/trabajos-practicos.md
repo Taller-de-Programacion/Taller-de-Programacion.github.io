@@ -15,8 +15,7 @@ Los enunciados de los trabajos prácticos de este y de los pasados
 cuatrimestres se encuentran en el [sitio de entregas de la materia]({{ site.sercom_url }}).
 
 Si eres alumno de la materia, debes leer atentamente
-la <a href="/guia-electronica" target="_self">guía de entrega digital</a>
-y las <a href="/normas-cpplint" target="_self">normas de codificación</a>,
+la <a href="/guia-electronica" target="_self">guía de entrega digital</a>.
 
 Para el trabajo final deberas presentar adicionalmente
 una serie de <a href="/documentacion-requerida" target="_self">documentos requeridos</a>.
@@ -33,7 +32,7 @@ Aquí hay alguno de los trabajos prácticos de cuatrimestres anteriores:
   <div class="row">
     <div class="col-md-3">
     <iframe width="200" height="200" src="https://www.youtube.com/embed/qZ-HH_SZ9NI" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <p>Remake del mítico Wolfenstein 3D de ID Software. Hecho por 
+      <p>Remake del mítico Wolfenstein 3D de ID Software. Hecho por
 Carretero Andres,
 Montiel Ramiro,
 Parente Gaston y
@@ -45,7 +44,7 @@ su propia <a href="https://ramamont.github.io/taller-tp-grupal/">página web</a>
     </div>
     <div class="col-md-3">
 <iframe width="200" height="200" src="https://www.youtube.com/embed/okrdMPxOTbg" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <p>Remake de un clásico argentino, el Argentum Online de Morgolock. Hecho por 
+      <p>Remake de un clásico argentino, el Argentum Online de Morgolock. Hecho por
 Mauro Parafati,
 Santiago Klein y
 Yuhong Huang
@@ -56,7 +55,7 @@ su propia <a href="https://mauro7x.github.io/argentum/">página web</a>.</p>
     </div>
     <div class="col-md-3">
 <iframe width="200" height="200" src="https://www.youtube.com/embed/zYuNiUTCyk0" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <p>Una implementacion alternativa del juego Portal de Valve pero en 2D. Hecho por 
+      <p>Una implementacion alternativa del juego Portal de Valve pero en 2D. Hecho por
 Blanco Joaquin,
 Bravo Victor y
 Rack Lucas
@@ -70,7 +69,7 @@ durante la cursada 2019 - 1er cuatrimestre.
   <div class="row">
     <div class="col-md-3">
 <iframe width="200" height="200" src="https://www.youtube.com/embed/RLAoDbgdZdY" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <p>Un tower defense isométrico con los sprites del Diablo 2, de Blizzard. Hecho por 
+      <p>Un tower defense isométrico con los sprites del Diablo 2, de Blizzard. Hecho por
 Martín Queija,
 Damián Cassinotti y
 Juan Pablo Rombolá

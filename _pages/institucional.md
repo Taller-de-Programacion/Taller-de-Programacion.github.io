@@ -29,8 +29,7 @@ La [guía de registración](/inscripcion-sercom) les muestra paso a paso
 como registrarse en el Sercom.
 
 Es indispensable leer atentamente
-la [guía de entrega electrónica](/guia-electronica) y las
-<a href="/normas-cpplint" target="_self">normas de codificación</a>,
+la [guía de entrega electrónica](/guia-electronica).
 
 ### Recursantes
 
