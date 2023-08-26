@@ -38,9 +38,8 @@ curso actual desde la <a href="{{ site.sercom_url }}" target="_blank">sección c
 
 Si el alumno tiene algún TP aprobado de un cuatrimestre anterior con
 nota **mayor a 7** cuenta con la posibilidad de no realizarlo nuevamente.
-Para ello, se **debe** entregar una entrega simbólica en el Sercom y se
-**debe** entregar un informe con la carátula del TP anterior en donde conste
-la aprobación del mismo.
+Para ello, se **debe** notificar al JTP en que cuatrimestre cursó para
+que cargue las notas en el cuatrimestre actual.
 
 Si bien los temas de los TPs son equivalentes entre cuatrimestres,
 es posible que la cátedra decida agregar o mover temas de un TP a otro.
@@ -120,5 +119,4 @@ y Calificación y rubrique la aprobación.
  - Leonardo Giampieri
  - Mateo Capon
  - Andres Zambrano
- - Ezequiel Werner
- - Federico Gomez Peter
+ - Lara Scazzola
