@@ -9,13 +9,13 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # This MUST be on Monday, otherwise _pages/clases.md may not
 # yield the correct calendar
-current_quater: 2023/08/21
+current_quater: 2024/03/11
 
 # This MUST be a string of Comma Separated Dates as a Javascript Array
 # Don't forget to double quote like:
 #   current_quater_holidays: '[]'  # no holidays
 #   current_quater_holidays: '["2010/04/13", "2010/05/13"]'  # two holidays
-current_quater_holidays: '[]'
+current_quater_holidays: '["2024/04/02", "2024/07/09"]'
 
 github_username:  Taller-de-programacion
 repository: Taller-de-Programacion/Taller-de-Programacion.github.io
