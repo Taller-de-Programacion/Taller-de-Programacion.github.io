@@ -20,7 +20,8 @@ current_quater_holidays: '["2024/04/02", "2024/07/09"]'
 github_username:  Taller-de-programacion
 repository: Taller-de-Programacion/Taller-de-Programacion.github.io
 
-sercom_url: http://192.34.63.156:62128/
+#sercom_url: http://192.34.63.156:62128/
+sercom_url: http://9508.cercom.com.ar:62128/
 
 # Build settings
 markdown: kramdown
