@@ -2,7 +2,7 @@
 layout: post
 title: Inicio de Clases - 1er Cuat. 2024
 author: Di Paola Martin
-date: 01/03/2024
+date: 29/02/2024
 tags: [Noticias]
 snippets: none
 
