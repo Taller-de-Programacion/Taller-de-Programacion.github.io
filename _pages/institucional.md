@@ -119,4 +119,6 @@ y Calificación y rubrique la aprobación.
  - Leonardo Giampieri
  - Mateo Capon
  - Andres Zambrano
- - Lara Scazzola
+ - Nathalia Encinoza
+ - Juan Hoszowski
+ - Ivan Erlich
