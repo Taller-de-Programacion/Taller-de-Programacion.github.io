@@ -161,9 +161,6 @@ revisión o *code review*.
 El *code review* es un proceso estándar que fomenta la colaboración
 y la mejora continua.
 
-El docente le enviará al alumno un mail pidiéndole que lo agregue como
-*colaborador* al repositorio.
-
 El docente podrá
 seleccionar fragmentos de código
 
