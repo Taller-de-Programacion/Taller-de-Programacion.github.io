@@ -55,10 +55,6 @@ en donde deberás ir resolviendo distintas partes del proyecto.
 Es importante que todo el
 código que crees esten dentro del repositorio **sin** subcarpetas.
 
-Ademas del código deberás crear un `README` con tu nombre y padrón.
-
-<img style="max-width: 100%;" src="assets/img/git/05_code_and_readme.png" />
-
 Con `git add` podes seleccionar que cambios se incluiran en el siguiente
 commit; con `git commit` consolidas tus cambios en un commit, es recomendable
 hacer buenos mensajes de commit. Finalmente un `git push` copia tus commits
