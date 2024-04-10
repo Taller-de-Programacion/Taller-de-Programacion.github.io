@@ -206,8 +206,8 @@ var lectures = [
                 link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/2022/threads.pdf",
              },
              {
-                name: "Práctica de Threads en C++",
-                link: "https://github.com/Taller-de-Programacion/ejercicio_threads",
+                name: "Hands On Threads en C++",
+                link: "https://github.com/eldipa/hands-on-threads",
              }
         ]
     },
