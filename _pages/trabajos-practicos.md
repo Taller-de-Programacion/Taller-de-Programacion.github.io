@@ -31,6 +31,27 @@ Aquí hay alguno de los trabajos prácticos de cuatrimestres anteriores:
 <div class="container marketing">
   <div class="row">
     <div class="col-md-3">
+    <iframe width="200" height="200" src="https://www.youtube.com/embed/DaEdsMeefTc" title="Jazz JackRabbit 2 Remake - Gameplay - Single Player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <p>Remake del Jazz Jackrabbit 2. Hecho por
+Ian von der Heyde,
+Ignacio Agustín Sugai,
+Juan Martín de la Cruz y
+Juan Patricio Amboage
+durante la cursada 2024 - 1er cuatrimestre.
+</p>
+<p>Mas info en la <a href="https://juandelahd.github.io/JJ2-Website/">página web del proyecto</a>.</p>
+    </div>
+    <div class="col-md-3">
+    <iframe width="200" height="200" src="https://www.youtube.com/embed/eLKjT5RcCHQ" title="Jazz JackRabbit 2 Remake - Gameplay - Single Player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <p>Remake del Jazz Jackrabbit 2. Hecho por
+Victoria Avalos,
+José Ignacio Castro Martinez y
+Walter Gabriel Diem
+durante la cursada 2024 - 1er cuatrimestre.
+</p>
+<p>El código fuente puede descargarse desde <a href="https://github.com/Jignacio14/JazzJackRabbit">un repositorio público</a>.</p>
+    </div>
+    <div class="col-md-3">
     <iframe width="200" height="200" src="https://www.youtube.com/embed/cXs05yU9hYE" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <p>Un clasico: el Worms! Hecho por
 Alan Valdevenito
@@ -39,10 +60,6 @@ Federico Solari Vazquez
 durante la cursada 2023 - 2d cuatrimestre.
 </p>
 <p>Los alumnos liberaron el <a href="https://github.com/AlanValdevenito/Worms">código</a> como MIT.</p>
-    </div>
-    <div class="col-md-3">
-    </div>
-    <div class="col-md-3">
     </div>
   </div>
 
