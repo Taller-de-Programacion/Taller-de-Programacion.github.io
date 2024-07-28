@@ -32,7 +32,8 @@ Aquí hay alguno de los trabajos prácticos de cuatrimestres anteriores:
   <div class="row">
     <div class="col-md-3">
     <iframe width="200" height="200" src="https://www.youtube.com/embed/DaEdsMeefTc" title="Jazz JackRabbit 2 Remake - Gameplay - Single Player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      <p>Remake del Jazz Jackrabbit 2. Hecho por
+      <p>Remake del Jazz Jackrabbit 2 de Epic Games</p>
+<p>Hecho por
 Ian von der Heyde,
 Ignacio Agustín Sugai,
 Juan Martín de la Cruz y
@@ -43,7 +44,8 @@ durante la cursada 2024 - 1er cuatrimestre.
     </div>
     <div class="col-md-3">
     <iframe width="200" height="200" src="https://www.youtube.com/embed/eLKjT5RcCHQ" title="Jazz JackRabbit 2 Remake - Gameplay - Single Player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      <p>Remake del Jazz Jackrabbit 2. Hecho por
+      <p>Remake del Jazz Jackrabbit 2 de Epic Games.</p>
+<p>Hecho por
 Victoria Avalos,
 José Ignacio Castro Martinez y
 Walter Gabriel Diem
@@ -53,7 +55,8 @@ durante la cursada 2024 - 1er cuatrimestre.
     </div>
     <div class="col-md-3">
     <iframe width="200" height="200" src="https://www.youtube.com/embed/cXs05yU9hYE" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <p>Un clasico: el Worms! Hecho por
+      <p>Un clásico: el Worms!</p>
+<p>Hecho por
 Alan Valdevenito
 Mateo Julián Rico
 Federico Solari Vazquez
@@ -67,7 +70,8 @@ durante la cursada 2023 - 2d cuatrimestre.
   <div class="row">
     <div class="col-md-3">
     <iframe width="200" height="200" src="https://www.youtube.com/embed/qZ-HH_SZ9NI" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <p>Remake del mítico Wolfenstein 3D de ID Software. Hecho por
+      <p>Remake del mítico Wolfenstein 3D de ID Software.</p>
+<p>Hecho por
 Carretero Andres,
 Montiel Ramiro,
 Parente Gaston y
@@ -79,7 +83,8 @@ su propia <a href="https://ramamont.github.io/taller-tp-grupal/">página web</a>
     </div>
     <div class="col-md-3">
 <iframe width="200" height="200" src="https://www.youtube.com/embed/okrdMPxOTbg" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <p>Remake de un clásico argentino, el Argentum Online de Morgolock. Hecho por
+      <p>Remake de un clásico argentino, el Argentum Online de Morgolock.</p>
+<p>Hecho por
 Mauro Parafati,
 Santiago Klein y
 Yuhong Huang
@@ -90,7 +95,8 @@ su propia <a href="https://mauro7x.github.io/argentum/">página web</a>.</p>
     </div>
     <div class="col-md-3">
 <iframe width="200" height="200" src="https://www.youtube.com/embed/zYuNiUTCyk0" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <p>Una implementacion alternativa del juego Portal de Valve pero en 2D. Hecho por
+      <p>Una implementacion alternativa del juego Portal de Valve pero en 2D.</p>
+<p>Hecho por
 Blanco Joaquin,
 Bravo Victor y
 Rack Lucas
@@ -104,7 +110,8 @@ durante la cursada 2019 - 1er cuatrimestre.
   <div class="row">
     <div class="col-md-3">
 <iframe width="200" height="200" src="https://www.youtube.com/embed/RLAoDbgdZdY" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <p>Un tower defense isométrico con los sprites del Diablo 2, de Blizzard. Hecho por
+      <p>Un tower defense isométrico con los sprites del Diablo 2 de Blizzard.</p>
+<p>Hecho por
 Martín Queija,
 Damián Cassinotti y
 Juan Pablo Rombolá
