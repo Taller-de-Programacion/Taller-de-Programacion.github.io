@@ -120,5 +120,6 @@ y Calificación y rubrique la aprobación.
  - Mateo Capon
  - Andres Zambrano
  - Nathalia Encinoza
- - Juan Hoszowski
  - Ivan Erlich
+ - Tomás Della Vecchia
+ - Abril Diaz Miguez
