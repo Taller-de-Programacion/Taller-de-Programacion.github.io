@@ -9,7 +9,7 @@ snippets: none
 ---
 
 Damos inicio al segundo ciclo de clases del 2024
-que abarca del 09/08/2024 al 02/12/2024.
+que abarca del 19/08/2024 al 02/12/2024.
 
 Se les recuerda a los alumnos que **deben** inscribirse en el sitio de entregas
 <a href="{{ site.sercom_url }}" target="_blank">Sercom</a>.
