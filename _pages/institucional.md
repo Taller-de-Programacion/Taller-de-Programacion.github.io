@@ -87,8 +87,8 @@ tener:
    redondea por truncamiento).
  - Trabajo grupal con nota **mayor o igual a 7**.
 
-Para asentar la nota de promoción el alumno deberá **anotarse y concurrir**
-a una fecha de final.
+Para asentar la nota de promoción el alumno deberá **anotarse**
+a una fecha de final (no es necesario concurrir).
 
 ### Exámen final
 
