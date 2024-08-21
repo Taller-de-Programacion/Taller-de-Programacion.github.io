@@ -37,8 +37,6 @@ para cursar Taller.
 ### Apuntes de otros cuatrimestres
 
 
-* [Tutorial de GDB (Leandro Fernández)](http://www.drk.com.ar/docs/development/conociendo_gdb.php)
-
 * [C - Fundamentos](/assets/apuntes_legacy/C - Fundamentos.pdf.7z)
 
 * [C - Memoria](/assets/apuntes_legacy/C - Memoria.pdf.7z)
