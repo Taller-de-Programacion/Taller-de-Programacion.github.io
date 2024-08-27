@@ -164,7 +164,7 @@ var lectures = [
                 link: "https://github.com/eldipa/taller-clases/raw/master/sockets/bin/sockets-tcp-handout.pdf",
              },
              {
-                name: "Sockets TCP/IP en C++ (codigo + ejemplos)",
+                name: "Hands On Sockets TCP/IP en C++",
                 link: "https://github.com/eldipa/hands-on-sockets-in-cpp",
              },
              {
