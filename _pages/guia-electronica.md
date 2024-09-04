@@ -90,8 +90,6 @@ para la codificación de los archivos que conforman el código fuente.
 Nota: cuando el enunciado no mencione el tratamiento de errores,
 el programa deberá retornar al sistema operativo cero en caso de
 ejecución exitosa y uno ante una situación de error.
-Si el alumno decidiera retornar varios código de error para
-diferentes situaciones deberán enumerarlos en el informe.
 
 ## Release de la solución
 
@@ -189,7 +187,6 @@ Entre otros serán evaluados en los siguientes puntos generales:
 <li>Cumplimiento de los objetivos planteados</li>
 <li>Código ordenado y eficiente</li>
 <li>Documentación del código fuente</li>
-<li>Claridad del informe del trabajo práctico</li>
 <li>Conceptos de programación utilizados</li>
 <li>Perdida de memoria y/o recursos
 <ul>
