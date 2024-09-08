@@ -65,6 +65,6 @@ disqus-shortname: webjeda-demo
 # Go to https://getsimpleform.com and get a API token by signing up with your email and enter that here
 api-token:
 
-include: [_pages]
+include: [_pages, _slides_clases]
 version: 0.8
 
