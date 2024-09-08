@@ -156,6 +156,10 @@ var lectures = [
                 link: "https://taller-de-programacion.github.io/sockets-presentation",
              },
              {
+                name: "Protocolo (handout)",
+                link: "https://github.com/eldipa/taller-clases/raw/master/sockets/bin/protocols-handout.pdf",
+             },
+             {
                 name: "Hands On Sockets TCP/IP en C++",
                 link: "https://github.com/eldipa/hands-on-sockets-in-cpp",
              },
