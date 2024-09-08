@@ -153,7 +153,7 @@ var lectures = [
             [
              {
                 name: "Sockets TCP/IP (slides + handout)",
-                link: "https://taller-de-programacion.github.io/sockets-presentation",
+                link: "https://eldipa.github.io/taller-clases/sockets-presentation",
              },
              {
                 name: "Protocolo (handout)",
