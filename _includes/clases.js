@@ -152,16 +152,8 @@ var lectures = [
         links:
             [
              {
-                name: "Introducción a stack IP-TCP-HTTP (handout)",
-                link: "https://github.com/eldipa/taller-clases/raw/master/sockets/bin/stack-web-handout.pdf",
-             },
-             {
-                name: "Introducción a redes TCP/IP (handout)",
-                link: "https://github.com/eldipa/taller-clases/raw/master/sockets/bin/tcp_ip_network_overview-handout.pdf",
-             },
-             {
-                name: "Sockets TCP/IP (handout)",
-                link: "https://github.com/eldipa/taller-clases/raw/master/sockets/bin/sockets-tcp-handout.pdf",
+                name: "Sockets TCP/IP (slides + handout)",
+                link: "https://taller-de-programacion.github.io/sockets-presentation",
              },
              {
                 name: "Hands On Sockets TCP/IP en C++",
