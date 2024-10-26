@@ -118,7 +118,6 @@ y Calificación y rubrique la aprobación.
  - Francisco Vazquez
  - Leonardo Giampieri
  - Mateo Capon
- - Andres Zambrano
  - Nathalia Encinoza
  - Ivan Erlich
  - Tomás Della Vecchia
