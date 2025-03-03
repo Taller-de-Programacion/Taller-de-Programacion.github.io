@@ -28,3 +28,4 @@ Les recordamos ademas **inscribirse** al Discord que le pasaremos por
 mail antes de arrancar las clases.
 
 Que tengan un buen comienzo de clases!
+
