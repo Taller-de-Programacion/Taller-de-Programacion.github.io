@@ -31,6 +31,24 @@ Aquí hay alguno de los trabajos prácticos de cuatrimestres anteriores:
 <div class="container marketing">
   <div class="row">
     <div class="col-md-3">
+    <iframe width="200" height="200" src="https://www.youtube.com/embed/VmtJ_JqwkxE" title="Duck Game" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <p>Remake de Duck Game de Adult Swim Games</p>
+<p>Hecho por
+Federico Letier,
+Juan Pablo Bel,
+Facundo Lescano y
+Lautaro Pedrozo
+durante la cursada 2024 - 2do cuatrimestre.
+</p>
+<p>Los alumnos liberaron el <a href="https://github.com/Juannbel/duck-game">código</a> como GPL-3.0</p>
+    </div>
+    <div class="col-md-3"></div>
+    <div class="col-md-3"></div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-md-3">
     <iframe width="200" height="200" src="https://www.youtube.com/embed/DaEdsMeefTc" title="Jazz JackRabbit 2 Remake - Gameplay - Single Player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       <p>Remake del Jazz Jackrabbit 2 de Epic Games</p>
 <p>Hecho por
