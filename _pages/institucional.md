@@ -115,10 +115,9 @@ y Calificación y rubrique la aprobación.
  - Martín Di Paola (martinp.dipaola at gmail.com)
 
 #### Ayudantes
- - Francisco Vazquez
  - Leonardo Giampieri
  - Mateo Capon
  - Nathalia Encinoza
- - Ivan Erlich
- - Tomás Della Vecchia
  - Abril Diaz Miguez
+ - Mateo Serrano
+ - Jonathan Dominguez
