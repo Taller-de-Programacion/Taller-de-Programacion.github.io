@@ -293,7 +293,7 @@ var lectures = [
     },
     {
         events:
-            ["Entrega final TP (parte threads)", "Explicación TP (parte grupal)"],
+            ["Entrega final TP (parte threads)", "Explicación TP (parte grupal)", "== Clase VIRTUAL =="],
         links:
             [
              {
@@ -304,7 +304,7 @@ var lectures = [
     },
     {
         events:
-            [],
+            ["== Clase VIRTUAL =="],
         links:
             [
              {
@@ -315,7 +315,7 @@ var lectures = [
     },
     {
         events:
-            [],
+            ["== Clase VIRTUAL =="],
         links:
             [
              {
@@ -326,7 +326,7 @@ var lectures = [
     },
     {
         events:
-            [],
+            ["== Clase VIRTUAL =="],
         links:
             [
              {
