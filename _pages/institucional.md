@@ -36,7 +36,7 @@ la [guía de entrega electrónica](/guia-electronica).
 Si el alumno es **recursante** de la materia, debe inscribirse en el
 curso actual desde la <a href="{{ site.sercom_url }}" target="_blank">sección correspondiente</a>.
 
-Si el alumno tiene algún TP aprobado de un cuatrimestre anterior con
+Si el alumno tiene algún TP Individual aprobado de un cuatrimestre anterior con
 nota **mayor a 7** cuenta con la posibilidad de no realizarlo nuevamente.
 Para ello, se **debe** notificar al JTP en que cuatrimestre cursó para
 que cargue las notas en el cuatrimestre actual.
@@ -45,6 +45,8 @@ Si bien los temas de los TPs son equivalentes entre cuatrimestres,
 es posible que la cátedra decida agregar o mover temas de un TP a otro.
 En cuyo caso el alumno recursante deberá realizar el TP del
 cuatrimestre corriente sin excepción.
+
+El TP Grupal **no** esta alcanzado por este beneficio.
 
 Ante cualquier duda respecto a la equivalencia de TPs,
 consulten al equipo docente para evitar confusiones.
