@@ -85,12 +85,47 @@ algun documento que avale dicha simultaneidad/equivalencia/excepción.
 Para promocionar la materia y no rendir el examen final el alumno debe
 tener:
 
- - Promedio de las entregas individuales **mayor o igual a 8** (se
-   redondea por truncamiento).
+ - Promedio de las entregas individuales **mayor o igual a 7** (redondeo)
  - Trabajo grupal con nota **mayor o igual a 7**.
 
 Para asentar la nota de promoción el alumno deberá **anotarse**
 a una fecha de final (no es necesario concurrir).
+
+### Trabajos prácticos
+
+La materia cuenta con 4 trabajos prácticos, 3 individuales y 1 grupal.
+
+TP 0 es un TP individual de onboarding para que el alumno haga un repaso de temas
+y herramientas básicos.
+
+TP 1 y TP 2 son individuales que el alumno tendra 2 semanas para
+resolver, pasar las pruebas automáticas del Sercom, la evaluación Oral
+y el Code Review hecho por los docentes.
+
+Si la entrega no pasa las pruebas automáticas del Sercom o el alumno
+no muestra en el Oral autoría y conocimiento de su propio código entregado,
+el alumno pierde la cursada.
+
+Que el TP pase tanto pruebas automáticas como el oral no es condición
+suficiente para aprobarlo. La decisión final está en el Code Review
+donde se asigna la nota del TP con los siguientes posibles desenlaces:
+
+ - El TP tiene 7 o más: la nota del TP queda firme. No hay reentrega.
+ - El TP tiene entre 4 y 6: la nota del TP es esa y el alumno puede
+   optar por subirla hasta un máximo de 7 en una reentrega.
+   La nota final le queda el promedio (por redondeo) de ambas (con un
+   máximo de 7).
+ - El TP no alcanza el 4: el alumno no alcanza los contenidos minímos y
+   pierde la cursada.
+
+El TP Final o Grupal consta de 8 semanas con reuniones semanales
+con el docente a cargo del grupo (los martes o los jueves, a coordinar).
+
+La evaluación constará de una demo del TP, Code Review y un Oral.
+
+Al igual que en el caso de los TPs Individual, los alumnos deberan
+mostrar autoría y conocimiento del propio código entregado. El alumno
+que no lo demuestre pierde la cursada.
 
 ### Exámen final
 
@@ -119,7 +154,9 @@ y Calificación y rubrique la aprobación.
 #### Ayudantes
  - Leonardo Giampieri
  - Mateo Capon
- - Nathalia Encinoza
  - Abril Diaz Miguez
  - Mateo Serrano
  - Jonathan Dominguez
+ - Mateo Pautaso
+ - Tiago Calderon
+ - Augustin Bermudez

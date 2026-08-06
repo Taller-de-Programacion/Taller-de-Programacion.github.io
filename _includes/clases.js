@@ -122,10 +122,10 @@ fillLecturesTable = function(initial_date, lectures, holidays) {
 var lectures = [
     {
         events:
-            ["Explicación TP", "Explicación Onboarding"],
+            ["Se habilita TP 0 - Onboarding"],
         links: [
              {
-                name: "Introducción a la Materia (presentación)",
+                name: "Introducción a la Materia (slides)",
                 link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/2018/introduccion.pdf",
              },
              {
@@ -135,6 +135,10 @@ var lectures = [
              {
                 name: "Memoria en C/C++ (handout)",
                 link: "https://github.com/eldipa/taller-clases/raw/master/memoria/bin/memoria-handout.pdf",
+             },
+             {
+                name: "Makefiles & CMake",
+                link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/2022/cmake.pdf"
              },
              {
                 name: "Buffer overflow (código)",
@@ -148,12 +152,20 @@ var lectures = [
     },
     {
         events:
-            ["Disponible cuestionario recap de Socket"],
+            ["Cierra TP 0", "Se habilita TP 1 - Socket"],
         links:
             [
              {
+                name: "Uso de AI en el Desarrollo (slides + handout)",
+                link: "TODO"
+             },
+             {
                 name: "Sockets TCP/IP (slides + handout)",
                 link: "https://eldipa.github.io/taller-clases/sockets-presentation",
+             },
+             {
+                name: "Sockets UDP (slides)",
+                link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/2018/introduccion_sockets_udp.pdf",
              },
              {
                 name: "Protocolo (handout)",
@@ -162,18 +174,18 @@ var lectures = [
              {
                 name: "Hands On Sockets TCP/IP en C++",
                 link: "https://github.com/eldipa/hands-on-sockets-in-cpp",
-             },
-             {
-                name: "struct y clases C++ (handout)",
-                link: "https://github.com/eldipa/taller-clases/raw/master/classes/bin/struct_and_classes-handout.pdf",
              }
         ],
     },
     {
         events:
-            ["Entrega final Onboarding", "Explicación TP (parte sockets)"],
+            [],
         links:
             [
+             {
+                name: "Clases C++ (handout)",
+                link: "https://github.com/eldipa/taller-clases/raw/master/classes/bin/struct_and_classes-handout.pdf",
+             }
              {
                 name: "RAII C++ (handout)",
                 link: "https://github.com/eldipa/taller-clases/raw/master/classes/bin/raii-handout.pdf",
@@ -185,64 +197,45 @@ var lectures = [
              {
                 name: "Pasaje y asignacion de objetos (Move Semantics) (handout)",
                 link: "https://github.com/eldipa/taller-clases/raw/master/moving/bin/moving-handout.pdf",
+             },
+             {
+                name: "Herencia y Polimorfismo (handout)",
+                link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/2018/polimorfismo-handout.pdf",
+             },
+             {
+                name: "Herencia y Polimorfismo (slides)",
+                link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/herencia_y_polimorfismo.pdf",
              }
         ],
     },
     {
         events:
-            ["Entrega obligatoria TP (parte sockets) y recaps"],
+            ["Entrega del TP 1 Sockets y recaps", "Oral del TP 1 (Jueves)"],
         links:
             [
              {
-                name: "Manejo de Errores (handout)",
-                link: "https://github.com/Taller-de-Programacion/clases/raw/master/manejodeerrores/bin/manejodeerrores-handout.pdf",
-             },
-             {
-                name: "Introducción a Threads (presentación)",
+                name: "Introducción a Threads (slides)",
                 link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/2022/threads.pdf",
              },
              {
                 name: "Hands On Threads en C++",
                 link: "https://github.com/eldipa/hands-on-threads",
+             },
+             {
+                name: "Recursos compartidos (handout)",
+                link: "https://github.com/eldipa/taller-clases/raw/master/shared-resources/bin/shared-resources-handout.pdf",
              }
         ]
     },
     {
         events:
-            ["Devolucion de correcciones", "Disponible cuestionario recap de Threads"],
+            ["Devolucion de correcciones del TP 1", "Se habilita TP 2 - Threads"],
         links:
             [
-             // {
-             //    name: "Threads en C++ (tutorial - Lafroce)",
-             //    link: "https://github.com/Taller-de-Programacion/threads",
-             // },
-             {
-                name: "Recursos compartidos (handout)",
-                link: "https://github.com/eldipa/taller-clases/raw/master/shared-resources/bin/shared-resources-handout.pdf",
-             },
              {
                 name: "Queues Thread Safe",
                 link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/2022/queues.pdf",
-             }
-             // {
-             //    name: "Recursos compartidos (handout - Di Paola)",
-             //    link: "https://github.com/eldipa/taller-clases/raw/master/shared-resources/bin/shared-resources-handout.pdf",
-             // },
-             // {
-             //    name: "Introducción a Threads (presentación - Di Paola)",
-             //    link: "https://github.com/Taller-de-Programacion/clases/raw/master/introthreads/bin/introathreads-draft.pdf",
-             // },
-             // {
-             //    name: "Cliente-Servidor (handout - Di Paola)",
-             //    link: "https://github.com/Taller-de-Programacion/clases/raw/master/client_server_arch/bin/client_server_arch-handout.pdf",
-             // },
-         ],
-    },
-    {
-        events:
-            ["Entrega final TP (parte sockets)", "Explicación TP (parte threads)"],
-        links:
-            [
+             },
              {
                 name: "Cliente-Servidor (slides)",
                 link: "https://github.com/eldipa/taller-clases/raw/master/client_server_arch/bin/client_server_arch.pdf",
@@ -251,30 +244,45 @@ var lectures = [
                 name: "Cliente-Servidor (handout)",
                 link: "https://github.com/eldipa/taller-clases/raw/master/client_server_arch/bin/client_server_arch-handout.pdf",
              }
+         ],
+    },
+    {
+        events:
+            ["Entrega TP 1 (en caso de reentrega)"],
+        links:
+            [
+             {
+                name: "Manejo de Errores (handout)",
+                link: "https://github.com/Taller-de-Programacion/clases/raw/master/manejodeerrores/bin/manejodeerrores-handout.pdf",
+             }
             ],
     },
     {
         events:
-            ["Entrega obligatoria TP (parte threads) y recaps"],
+            ["Entrega del TP 2 Threads y recaps", "Oral del TP 2 (jueves)", "Devolucion de correcciones del TP 1 (en caso de reentrega)"],
         links:
             [
              {
-                name: "Herencia y Polimorfismo (handout)",
-                link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/2018/polimorfismo-handout.pdf",
-             },
-             {
-                name: "Herencia y Polimorfismo (presentación)",
-                link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/herencia_y_polimorfismo.pdf",
-             },
-             {
-                name: "Sobrecarga de Operadores (presentación)",
+                name: "Sobrecarga de Operadores (slides)",
                 link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/2018/sobrecarga_de_operadores.pdf",
              },
+             {
+                name: "Namespaces, friends and smart pointers (slides)",
+                link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/namespaces_friends_smart_pointers.pdf",
+             },
+             {
+                name: "Templates (handout)",
+                link: "https://github.com/Taller-de-Programacion/clases/raw/master/templates/bin/templates-handout.pdf",
+             },
+             {
+                name: "Templates (slides)",
+                link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/templates.pdf",
+             }
             ]
     },
     {
         events:
-            ["Devolucion de correcciones"],
+            ["Devolucion de correcciones del TP 2", "Armado de grupos para el TP Grupal"],
         links:
             [
              {
@@ -293,50 +301,29 @@ var lectures = [
     },
     {
         events:
-            ["Entrega final TP (parte threads)", "Explicación TP (parte grupal)", "== Clase VIRTUAL =="],
+            ["Entrega TP 2 (en caso de reentrega)"],
         links:
             [
-             {
-                name: "Makefiles & CMake",
-                link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/2022/cmake.pdf"
-             }
             ],
     },
     {
         events:
-            ["== Clase VIRTUAL =="],
+            ["Devolucion de correcciones del TP 2 (en caso de reentrega)"],
+        links:
+            [],
+    },
+    {
+        events:
+            [],
         links:
             [
-             {
-                name: "Namespaces, friends and smart pointers (presentación)",
-                link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/namespaces_friends_smart_pointers.pdf",
-             }
             ],
     },
     {
         events:
-            ["== Clase VIRTUAL =="],
+            [],
         links:
             [
-             {
-                name: "Introducción a Sockets UDP en C (presentación)",
-                link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/2018/introduccion_sockets_udp.pdf",
-             }
-            ],
-    },
-    {
-        events:
-            ["== Clase VIRTUAL =="],
-        links:
-            [
-             {
-                name: "Templates (handout)",
-                link: "https://github.com/Taller-de-Programacion/clases/raw/master/templates/bin/templates-handout.pdf",
-             },
-             {
-                name: "Templates (presentación)",
-                link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/templates.pdf",
-             }
             ],
     },
     {
@@ -347,21 +334,21 @@ var lectures = [
     },
     {
         events:
-            ["Entrega obligatoria TP (parte grupal)"],
+            [],
         links:
             [],
     },
     {
         events:
-            ["Devolucion de correcciones"],
+            ["Demo del TP Grupal"],
         links:
             [],
     },
     {
         events:
             [
-              "Reentrega final TP (parte grupal)",
-              "Examen oral sobre el TP",
+              "Demo del TP Grupal",
+              "Oral sobre el TP Grupal",
             ],
         links:
             [],
@@ -372,7 +359,7 @@ var lectures = [
 /*
 
              {
-                name: "Proceso de Compilación (presentación)",
+                name: "Proceso de Compilación (slides)",
                 link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/2018/proceso_de_compilacion.pdf",
              },
              {
@@ -384,11 +371,11 @@ var lectures = [
                 link: "https://github.com/Taller-de-Programacion/compilacion/tree/master/make",
              }
              {
-                name: "Archivos (presentación)",
+                name: "Archivos (slides)",
                 link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/2018/archivos.pdf",
              },
              {
-                name: "TDAs (presentación)",
+                name: "TDAs (slides)",
                 link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/2018/tipos_de_datos_abstractos.pdf",
              },
              {
