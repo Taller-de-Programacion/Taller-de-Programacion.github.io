@@ -185,7 +185,7 @@ var lectures = [
              {
                 name: "Clases C++ (handout)",
                 link: "https://github.com/eldipa/taller-clases/raw/master/classes/bin/struct_and_classes-handout.pdf",
-             }
+             },
              {
                 name: "RAII C++ (handout)",
                 link: "https://github.com/eldipa/taller-clases/raw/master/classes/bin/raii-handout.pdf",
