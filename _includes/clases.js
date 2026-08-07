@@ -1,6 +1,6 @@
 createList = function(array) {
     var node = document.createElement("ul");
-    node.className = "list-unstyled";
+    node.className = ""; // "list-unstyled";
     array.forEach(function(el) {
         var item = document.createElement("li");
         item.innerHTML = el;
@@ -11,7 +11,7 @@ createList = function(array) {
 
 createListOfLinks = function(array) {
     var node = document.createElement("ul");
-    node.className = "list-unstyled";
+    node.className = ""; // "list-unstyled";
     array.forEach(function(el) {
         var item = document.createElement("li");
         var anchor = document.createElement("a");
