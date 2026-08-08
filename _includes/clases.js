@@ -122,7 +122,7 @@ fillLecturesTable = function(initial_date, lectures, holidays) {
 var lectures = [
     {
         events:
-            ["Se habilita TP 0 - Onboarding"],
+            ["Se habilita TP 0 (Onboarding) y recaps"],
         links: [
              {
                 name: "Introducción a la Materia (slides)",
@@ -152,7 +152,7 @@ var lectures = [
     },
     {
         events:
-            ["Cierra TP 0", "Se habilita TP 1 - Socket"],
+            ["Cierra TP 0", "Se habilita TP 1 (Socket) y recaps"],
         links:
             [
              {
@@ -229,7 +229,7 @@ var lectures = [
     },
     {
         events:
-            ["Devolucion de correcciones del TP 1", "Se habilita TP 2 - Threads"],
+            ["Devolucion de correcciones del TP 1", "Se habilita reentrega TP 1", "Se habilita TP 2 (Threads)"],
         links:
             [
              {
@@ -282,7 +282,7 @@ var lectures = [
     },
     {
         events:
-            ["Devolucion de correcciones del TP 2", "Armado de grupos para el TP Grupal"],
+            ["Devolucion de correcciones del TP 2", "Se habilita reentrega TP 2", "Armado de grupos para el TP Grupal"],
         links:
             [
              {
