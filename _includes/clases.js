@@ -301,54 +301,54 @@ var lectures = [
     },
     {
         events:
-            ["Entrega TP 2 (en caso de reentrega)"],
+            ["Entrega TP 2 (en caso de reentrega)", "Reunion del grupo con el docente (virtual)"],
         links:
             [
             ],
     },
     {
         events:
-            ["Devolucion de correcciones del TP 2 (en caso de reentrega)"],
+            ["Devolucion de correcciones del TP 2 (en caso de reentrega)", "Reunion del grupo con el docente (virtual)"],
         links:
             [],
     },
     {
         events:
-            [],
-        links:
-            [
-            ],
-    },
-    {
-        events:
-            [],
+            ["Reunion del grupo con el docente (virtual)"],
         links:
             [
             ],
     },
     {
         events:
-            [],
+            ["Reunion del grupo con el docente (virtual)"],
+        links:
+            [
+            ],
+    },
+    {
+        events:
+            ["Reunion del grupo con el docente (virtual)"],
         links:
             [],
     },
     {
         events:
-            [],
+            ["Reunion del grupo con el docente (virtual)"],
         links:
             [],
     },
     {
         events:
-            ["Demo del TP Grupal"],
+            ["Demo del TP Grupal con el docente (virtual)"],
         links:
             [],
     },
     {
         events:
             [
-              "Demo del TP Grupal",
-              "Oral sobre el TP Grupal",
+              "Demo del TP Grupal con el docente (virtual)",
+              "Oral sobre el TP Grupal (virtual)",
             ],
         links:
             [],
