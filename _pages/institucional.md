@@ -8,7 +8,7 @@ nav-institucional: active
 
 ---
 
-Este es el sitio oficial de la materia **Taller de programación I – 7542/9508**
+Este es el sitio oficial de la materia **Taller de programación I – 7542/9508/TA045**
 
 Aquí encontrará toda la información administrativa necesaria para inscribirse,
 cursar y rendir los exámenes.

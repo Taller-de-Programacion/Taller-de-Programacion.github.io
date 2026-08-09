@@ -1,6 +1,6 @@
 # Taller de programación I
 
-Sitio no oficial de la materia 7542 - Taller de programación I
+Sitio no oficial de la materia 7542/9508/TA045 - Taller de programación I
 
 ## Como contribuir
 
@@ -43,7 +43,7 @@ date: la-fecha-de-publicacion
 ### Verificar localmente el post
 
 Estando dentro de la carpeta ```Taller-de-Programacion.github.io```, levantamos el sitio con docker
-Se utilizará la imagen ```jekyll/jekyll:pages``` del proyecto [jekyll/docker](https://github.com/jekyll/docker) ya que es la más similar a github-pages. 
+Se utilizará la imagen ```jekyll/jekyll:pages``` del proyecto [jekyll/docker](https://github.com/jekyll/docker) ya que es la más similar a github-pages.
 
 El comando ```run``` creara un container a partir de la imagen. Es necesario hacerlo una sólo vez: con los comandos ```start``` y ```stop``` podremos iniciar y detener el container sin necesidad de crearlo desde cero.
 
