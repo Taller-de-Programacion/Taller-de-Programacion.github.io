@@ -126,19 +126,19 @@ var lectures = [
         links: [
              {
                 name: "Introducción a la Materia (slides)",
-                link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/2018/introduccion.pdf",
+                link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/clase1.intro.a.la.materia.pdf",
              },
              {
                 name: "Onboarding (enunciado)",
                 link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/onboarding.pdf",
              },
              {
-                name: "Memoria en C/C++ (handout)",
-                link: "https://github.com/eldipa/taller-clases/raw/master/memoria/bin/memoria-handout.pdf",
+                name: "Memoria en C/C++ (slides)",
+                link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/clase1.memoria.pdf",
              },
              {
-                name: "Makefiles & CMake",
-                link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/2022/cmake.pdf"
+                name: "Proceso de Compilación (slides)",
+                link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/clase1.proceso.de.compilacion.pdf"
              },
              {
                 name: "Buffer overflow (código)",
