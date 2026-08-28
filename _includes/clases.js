@@ -174,6 +174,10 @@ var lectures = [
              {
                 name: "Hands On Sockets TCP/IP en C++",
                 link: "https://github.com/eldipa/hands-on-sockets-in-cpp",
+             },
+             {
+                name: "AI for Software Development",
+                link: "https://eldipa.github.io/lectures/lectures/taller/taller-002--using-ai-for-dev.pdf",
              }
         ],
     },
