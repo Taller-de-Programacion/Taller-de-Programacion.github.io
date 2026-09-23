@@ -178,6 +178,10 @@ var lectures = [
              {
                 name: "AI for Software Development",
                 link: "https://eldipa.github.io/lectures/lectures/taller/taller-002--using-ai-for-dev.pdf",
+             },
+             {
+                name: "Clases C++ (handout)",
+                link: "https://github.com/eldipa/taller-clases/raw/master/classes/bin/struct_and_classes-handout.pdf",
              }
         ],
     },
@@ -186,10 +190,6 @@ var lectures = [
             [],
         links:
             [
-             {
-                name: "Clases C++ (handout)",
-                link: "https://github.com/eldipa/taller-clases/raw/master/classes/bin/struct_and_classes-handout.pdf",
-             },
              {
                 name: "RAII C++ (handout)",
                 link: "https://github.com/eldipa/taller-clases/raw/master/classes/bin/raii-handout.pdf",
