@@ -258,6 +258,14 @@ var lectures = [
              {
                 name: "Manejo de Errores (handout)",
                 link: "https://github.com/Taller-de-Programacion/clases/raw/master/manejodeerrores/bin/manejodeerrores-handout.pdf",
+             },
+             {
+                name: "Templates (handout)",
+                link: "https://github.com/Taller-de-Programacion/clases/raw/master/templates/bin/templates-handout.pdf",
+             },
+             {
+                name: "Templates (slides)",
+                link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/templates.pdf",
              }
             ],
     },
@@ -273,14 +281,6 @@ var lectures = [
              {
                 name: "Namespaces, friends and smart pointers (slides)",
                 link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/namespaces_friends_smart_pointers.pdf",
-             },
-             {
-                name: "Templates (handout)",
-                link: "https://github.com/Taller-de-Programacion/clases/raw/master/templates/bin/templates-handout.pdf",
-             },
-             {
-                name: "Templates (slides)",
-                link: "https://github.com/Taller-de-Programacion/Taller-de-Programacion.github.io/raw/master/assets/templates.pdf",
              }
             ]
     },
